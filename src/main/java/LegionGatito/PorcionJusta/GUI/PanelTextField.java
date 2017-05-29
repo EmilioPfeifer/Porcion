@@ -38,7 +38,6 @@ public class PanelTextField extends JPanel {
 		this.add(this.ingrFechaNac);
 		this.add(this.ingrEstatura);
 		this.add(this.ingrPeso);
-		
-		
+			
 	}
 }

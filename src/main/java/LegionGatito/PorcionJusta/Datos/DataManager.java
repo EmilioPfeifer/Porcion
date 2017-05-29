@@ -3,20 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LegionGatito.PorcionJusta.Logic;
-
-import java.util.Date;
+package LegionGatito.PorcionJusta.Datos;
 
 /**
  *
  * @author UsuarioWin7
  */
-public class Control {
-    Date fecha;
-    double pesoControdo;
-
-    public Control(double pesoControdo) {
-        this.pesoControdo = pesoControdo;
-    }
+public class DataManager {
     
 }

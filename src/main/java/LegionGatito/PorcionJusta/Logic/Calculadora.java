@@ -5,18 +5,18 @@
  */
 package LegionGatito.PorcionJusta.Logic;
 
-import java.util.Date;
-
 /**
  *
  * @author UsuarioWin7
  */
-public class Control {
-    Date fecha;
-    double pesoControdo;
-
-    public Control(double pesoControdo) {
-        this.pesoControdo = pesoControdo;
+public class Calculadora {
+    public double calcularIMC() {
+        double imc = 0;
+        return imc;
     }
     
+    public double calcularCalDiaria() {
+        double calDiarias = 0;
+        return calDiarias;
+    }
 }

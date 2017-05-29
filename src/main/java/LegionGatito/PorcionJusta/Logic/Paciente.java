@@ -6,12 +6,24 @@
 package LegionGatito.PorcionJusta.Logic;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
  * @author UsuarioWin7
  */
 public class Paciente extends Persona {
-    double imc, caloriasDiarias;
+    double imc;
+    double caloriasDiarias;
     ArrayList<Control> controles = new ArrayList<Control>();
+
+    public Paciente(String nombre, int edad, double estatura, Date fechaNac, double peso, boolean masculino) {
+        super(nombre, edad, estatura, fechaNac, peso, masculino);
+    }
+    
+    
+    public void addControl(double peso) {
+        Control control = new Control(peso);
+        this.controles.add(control);
+    }
 }

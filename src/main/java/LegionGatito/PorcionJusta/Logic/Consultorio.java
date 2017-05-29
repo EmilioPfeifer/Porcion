@@ -13,6 +13,12 @@ import java.util.ArrayList;
  */
 public class Consultorio {
     ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
+    Calculadora calculadora;
+
+    public Consultorio() {
+        this.calculadora = new Calculadora();
+    }
+    
     
     public double calcularIMC(){
         return this.pacientes.get(0).imc;
@@ -26,12 +32,7 @@ public class Consultorio {
         
     }
     
-    public void quitarPersona() {
-        
-    }
-    
-    public void agregarControl() {
-        
-    }
-    
+    public ArrayList<Paciente> getLista() {
+        return this.pacientes;
+    }   
 }

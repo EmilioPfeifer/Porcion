@@ -13,7 +13,20 @@ import java.util.Date;
  */
 public class Persona {
     String nombre;
-    int edad, estatura;
+    int edad;
+    double estatura;
     Date fechaNac;
     double peso;
+    boolean masculino;
+
+    public Persona(String nombre, int edad, double estatura, Date fechaNac, double peso, boolean masculino) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.estatura = estatura;
+        this.fechaNac = fechaNac;
+        this.peso = peso;
+        this.masculino = masculino;
+    }
+    
+    
 }
