@@ -1,16 +1,20 @@
 package LegionGatito.PorcionJusta.GUI;
 
+import LegionGatito.PorcionJusta.Logic.Persona;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class VentanaIngreso extends JFrame implements ActionListener{
     private PanelTextos panelTextos;
     private PanelTextField panelTF;
     private PanelBotones panelBotones;
+    private Archivador archivo;
+    private Persona paciente;
         
     public VentanaIngreso(){
         initComponents();
@@ -37,6 +41,7 @@ public class VentanaIngreso extends JFrame implements ActionListener{
         this.add(this.panelBotones, distribution.SOUTH);
         this.add(this.panelTextos, distribution.WEST);
         this.add(this.panelTF, distribution.CENTER);
+        this.archivo = new Archivador();
         this.setVisible(true);		
     }
 
@@ -44,13 +49,33 @@ public class VentanaIngreso extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
         if (this.panelBotones.getBtnMenu() == e.getSource()) {
+            if (this.panelTF.ingrNombre.getText().trim().equals("")) {
+                JOptionPane.showMessageDialog( null, "Bloque vacio", "Nombre", JOptionPane.PLAIN_MESSAGE );
+                return;
+            }else if (this.panelTF.ingrFechaNac.getText().trim().equals("")) {
+                JOptionPane.showMessageDialog( null, "Bloque vacio", "Fecha de Nacimiento", JOptionPane.PLAIN_MESSAGE );
+                return;
+            }else if (this.panelTF.ingrEstatura.getText().trim().equals("")) {
+                JOptionPane.showMessageDialog( null, "Bloque vacio", "Estatura", JOptionPane.PLAIN_MESSAGE );
+                return;
+            }else if (this.panelTF.ingrPeso.getText().trim().equals("")) {
+                JOptionPane.showMessageDialog( null, "Bloque vacio", "Peso", JOptionPane.PLAIN_MESSAGE );
+                return;
+            }
+        paciente = new Persona(this.panelTF.ingrNombre.getText().trim(), 17,
+        Double.parseDouble(this.panelTF.ingrEstatura.getText().trim()),
+        this.panelTF.ingrFechaNac.getText().trim(),
+        Double.parseDouble(this.panelTF.ingrPeso.getText().trim()),
+        true);
+        this.archivo.crearArchivo(this.paciente.data,this.panelTF.ingrNombre.getText().trim());
+        VentanaSeleccion s = new VentanaSeleccion();
+        s.setVisible(true);
+        this.setVisible(false);
+        }
+        // otro boton
+        if (this.panelBotones.getBtnSalir() == e.getSource()) {
             VentanaInicio ini = new VentanaInicio();
             ini.setVisible(true);
-            this.setVisible(false);
-        }	        
-        if (this.panelBotones.getBtnSalir() == e.getSource()) {
-            VentanaSeleccion s = new VentanaSeleccion();
-            s.setVisible(true);
             this.setVisible(false);
         }
 			

@@ -21,11 +21,12 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
     private PanelBotones panelBotones;
     private PanelTextos panelTextos;
     private PanelCombo panelCombo;
+    private Archivador archivo;
 
     public VentanaSeleccion() {
-        String[] nombres = {"Ana", "Margarita", "Daniela", "Divian",
+        /*String[] nombres = {"Ana", "Margarita", "Daniela", "Divian",
             "Leslie", "Paz", "Andrea", "Macarena"};
-        JList lista = new JList(nombres);
+        JList lista = new JList(nombres);*/
         initComponents();
     }
 
@@ -45,6 +46,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
         this.panelBotones.getBtnMenu().addActionListener((ActionListener) this);
         this.add(this.panelCombo, distribucion.CENTER);
         this.add(this.panelBotones, distribucion.SOUTH);
+        this.archivo = new Archivador();
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -53,8 +55,10 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             v.setVisible(true);
             this.setVisible(false);
         }
-        if (this.panelBotones.getBtnSeleccionar() == e.getSource()) {
+        if (this.panelBotones.getBtnSeleccionar() == e.getSource()) { 
+            String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
             VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
+            this.archivo.leerArchivoTxt(nombre);
             mp.setVisible(true);
             this.setVisible(false);
         }

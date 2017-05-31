@@ -17,7 +17,7 @@ public class Paciente extends Persona {
     double caloriasDiarias;
     ArrayList<Control> controles = new ArrayList<Control>();
 
-    public Paciente(String nombre, int edad, double estatura, Date fechaNac, double peso, boolean masculino) {
+    public Paciente(String nombre, int edad, double estatura, String fechaNac, double peso, boolean masculino) {
         super(nombre, edad, estatura, fechaNac, peso, masculino);
     }
     

@@ -5,10 +5,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class PanelTextField extends JPanel {
-	private JTextField ingrNombre;
-	private JTextField ingrFechaNac;
-	private JTextField ingrEstatura;
-	private JTextField ingrPeso;
+	JTextField ingrNombre;
+	JTextField ingrFechaNac;
+	JTextField ingrEstatura;
+	JTextField ingrPeso;
 	
 	
 	public PanelTextField(){
