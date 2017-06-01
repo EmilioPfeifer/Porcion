@@ -13,6 +13,8 @@ public class DatosConsultorio extends DataManager {
     public void buscarControl() {
         
     }
+    
+    
 }
 /*
 Hombres
