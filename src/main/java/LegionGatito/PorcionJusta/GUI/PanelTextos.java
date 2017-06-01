@@ -28,8 +28,6 @@ public class PanelTextos extends JPanel {
     JLabel cal;
     
     
-    String[] nombres = {"Ana","Margarita","Daniela","Divian", 
-                        "Leslie","Paz","Andrea","Macarena"};
     JList lista;
     
     public void initInicio() {

@@ -1,5 +1,8 @@
 package LegionGatito.PorcionJusta.GUI;
 
+import LegionGatito.PorcionJusta.Datos.DataManager;
+import LegionGatito.PorcionJusta.Datos.DatosConsultorio;
+import LegionGatito.PorcionJusta.Logic.Paciente;
 import LegionGatito.PorcionJusta.Logic.Persona;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -13,11 +16,17 @@ public class VentanaIngreso extends JFrame implements ActionListener{
     private PanelTextos panelTextos;
     private PanelTextField panelTF;
     private PanelBotones panelBotones;
-    private Archivador archivo;
-    private Persona paciente;
+    private DataManager archivo;
+    private DatosConsultorio subarchivo;
+    private Paciente paciente;
+    private PanelCombo combo;
         
     public VentanaIngreso(){
+        this.archivo = new DataManager();
+        this.subarchivo = new DatosConsultorio();
         initComponents();
+        this.combo = new PanelCombo();
+        
     }
 	
     private void initComponents(){
@@ -41,8 +50,24 @@ public class VentanaIngreso extends JFrame implements ActionListener{
         this.add(this.panelBotones, distribution.SOUTH);
         this.add(this.panelTextos, distribution.WEST);
         this.add(this.panelTF, distribution.CENTER);
-        this.archivo = new Archivador();
-        this.setVisible(true);		
+        this.setVisible(true);
+    }
+    
+    private boolean comprovar(String dato){
+        String nDato;
+        boolean paso = true;
+        try{
+            Double.parseDouble(dato);
+        }catch(IllegalArgumentException e){
+            nDato = dato.replace(",", ".");
+            try{
+                Double.parseDouble(nDato);
+            }catch(IllegalArgumentException d){
+                JOptionPane.showMessageDialog( null, "caracter ilegal", "ERROR", JOptionPane.PLAIN_MESSAGE );
+                paso = false;
+            }
+        }
+        return paso;
     }
 
 	
@@ -62,15 +87,24 @@ public class VentanaIngreso extends JFrame implements ActionListener{
                 JOptionPane.showMessageDialog( null, "Bloque vacio", "Peso", JOptionPane.PLAIN_MESSAGE );
                 return;
             }
-        paciente = new Persona(this.panelTF.ingrNombre.getText().trim(), 17,
-        Double.parseDouble(this.panelTF.ingrEstatura.getText().trim()),
-        this.panelTF.ingrFechaNac.getText().trim(),
-        Double.parseDouble(this.panelTF.ingrPeso.getText().trim()),
-        true);
-        this.archivo.crearArchivo(this.paciente.data,this.panelTF.ingrNombre.getText().trim());
-        VentanaSeleccion s = new VentanaSeleccion();
-        s.setVisible(true);
-        this.setVisible(false);
+            //creacion de paciente
+            if (this.comprovar(this.panelTF.ingrEstatura.getText().trim()) && this.comprovar(this.panelTF.ingrPeso.getText().trim())) {
+            
+                paciente = new Paciente(this.panelTF.ingrNombre.getText().trim(), 17    ,
+            Double.parseDouble(this.panelTF.ingrEstatura.getText().trim().replace(",", ".")),
+            this.panelTF.ingrFechaNac.getText().trim(),
+            Double.parseDouble(this.panelTF.ingrPeso.getText().trim().replace(",", ".")),
+            true);
+                
+            } else {
+                return;
+            }
+            //
+            this.archivo.crearArchivo(this.paciente.data,this.panelTF.ingrNombre.getText().trim());
+            this.subarchivo.reescribirPaciente(this.combo.lista,this.panelTF.ingrNombre.getText().trim());
+            VentanaSeleccion s = new VentanaSeleccion();
+            s.setVisible(true);
+            this.setVisible(false);
         }
         // otro boton
         if (this.panelBotones.getBtnSalir() == e.getSource()) {

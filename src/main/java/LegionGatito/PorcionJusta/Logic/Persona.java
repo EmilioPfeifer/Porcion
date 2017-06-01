@@ -12,6 +12,7 @@ import java.util.Date;
  * @author UsuarioWin7
  */
 public class Persona {
+
     public String[] data = new String[3000];
     String nombre;
     int edad;
@@ -33,6 +34,14 @@ public class Persona {
         this.data[4] = String.valueOf(this.peso);
         this.masculino = masculino;
     }
-    
-    
+
+    public Persona(String[] datos) {
+        this.nombre = datos[0];
+        this.edad = Integer.parseInt(datos[1]);
+        this.estatura = Double.parseDouble(datos[2]);
+        this.fechaNac = datos[3];
+        this.peso = Double.parseDouble(datos[4]);
+        this.masculino = false;
+    }
+
 }

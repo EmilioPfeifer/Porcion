@@ -5,6 +5,10 @@
  */
 package LegionGatito.PorcionJusta.GUI;
 
+import LegionGatito.PorcionJusta.Datos.DataManager;
+import LegionGatito.PorcionJusta.Datos.DatosConsultorio;
+import LegionGatito.PorcionJusta.Logic.Consultorio;
+import LegionGatito.PorcionJusta.Logic.Paciente;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,12 +25,18 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
     private PanelBotones panelBotones;
     private PanelTextos panelTextos;
     private PanelCombo panelCombo;
-    private Archivador archivo;
+    private DataManager archivo;
+    private DatosConsultorio subArchivo;
+    private Consultorio consultorio;
+    private Paciente paciente;
 
     public VentanaSeleccion() {
         /*String[] nombres = {"Ana", "Margarita", "Daniela", "Divian",
             "Leslie", "Paz", "Andrea", "Macarena"};
         JList lista = new JList(nombres);*/
+        this.archivo = new DataManager();
+        this.consultorio = new Consultorio();
+        this.subArchivo = new DatosConsultorio();
         initComponents();
     }
 
@@ -40,13 +50,13 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
         this.panelBotones = new PanelBotones();
         this.panelTextos = new PanelTextos();
         this.panelCombo = new PanelCombo();
+        this.panelCombo.initSeleccion();
         this.panelBotones.initSeleccion();
         this.panelBotones.getBtnAgregar().addActionListener((ActionListener) this);
         this.panelBotones.getBtnSeleccionar().addActionListener((ActionListener) this);
         this.panelBotones.getBtnMenu().addActionListener((ActionListener) this);
         this.add(this.panelCombo, distribucion.CENTER);
         this.add(this.panelBotones, distribucion.SOUTH);
-        this.archivo = new Archivador();
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -55,10 +65,16 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             v.setVisible(true);
             this.setVisible(false);
         }
-        if (this.panelBotones.getBtnSeleccionar() == e.getSource()) { 
-            String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
+        if (this.panelBotones.getBtnSeleccionar() == e.getSource()) {
+            int contador =0;
+            while(this.subArchivo.obtenerPacientes()[contador] != null) {
+               this.paciente = new Paciente(this.subArchivo.leerNombrePaciente(this.subArchivo.obtenerPacientes()[contador]));
+               this.consultorio.add(this.paciente);
+               contador++;
+            }
+            this.consultorio.add(paciente);
+            //String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
             VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
-            this.archivo.leerArchivoTxt(nombre);
             mp.setVisible(true);
             this.setVisible(false);
         }
