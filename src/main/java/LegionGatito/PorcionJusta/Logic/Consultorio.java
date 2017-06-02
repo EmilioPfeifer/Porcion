@@ -30,7 +30,6 @@ public class Consultorio {
 		}
     }
     
-    public void 
 
     public ArrayList<Paciente> getLista() {
         return this.pacientes;

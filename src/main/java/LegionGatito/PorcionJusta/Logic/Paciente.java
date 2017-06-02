@@ -55,7 +55,11 @@ public class Paciente extends Persona {
         return edad;
     }
 
-    public double getEstatura() {
+    public ArrayList<Control> getControles() {
+		return controles;
+	}
+
+	public double getEstatura() {
         return estatura;
     }
 

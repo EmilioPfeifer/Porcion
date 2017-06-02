@@ -70,7 +70,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             int contador =0;
             while(this.subArchivo.obtenerPacientes()[contador] != null) {
                this.paciente = new Paciente(this.subArchivo.leerNombrePaciente(this.subArchivo.obtenerPacientes()[contador]));
-               this.consultorio.add(this.paciente);
+               this.consultorio.addPaciente(this.paciente);
                contador++;
             }
             //String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();

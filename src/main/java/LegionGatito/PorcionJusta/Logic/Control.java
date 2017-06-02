@@ -38,5 +38,10 @@ public class Control {
 	public String getFechaControl() {
 		return fechaControl;
 	}
+
+	public double getPesoControl() {
+		return pesoControl;
+	}
+	
     
 }
