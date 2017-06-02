@@ -66,13 +66,13 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             this.setVisible(false);
         }
         if (this.panelBotones.getBtnSeleccionar() == e.getSource()) {
+            this.panelCombo.cmbListaPacientes.getSelectedItem();
             int contador =0;
             while(this.subArchivo.obtenerPacientes()[contador] != null) {
                this.paciente = new Paciente(this.subArchivo.leerNombrePaciente(this.subArchivo.obtenerPacientes()[contador]));
                this.consultorio.add(this.paciente);
                contador++;
             }
-            this.consultorio.add(paciente);
             //String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
             VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
             mp.setVisible(true);

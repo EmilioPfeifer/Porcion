@@ -16,7 +16,7 @@ public class Consultorio {
     Calculadora calculadora;
 
     public Consultorio() {
-        this.calculadora = new Calculadora();
+       
     }
     
     public void add(Paciente pac){

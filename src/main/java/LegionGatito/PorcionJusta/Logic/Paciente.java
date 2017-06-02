@@ -15,10 +15,15 @@ import java.util.Date;
 public class Paciente extends Persona {
     double imc;
     double caloriasDiarias;
-    ArrayList<Control> controles = new ArrayList<Control>();
+    private ArrayList<Control> controles = new ArrayList<Control>();
+    private Calculadora calculadora ;
 
     public Paciente(String nombre, int edad, double estatura, String fechaNac, double peso, boolean masculino) {
         super(nombre, edad, estatura, fechaNac, peso, masculino);
+        
+    	calculadora = new Calculadora(peso, estatura, fechaNac, masculino);
+    	this.imc = calculadora.calcularImc();
+        this.caloriasDiarias = calculadora.calcularCalorias();
     }
 
     public Paciente(String[] datos) {

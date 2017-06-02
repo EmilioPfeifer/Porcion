@@ -28,7 +28,7 @@ public class Calculadora {
 		this.masculino = masculino;
 	}
 
-	public double CalcularCalorias() {
+	public double calcularCalorias() {
 		double calorias = 0;
 		if (masculino) {
 			calorias = 66.4730 + (13.7516 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
@@ -39,7 +39,7 @@ public class Calculadora {
 		return calorias;
 	}
 
-	public double imc() {
+	public double calcularImc() {
 		double imc = 0;
 		imc = peso / (altura * altura);
 		return imc;
@@ -58,6 +58,8 @@ public class Calculadora {
 		System.out.println(edad);
 		return periodo.getYears();
 	}
+	
+	
 
 	public int getEdad() {
 		return edad;

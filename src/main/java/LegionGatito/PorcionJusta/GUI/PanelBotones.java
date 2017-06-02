@@ -31,8 +31,9 @@ public class PanelBotones extends JPanel {
 	
 	public void initControl(){
 		this.btnAddControl = new JButton("Agregar");
-		
+		this.btnSalir = new JButton("Salir");
 		this.add(btnAddControl);
+                this.add(this.btnSalir);
 	}
 	public void initSeleccion() {
 		this.btnSeleccionar = new JButton("Seleccionar");
