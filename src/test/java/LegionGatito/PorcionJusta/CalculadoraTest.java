@@ -24,7 +24,7 @@ public class CalculadoraTest {
 
 	@Before
 	public void setUp() throws Exception {
-		calculadora = new Calculadora(82, 1.28, "11-11-1996", true);
+		calculadora = new Calculadora(82, 1.75, "11-11-1996", true);
 	}
 
 	@After
@@ -39,17 +39,34 @@ public class CalculadoraTest {
 		boolean masculino = true;
 		calculadora = new Calculadora(peso, altura, fechaNac, masculino);
 	}
+	@Test
+	public void testConstructorDoubleVacio() {
+		double peso = 84;
+		double altura = Double.NaN;
+		String fechaNac = "11-11-1996";
+		boolean masculino = true;
+		calculadora = new Calculadora(peso, altura, fechaNac, masculino);
+	}
 
 	@Test 
-	void testCalcularEdad(){
+	public void testCalcularEdad(){
 		double peso = 84;
 		double altura = 1.58;
 		String fechaNac = "11-11-1996";
 		boolean masculino = true;
 		calculadora = new Calculadora(peso, altura, fechaNac, masculino);
 		int edadEsperada = 20;
-		int edadReal = calculadora.getEdad();
+		int edadReal = calculadora.calcularEdad();
 		assertEquals(edadEsperada, edadReal);
 	}
+	
+	@Test
+	public void testCalcularIMC(){
+		double caloriasEsperadas = 26.77;
+		double caloriasReales = this.calculadora.calcularImc();
+		assertEquals(caloriasEsperadas, caloriasReales, 0.0);
+		
+	}
+	
 
 }

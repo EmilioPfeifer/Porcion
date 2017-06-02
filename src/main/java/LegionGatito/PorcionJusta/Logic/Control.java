@@ -22,7 +22,6 @@ public class Control {
     	if (!Double.isNaN(pesoControlado)) {
     		this.fechaControl =  calcularFechaActual();
             this.pesoControl = pesoControlado;
-    		
 		}else{
 			throw new NullPointerException("Parametro peso vacio");
 		}

@@ -21,11 +21,21 @@ public class Calculadora {
 	private String fechaNacimiento;
 
 	public Calculadora(double peso, double altura, String fechaNac, boolean masculino) {
-		this.fechaNacimiento = fechaNac;
-		this.peso = peso;
-		this.altura = altura;
-		this.edad = calcularEdad();
-		this.masculino = masculino;
+		if (fechaNac != null) {
+			if (!Double.isNaN(altura) && !Double.isNaN(peso)) {
+				this.fechaNacimiento = fechaNac;
+				this.peso = peso;
+				this.altura = altura;
+				this.edad = calcularEdad();
+				this.masculino = masculino;
+			} else {
+				throw new IllegalArgumentException("double vacio");
+			}
+
+		} else {
+			throw new NullPointerException("String Vacio");
+		}
+
 	}
 
 	public double calcularCalorias() {
@@ -33,7 +43,7 @@ public class Calculadora {
 		if (masculino) {
 			calorias = 66.4730 + (13.7516 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
 		}
-		if (masculino) {
+		if (!masculino) {
 			calorias = 65.0955 + (9.5634 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
 		}
 		return calorias;
@@ -42,6 +52,9 @@ public class Calculadora {
 	public double calcularImc() {
 		double imc = 0;
 		imc = peso / (altura * altura);
+		imc = imc*100;
+		int truncarCentesima = (int) imc;
+		imc = truncarCentesima /100;
 		return imc;
 	}
 
@@ -58,8 +71,6 @@ public class Calculadora {
 		System.out.println(edad);
 		return periodo.getYears();
 	}
-	
-	
 
 	public int getEdad() {
 		return edad;
