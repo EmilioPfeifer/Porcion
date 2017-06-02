@@ -19,6 +19,10 @@ public class Consultorio {
         this.calculadora = new Calculadora();
     }
     
+    public void add(Paciente pac){
+        this.pacientes.add(pac);
+    }
+    
     
     public double calcularIMC(){
         return this.pacientes.get(0).imc;

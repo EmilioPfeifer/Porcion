@@ -20,10 +20,50 @@ public class Paciente extends Persona {
     public Paciente(String nombre, int edad, double estatura, String fechaNac, double peso, boolean masculino) {
         super(nombre, edad, estatura, fechaNac, peso, masculino);
     }
-    
+
+    public Paciente(String[] datos) {
+        super(datos);
+    }
     
     public void addControl(double peso) {
         Control control = new Control(peso);
         this.controles.add(control);
     }
+
+    public double getImc() {
+        return imc;
+    }
+
+    public double getCaloriasDiarias() {
+        return caloriasDiarias;
+    }
+
+    public String[] getData() {
+        return data;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public double getEstatura() {
+        return estatura;
+    }
+
+    public String getFechaNac() {
+        return fechaNac;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public boolean isMasculino() {
+        return masculino;
+    }
+    
 }

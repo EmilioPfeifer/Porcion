@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class VentanaControl extends JFrame implements ActionListener{
 	
@@ -48,7 +49,11 @@ public class VentanaControl extends JFrame implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		if(this.panelBotones.getBtnAddControl() == (e.getSource())){
-			this.setVisible(false);
+                    if (this.textF.ingrNombre.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog( null, "Bloque vacio", "", JOptionPane.PLAIN_MESSAGE );
+                        return;
+                    }
+                    this.setVisible(false);
 		}
 		
 	}
