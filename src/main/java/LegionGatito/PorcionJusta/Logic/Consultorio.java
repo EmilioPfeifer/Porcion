@@ -12,24 +12,26 @@ import java.util.ArrayList;
  * @author UsuarioWin7
  */
 public class Consultorio {
-    private ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
-
+    private ArrayList<Paciente> pacientes ;
     
 
     public Consultorio() {
+    	pacientes = new ArrayList<Paciente>();
 
 	}
 
  
     
-    public void add(Paciente pac){
-        this.pacientes.add(pac);
+    public void addPaciente(Paciente paciente){
+    	if (paciente != null) {
+    		this.pacientes.add(paciente);
+		}else{
+			throw new NullPointerException("Parametro paciente vacio");
+		}
     }
     
-	public void agregarPaciente() {
-    	
-    }
-    
+    public void 
+
     public ArrayList<Paciente> getLista() {
         return this.pacientes;
     }   

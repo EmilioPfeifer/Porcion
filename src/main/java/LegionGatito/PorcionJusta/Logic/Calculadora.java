@@ -29,7 +29,7 @@ public class Calculadora {
 				this.edad = calcularEdad();
 				this.masculino = masculino;
 			} else {
-				throw new IllegalArgumentException("double vacio");
+					throw new IllegalArgumentException("double vacio");
 			}
 
 		} else {
@@ -60,15 +60,11 @@ public class Calculadora {
 
 	public int calcularEdad() {
 		int edad = 0;
-		System.out.println("entro");
 		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		LocalDate fechaNac = LocalDate.parse(fechaNacimiento, fmt);
 		LocalDate ahora = LocalDate.now();
 
 		Period periodo = Period.between(fechaNac, ahora);
-		System.out.printf("Tu edad es: %s años, %s meses y %s días", periodo.getYears(), periodo.getMonths(),
-				periodo.getDays());
-		System.out.println(edad);
 		return periodo.getYears();
 	}
 

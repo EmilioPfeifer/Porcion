@@ -41,7 +41,7 @@ public class ControlTest {
 		//funciono
 		
 	}
-	
+		
 	@Test(expected = NullPointerException.class)
 	public void testConstructor(){
 		double peso = Double.NaN;

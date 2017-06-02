@@ -39,7 +39,7 @@ public class CalculadoraTest {
 		boolean masculino = true;
 		calculadora = new Calculadora(peso, altura, fechaNac, masculino);
 	}
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testConstructorDoubleVacio() {
 		double peso = 84;
 		double altura = Double.NaN;

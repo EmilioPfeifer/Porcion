@@ -6,7 +6,6 @@
 package LegionGatito.PorcionJusta.Logic;
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
@@ -23,7 +22,7 @@ public class Control {
     		this.fechaControl =  calcularFechaActual();
             this.pesoControl = pesoControlado;
 		}else{
-			throw new NullPointerException("Parametro peso vacio");
+			throw new IllegalArgumentException("Parametro peso vacio");
 		}
     	
     }

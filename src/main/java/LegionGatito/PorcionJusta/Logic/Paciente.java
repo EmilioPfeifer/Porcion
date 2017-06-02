@@ -20,8 +20,8 @@ public class Paciente extends Persona {
 
     public Paciente(String nombre, int edad, double estatura, String fechaNac, double peso, boolean masculino) {
         super(nombre, edad, estatura, fechaNac, peso, masculino);
-        
     	calculadora = new Calculadora(peso, estatura, fechaNac, masculino);
+    	this.edad = calculadora.calcularEdad();
     	this.imc = calculadora.calcularImc();
         this.caloriasDiarias = calculadora.calcularCalorias();
     }
