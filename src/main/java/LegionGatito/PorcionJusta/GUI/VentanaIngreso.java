@@ -91,10 +91,10 @@ public class VentanaIngreso extends JFrame implements ActionListener{
             if (this.comprovar(this.panelTF.ingrEstatura.getText().trim()) && this.comprovar(this.panelTF.ingrPeso.getText().trim())) {
             
                 paciente = new Paciente(this.panelTF.ingrNombre.getText().trim(), 17    ,
-            Double.parseDouble(this.panelTF.ingrEstatura.getText().trim().replace(",", ".")),
-            this.panelTF.ingrFechaNac.getText().trim(),
-            Double.parseDouble(this.panelTF.ingrPeso.getText().trim().replace(",", ".")),
-            true);
+                Double.parseDouble(this.panelTF.ingrEstatura.getText().trim().replace(",", ".")),
+                this.panelTF.ingrFechaNac.getText().trim(),
+                Double.parseDouble(this.panelTF.ingrPeso.getText().trim().replace(",", ".")),
+                true);
                 
             } else {
                 return;

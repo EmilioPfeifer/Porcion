@@ -37,25 +37,32 @@ public class VentanaControl extends JFrame implements ActionListener{
 	    this.panelBotones = new PanelBotones();
 	    this.panelBotones.initControl();
 	    this.panelBotones.getBtnAddControl().addActionListener((ActionListener)this);
+            this.panelBotones.getBtnSalir().addActionListener((ActionListener)this);
 	    
 	    this.add(panelBotones, distribution.SOUTH);
 	    
 	    
 	    
 	}
-	
-	
-	
-
+        public void comprovarIngreso(){
+            try{
+                Double.parseDouble(this.textF.ingrPeso.getText().trim().replace(",", "."));
+            }catch(IllegalArgumentException e){
+                JOptionPane.showMessageDialog( null, "caracter ilegal", "ERROR", JOptionPane.PLAIN_MESSAGE );
+            }
+        }
+        
 	public void actionPerformed(ActionEvent e) {
-		if(this.panelBotones.getBtnAddControl() == (e.getSource())){
-                    if (this.textF.ingrNombre.getText().trim().equals("")) {
-                        JOptionPane.showMessageDialog( null, "Bloque vacio", "", JOptionPane.PLAIN_MESSAGE );
-                        return;
-                    }
-                    this.setVisible(false);
-		}
-		
+            if(this.panelBotones.getBtnAddControl() == (e.getSource())){
+                if (this.textF.ingrPeso.getText().trim().equals("")) {
+                    JOptionPane.showMessageDialog( null, "Bloque vacio", "", JOptionPane.PLAIN_MESSAGE );
+                    return;
+                }
+                this.setVisible(false);
+            }
+            if (this.panelBotones.getBtnSalir() == (e.getSource())) {
+                this.setVisible(false);
+            }
 	}
 	
 }
