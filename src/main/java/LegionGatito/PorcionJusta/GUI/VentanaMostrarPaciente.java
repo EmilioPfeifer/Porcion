@@ -4,9 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class VentanaMostrarPaciente extends JFrame implements ActionListener{
+public class VentanaMostrarPaciente extends JPanel implements ActionListener{
 	private PanelTextos panelTextos;
 	private PanelBotones panelBotones;
 	
@@ -15,10 +15,10 @@ public class VentanaMostrarPaciente extends JFrame implements ActionListener{
 	}
 	
 	private void initComponents(){
-            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.setSize(640,480); 
-            this.setTitle("Ventana Paciente");
-            this.setLocationRelativeTo(null);
+            //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            //this.setSize(640,480); 
+            //this.setTitle("Ventana Paciente");
+            //this.setLocationRelativeTo(null);
             BorderLayout distribucion = new BorderLayout();
             this.setLayout(distribucion);
         
@@ -43,8 +43,8 @@ public class VentanaMostrarPaciente extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		 if (this.panelBotones.getBtnMenu()== e.getSource()) {
-	            VentanaInicio vi = new VentanaInicio();
-	            vi.setVisible(true);
+	            VentanaSeleccion vs = new VentanaSeleccion();
+	            vs.setVisible(true);
 	            this.setVisible(false);
 	        }
 	        

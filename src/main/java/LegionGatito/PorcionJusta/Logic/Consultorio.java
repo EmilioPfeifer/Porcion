@@ -29,8 +29,6 @@ public class Consultorio {
 			throw new NullPointerException("Parametro paciente vacio");
 		}
     }
-    
-    public void 
 
     public ArrayList<Paciente> getLista() {
         return this.pacientes;

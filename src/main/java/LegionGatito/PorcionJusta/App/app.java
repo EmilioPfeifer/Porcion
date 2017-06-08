@@ -1,16 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package LegionGatito.PorcionJusta.App;
 
-import LegionGatito.PorcionJusta.GUI.PanelCombo;
 import LegionGatito.PorcionJusta.GUI.VentanaInicio;
 
-public class app {
+/**
+ *
+ * @author root
+ */
+public class App {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-            VentanaInicio vi = new VentanaInicio();
-            //PanelCombo r = new PanelCombo();
-		
-	}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
 
+        VentanaInicio vi = new VentanaInicio();
+    }
+    
 }

@@ -90,7 +90,7 @@ public class VentanaIngreso extends JFrame implements ActionListener{
             //creacion de paciente
             if (this.comprovar(this.panelTF.ingrEstatura.getText().trim()) && this.comprovar(this.panelTF.ingrPeso.getText().trim())) {
             
-                paciente = new Paciente(this.panelTF.ingrNombre.getText().trim(), 17    ,
+                paciente = new Paciente(this.panelTF.ingrNombre.getText().trim(), 19,
                 Double.parseDouble(this.panelTF.ingrEstatura.getText().trim().replace(",", ".")),
                 this.panelTF.ingrFechaNac.getText().trim(),
                 Double.parseDouble(this.panelTF.ingrPeso.getText().trim().replace(",", ".")),

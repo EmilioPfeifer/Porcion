@@ -43,10 +43,10 @@ public class PanelTextos extends JPanel {
     public void  textosDatos(){
     	GridLayout distribution = new GridLayout(4,1,5,5);
     	this.setLayout(distribution);
-    	this.nombre = new JLabel("nombre");
+    	this.nombre = new JLabel("Nombre");
     	this.fechaNac = new JLabel("Fecha de nacimiento");
-    	this.estatura = new  JLabel("Estatura");
-    	this.peso = new JLabel("Peso");
+    	this.estatura = new  JLabel("Estatura (mts)");
+    	this.peso = new JLabel("Peso (kg)");
     	
     	this.add(this.nombre);
     	this.add(this.fechaNac);

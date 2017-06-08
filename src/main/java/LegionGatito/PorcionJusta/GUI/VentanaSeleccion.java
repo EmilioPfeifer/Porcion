@@ -29,6 +29,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
     private DatosConsultorio subArchivo;
     private Consultorio consultorio;
     private Paciente paciente;
+    private VentanaMostrarPaciente MPacientes;
 
     public VentanaSeleccion() {
         /*String[] nombres = {"Ana", "Margarita", "Daniela", "Divian",
@@ -50,12 +51,14 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
         this.panelBotones = new PanelBotones();
         this.panelTextos = new PanelTextos();
         this.panelCombo = new PanelCombo();
+        this.MPacientes = new VentanaMostrarPaciente();
         this.panelCombo.initSeleccion();
         this.panelBotones.initSeleccion();
         this.panelBotones.getBtnAgregar().addActionListener((ActionListener) this);
         this.panelBotones.getBtnSeleccionar().addActionListener((ActionListener) this);
         this.panelBotones.getBtnMenu().addActionListener((ActionListener) this);
-        this.add(this.panelCombo, distribucion.CENTER);
+        this.add(this.panelCombo, distribucion.NORTH);
+        this.add(this.MPacientes, distribucion.CENTER);
         this.add(this.panelBotones, distribucion.SOUTH);
     }
 
@@ -70,13 +73,13 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             int contador =0;
             while(this.subArchivo.obtenerPacientes()[contador] != null) {
                this.paciente = new Paciente(this.subArchivo.leerNombrePaciente(this.subArchivo.obtenerPacientes()[contador]));
-               this.consultorio.add(this.paciente);
+               this.consultorio.addPaciente(this.paciente);
                contador++;
             }
             //String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
-            VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
-            mp.setVisible(true);
-            this.setVisible(false);
+            //VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
+            //mp.setVisible(true);
+            //this.setVisible(false);
         }
         if (this.panelBotones.getBtnAgregar() == (e.getSource())) {
             VentanaIngreso vi = new VentanaIngreso();
