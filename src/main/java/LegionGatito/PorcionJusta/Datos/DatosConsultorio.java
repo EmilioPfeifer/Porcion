@@ -52,7 +52,7 @@ public class DatosConsultorio extends DataManager {
     private void escribirPaciente(String ruta, String[] data, String nuevo) {
         String[] texto = new String[3000];
         System.arraycopy(data, 0, texto, 0, data.length);
-        try{
+        /*try{
             BufferedReader bf = new BufferedReader(new FileReader(ruta));
             String bfRead;
             int contador=0;
@@ -76,6 +76,19 @@ public class DatosConsultorio extends DataManager {
             }
             bw.close();
         }catch(IOException e){
+        }*/
+        FileWriter escribir = null;
+        try {
+            escribir = new FileWriter(ruta, true);
+            escribir.write("\r\n"+nuevo);
+        } catch (IOException e) {
+            System.out.println("Problemas abriendo el archivo" + ruta);
+        } finally {
+            try {
+                escribir.close();
+            } catch (IOException ex) {
+                System.out.println("Problemas cerrando el archivo " + ruta);
+            }
         }
     }
     public String[] leerNombrePaciente(String nombre) {
@@ -115,6 +128,23 @@ public class DatosConsultorio extends DataManager {
         return texto;
     }
 
+    public void addControl(String paciente, String control) {
+        String ARCHIVO = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\"+paciente+".txt";
+        FileWriter escribir = null;
+
+        try {
+            escribir = new FileWriter(ARCHIVO, true);
+            escribir.write("\r\n"+control);
+        } catch (IOException e) {
+            System.out.println("Problemas abriendo el archivo" + ARCHIVO);
+        } finally {
+            try {
+                escribir.close();
+            } catch (IOException ex) {
+                System.out.println("Problemas cerrando el archivo " + ARCHIVO);
+            }
+        }
+    }
 }
 /*
 Hombres

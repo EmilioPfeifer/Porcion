@@ -31,7 +31,6 @@ public class VentanaMostrarPaciente extends JPanel implements ActionListener{
         this.panelBotones.initMostrar();
         
         this.panelBotones.getBtnGrafica().addActionListener((ActionListener)this);
-        this.panelBotones.getBtnMenu().addActionListener( (ActionListener)this);
         this.panelBotones.getBtnAddControl().addActionListener((ActionListener)this);
         this.add(this.panelTextos, distribucion.CENTER);
         this.add(panelBotones, distribucion.SOUTH);
@@ -51,7 +50,6 @@ public class VentanaMostrarPaciente extends JPanel implements ActionListener{
 	        if (this.panelBotones.getBtnGrafica()== e.getSource()) {
 	            VentanaGrafico vg = new VentanaGrafico();
 	            vg.setVisible(true);
-	            this.setVisible(false);
 	        }
 	        
 	        if(this.panelBotones.getBtnAddControl() == (e.getSource())){

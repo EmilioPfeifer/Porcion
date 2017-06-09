@@ -52,6 +52,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
         this.panelTextos = new PanelTextos();
         this.panelCombo = new PanelCombo();
         this.MPacientes = new VentanaMostrarPaciente();
+        this.MPacientes.setVisible(false);
         this.panelCombo.initSeleccion();
         this.panelBotones.initSeleccion();
         this.panelBotones.getBtnAgregar().addActionListener((ActionListener) this);
@@ -76,6 +77,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
                this.consultorio.addPaciente(this.paciente);
                contador++;
             }
+            this.MPacientes.setVisible(true);
             //String nombre = (String)this.panelCombo.cmbListaPacientes.getSelectedItem();
             //VentanaMostrarPaciente mp = new VentanaMostrarPaciente();
             //mp.setVisible(true);

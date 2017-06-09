@@ -29,6 +29,10 @@ public class Consultorio {
 			throw new NullPointerException("Parametro paciente vacio");
 		}
     }
+//<<<<<<< HEAD
+//=======
+    
+//>>>>>>> 05e0fd1cbb7366302bc5bb15d01b358d37136352
 
     public ArrayList<Paciente> getLista() {
         return this.pacientes;

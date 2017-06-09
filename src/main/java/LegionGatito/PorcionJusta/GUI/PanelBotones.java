@@ -39,7 +39,7 @@ public class PanelBotones extends JPanel {
 		this.btnSeleccionar = new JButton("Seleccionar");
 
 		this.btnAgregar = new JButton("Agregar");
-		this.btnMenu = new JButton("Menu");
+		this.btnMenu = new JButton("Atras");
 
 		this.add(this.btnSeleccionar);
 		this.add(this.btnAgregar);
@@ -61,11 +61,9 @@ public class PanelBotones extends JPanel {
 	
 	public void initMostrar(){
 		this.btnGrafica = new JButton("Grafico");
-		this.btnMenu = new JButton("Menu");
 		this.btnAddControl = new JButton("Agregar Control");
 		
 		this.add(btnAddControl);
-		this.add(btnMenu);
 		this.add(btnGrafica);
 	}
 

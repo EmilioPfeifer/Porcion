@@ -46,6 +46,7 @@ public class Calculadora {
 		if (!masculino) {
 			calorias = 65.0955 + (9.5634 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
 		}
+		System.out.println(calorias);
 		return calorias;
 	}
 
