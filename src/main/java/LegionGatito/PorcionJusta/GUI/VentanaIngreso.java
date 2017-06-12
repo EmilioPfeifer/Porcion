@@ -42,7 +42,7 @@ public class VentanaIngreso extends JFrame implements ActionListener{
         this.panelTF = new PanelTextField();
         this.panelTF.initIngresoNuevo();
         this.panelBotones = new PanelBotones();
-        this.panelBotones.initIngreso();
+        //this.panelBotones.initIngreso();
 			
         this.panelBotones.getBtnMenu().addActionListener((ActionListener)this);
         this.panelBotones.getBtnSalir().addActionListener((ActionListener)this);
@@ -101,7 +101,7 @@ public class VentanaIngreso extends JFrame implements ActionListener{
             }
             //
             this.archivo.crearArchivo(this.paciente.data,this.panelTF.ingrNombre.getText().trim());
-            this.subarchivo.reescribirPaciente(this.combo.lista,this.panelTF.ingrNombre.getText().trim());
+            //this.subarchivo.reescribirPaciente(this.combo.lista,this.panelTF.ingrNombre.getText().trim());
             VentanaSeleccion s = new VentanaSeleccion();
             s.setVisible(true);
             this.setVisible(false);

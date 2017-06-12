@@ -22,20 +22,20 @@ public class VentanaMostrarPaciente extends JPanel implements ActionListener{
             BorderLayout distribucion = new BorderLayout();
             this.setLayout(distribucion);
         
-        this.panelTextos = new PanelTextos();
-        this.panelTextos.mostrarCalor();
+            this.panelTextos = new PanelTextos();
+            this.panelTextos.mostrarCalor();
         
         
-        this.panelBotones = new PanelBotones();
+            this.panelBotones = new PanelBotones();
         
-        this.panelBotones.initMostrar();
+            this.panelBotones.initMostrar();
         
-        this.panelBotones.getBtnGrafica().addActionListener((ActionListener)this);
-        this.panelBotones.getBtnAddControl().addActionListener((ActionListener)this);
-        this.add(this.panelTextos, distribucion.CENTER);
-        this.add(panelBotones, distribucion.SOUTH);
+            this.panelBotones.getBtnGrafica().addActionListener((ActionListener)this);
+            this.panelBotones.getBtnAddControl().addActionListener((ActionListener)this);
+            this.add(this.panelTextos, distribucion.CENTER);
+            this.add(panelBotones, distribucion.SOUTH);
         
-        this.setVisible(true);
+            this.setVisible(true);
 	}
 
 

@@ -22,8 +22,26 @@ public class DatosConsultorio extends DataManager {
     public void buscarControl() {
         
     }
+    
+    public void addControl(String control) {
+        String ARCHIVO = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\EMILIO.txt";
+        FileWriter escribir = null;
 
-    public void leerPacientes(String[] paciente) {
+        try {
+            escribir = new FileWriter(ARCHIVO, true);
+            escribir.write("\r\n"+control);
+        } catch (IOException e) {
+            System.out.println("Problemas abriendo el archivo" + ARCHIVO);
+        } finally {
+            try {
+                escribir.close();
+            } catch (IOException ex) {
+                System.out.println("Problemas cerrando el archivo " + ARCHIVO);
+            }
+        }
+    }
+
+    /*public void leerPacientes(String[] paciente) {
         String[] texto = new String[3000];
         String direccion = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\Pacientes.txt";
         try{
@@ -40,19 +58,11 @@ public class DatosConsultorio extends DataManager {
             JOptionPane.showMessageDialog( null, "No existe", "ERROR", JOptionPane.PLAIN_MESSAGE );
         }
     }
-    public void reescribirPaciente(String[] data, String nuevo) {
-        //System.out.println("Ingrese ruta completa del archivo");
-        String ruta = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\Pacientes.txt";
-        Path archivo = Paths.get(ruta);
-        //System.out.println("Ingrese texto a guardar en el archivo");
-        //String texto = "hola mundo\r\nhello world";
-        escribirPaciente(ruta, data, nuevo);
-        //Files.write(archivo, texto.getBytes());
-    }
+
     private void escribirPaciente(String ruta, String[] data, String nuevo) {
         String[] texto = new String[3000];
         System.arraycopy(data, 0, texto, 0, data.length);
-        /*try{
+        try{
             BufferedReader bf = new BufferedReader(new FileReader(ruta));
             String bfRead;
             int contador=0;
@@ -76,7 +86,7 @@ public class DatosConsultorio extends DataManager {
             }
             bw.close();
         }catch(IOException e){
-        }*/
+        }
         FileWriter escribir = null;
         try {
             escribir = new FileWriter(ruta, true);
@@ -126,25 +136,8 @@ public class DatosConsultorio extends DataManager {
             JOptionPane.showMessageDialog( null, "No existe", "ERROR", JOptionPane.PLAIN_MESSAGE );
         }
         return texto;
-    }
+    }*/
 
-    public void addControl(String paciente, String control) {
-        String ARCHIVO = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\"+paciente+".txt";
-        FileWriter escribir = null;
-
-        try {
-            escribir = new FileWriter(ARCHIVO, true);
-            escribir.write("\r\n"+control);
-        } catch (IOException e) {
-            System.out.println("Problemas abriendo el archivo" + ARCHIVO);
-        } finally {
-            try {
-                escribir.close();
-            } catch (IOException ex) {
-                System.out.println("Problemas cerrando el archivo " + ARCHIVO);
-            }
-        }
-    }
 }
 /*
 Hombres

@@ -24,7 +24,7 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
 
     private PanelBotones panelBotones;
     private PanelTextos panelTextos;
-    private PanelCombo panelCombo;
+    //private PanelCombo panelCombo;
     private DataManager archivo;
     private DatosConsultorio subArchivo;
     private Consultorio consultorio;
@@ -50,15 +50,14 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
         this.setLayout(distribucion);
         this.panelBotones = new PanelBotones();
         this.panelTextos = new PanelTextos();
-        this.panelCombo = new PanelCombo();
+        //this.panelCombo = new PanelCombo();
         this.MPacientes = new VentanaMostrarPaciente();
-        this.MPacientes.setVisible(false);
-        this.panelCombo.initSeleccion();
+        //this.panelCombo.initSeleccion();
         this.panelBotones.initSeleccion();
-        this.panelBotones.getBtnAgregar().addActionListener((ActionListener) this);
-        this.panelBotones.getBtnSeleccionar().addActionListener((ActionListener) this);
+        //this.panelBotones.getBtnAgregar().addActionListener((ActionListener) this);
+        //this.panelBotones.getBtnSeleccionar().addActionListener((ActionListener) this);
         this.panelBotones.getBtnMenu().addActionListener((ActionListener) this);
-        this.add(this.panelCombo, distribucion.NORTH);
+        //this.add(this.panelCombo, distribucion.NORTH);
         this.add(this.MPacientes, distribucion.CENTER);
         this.add(this.panelBotones, distribucion.SOUTH);
     }
@@ -69,8 +68,8 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             v.setVisible(true);
             this.setVisible(false);
         }
-        if (this.panelBotones.getBtnSeleccionar() == e.getSource()) {
-            this.panelCombo.cmbListaPacientes.getSelectedItem();
+        /*if (this.panelBotones.getBtnSeleccionar() == e.getSource()) {
+            //this.panelCombo.cmbListaPacientes.getSelectedItem();
             int contador =0;
             while(this.subArchivo.obtenerPacientes()[contador] != null) {
                this.paciente = new Paciente(this.subArchivo.leerNombrePaciente(this.subArchivo.obtenerPacientes()[contador]));
@@ -87,6 +86,6 @@ public class VentanaSeleccion extends JFrame implements ActionListener {
             VentanaIngreso vi = new VentanaIngreso();
             vi.setVisible(true);
             this.setVisible(false);
-        }
+        }*/
     }
 }

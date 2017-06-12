@@ -10,7 +10,7 @@ public class PanelCombo extends JPanel{
         DatosConsultorio leer;
         String[] lista = new String[3000];
 	
-	public PanelCombo(){
+	/*public PanelCombo(){
             this.leer = new DatosConsultorio();
             //initSeleccion();
 	}
@@ -33,8 +33,9 @@ public class PanelCombo extends JPanel{
             System.arraycopy(pacientes, 0, this.lista, 0, pacientes.length);
         }
 }
-/*combo = new JComboBox();
+combo = new JComboBox();
         combo.addItem("uno");
         combo.addItem("dos");
         combo.addItem("tres");
         this.cmbListaPacientes.addItem("hola");*/
+}

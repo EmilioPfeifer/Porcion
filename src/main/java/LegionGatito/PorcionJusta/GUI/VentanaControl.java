@@ -1,5 +1,6 @@
 package LegionGatito.PorcionJusta.GUI;
 
+import LegionGatito.PorcionJusta.Datos.DatosConsultorio;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +13,7 @@ public class VentanaControl extends JFrame implements ActionListener{
 	private PanelBotones panelBotones;
 	private PanelTextos txt;
 	private PanelTextField textF; 
+        private DatosConsultorio data;
 	
 	public VentanaControl() {
 		// TODO Auto-generated constructor stub
@@ -40,6 +42,7 @@ public class VentanaControl extends JFrame implements ActionListener{
             this.panelBotones.getBtnSalir().addActionListener((ActionListener)this);
 	    
 	    this.add(panelBotones, distribution.SOUTH);
+            this.data = new DatosConsultorio();
 	    
 	    
 	    
@@ -58,6 +61,7 @@ public class VentanaControl extends JFrame implements ActionListener{
                     JOptionPane.showMessageDialog( null, "Bloque vacio", "", JOptionPane.PLAIN_MESSAGE );
                     return;
                 }
+                this.data.addControl(this.textF.ingrPeso.getText().trim());
                 this.setVisible(false);
             }
             if (this.panelBotones.getBtnSalir() == (e.getSource())) {

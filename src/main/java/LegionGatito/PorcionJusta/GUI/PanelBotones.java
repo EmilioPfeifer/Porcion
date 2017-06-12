@@ -36,22 +36,22 @@ public class PanelBotones extends JPanel {
                 this.add(this.btnSalir);
 	}
 	public void initSeleccion() {
-		this.btnSeleccionar = new JButton("Seleccionar");
+		//this.btnSeleccionar = new JButton("Seleccionar");
 
-		this.btnAgregar = new JButton("Agregar");
+		//this.btnAgregar = new JButton("Agregar");
 		this.btnMenu = new JButton("Atras");
 
-		this.add(this.btnSeleccionar);
-		this.add(this.btnAgregar);
+		//this.add(this.btnSeleccionar);
+		//this.add(this.btnAgregar);
 		this.add(this.btnMenu);
 	}
 
-	public void initIngreso() {
+	/*public void initIngreso() {
 		btnMenu = new JButton("Listo");
 		this.add(this.btnMenu);
 		this.btnSalir = new JButton("Salir");
 		this.add(btnSalir);
-	}
+	}*/
 	
 	public void initGraph(){
 		this.btnSalir = new JButton("Salir");
