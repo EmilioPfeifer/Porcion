@@ -1,7 +1,5 @@
 package ventanas;
 
-import java.awt.Color;
-import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -28,7 +26,7 @@ public class PanelTablaAlimentos extends JPanel {
 		this.add(tablaAlimentos);
 		
 		
-		this.setBackground(new Color(137, 208, 171));
+		//this.setBackground(new Color(137, 208, 171));
 		
 	}
 

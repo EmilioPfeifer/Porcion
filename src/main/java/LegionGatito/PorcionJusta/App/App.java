@@ -5,20 +5,17 @@
  */
 package LegionGatito.PorcionJusta.App;
 
-import LegionGatito.PorcionJusta.GUI.VentanaInicio;
+
+import ventanas.VentanaInicio;
 
 /**
  *
- * @author root
+ * @author p.m.h
  */
 public class App {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-
-        VentanaInicio vi = new VentanaInicio();
+    
+    public static void main(String[] args){
+        ventanas.VentanaInicio vi = new VentanaInicio();
     }
     
 }
