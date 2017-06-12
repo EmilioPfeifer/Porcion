@@ -1,8 +1,10 @@
 package ventanas;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
-public class VentanaGrafico extends JFrame {
+public class VentanaGrafico extends JFrame implements ActionListener{
 	private PanelGrafico panelGrafico;
 	
 	public VentanaGrafico(){
@@ -20,4 +22,8 @@ public class VentanaGrafico extends JFrame {
 	    this.add(this.panelGrafico);
 		
 	}
+
+    public void actionPerformed(ActionEvent ae) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

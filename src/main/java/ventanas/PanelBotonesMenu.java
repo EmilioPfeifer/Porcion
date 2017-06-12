@@ -1,8 +1,6 @@
 package ventanas;
 
 import java.awt.Color;
-import java.net.URL;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -39,4 +37,21 @@ public class PanelBotonesMenu extends JPanel{
 		this.add(btnTablaComida);
 		this.add(btnSalir);
 	}
+
+    public JButton getBtnTablaComida() {
+        return btnTablaComida;
+    }
+
+    public JButton getBtnAgregarControl() {
+        return btnAgregarControl;
+    }
+
+    public JButton getBtnGraficoControles() {
+        return btnGraficoControles;
+    }
+
+    public JButton getBtnSalir() {
+        return btnSalir;
+    }
+        
 }

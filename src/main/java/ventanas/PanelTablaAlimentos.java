@@ -13,7 +13,7 @@ public class PanelTablaAlimentos extends JPanel {
 	private JTable tablaAlimentos;
 	private JLabel textComida;
 	private JTextField comida;
-	private JButton seleccionar;
+	private JButton btnSeleccionar;
 	
 	public PanelTablaAlimentos(){
 		initComponents();
@@ -31,5 +31,17 @@ public class PanelTablaAlimentos extends JPanel {
 		this.setBackground(new Color(137, 208, 171));
 		
 	}
+
+    public JTable getTablaAlimentos() {
+        return tablaAlimentos;
+    }
+
+    public JTextField getComida() {
+        return comida;
+    }
+
+    public JButton getBtnSeleccionar() {
+        return btnSeleccionar;
+    }
 	
 }
