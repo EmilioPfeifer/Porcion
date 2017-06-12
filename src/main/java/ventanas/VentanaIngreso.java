@@ -15,7 +15,7 @@ public class VentanaIngreso extends JFrame implements ActionListener {
     private void initComponents() {
         this.panelDatos = new PanelIngresoDatos();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(600, 450);
+        this.setSize(400, 300);
         this.setTitle("Porcion Justa");
         this.setVisible(true);
         this.setLocationRelativeTo(null);

@@ -18,6 +18,7 @@ public class PanelIngresoDatos extends JPanel {
 	private JTextField estatura;
 	private JTextField peso;
         private JButton btnAceptar;
+        private JButton btnCancelar;
         
 
 	public PanelIngresoDatos() {
@@ -37,17 +38,19 @@ public class PanelIngresoDatos extends JPanel {
 		this.estatura = new JTextField();
 		this.peso = new JTextField();
                 this.btnAceptar = new JButton("Aceptar");
+                this.btnCancelar = new JButton("Cancelar");
 
 		this.TextNombre.setBounds(50, 50, 100, 20);
 		this.TextFechaNacimietno.setBounds(50, 80, 100, 20);
 		this.TextEstatura.setBounds(50, 110, 100, 20);
 		this.TextPeso.setBounds(50, 140, 100, 20);
 
-		this.nombre.setBounds(180, 50, 100, 20);
-		this.estatura.setBounds(180, 80, 100, 20);
-		this.fechaNacimiento.setBounds(180, 110, 100, 20);
-		this.peso.setBounds(180, 140, 100, 20);
-		this.btnAceptar.setBounds(200, 190, 80, 20);
+		this.nombre.setBounds(190, 50, 100, 20);
+		this.estatura.setBounds(190, 80, 100, 20);
+		this.fechaNacimiento.setBounds(190, 110, 100, 20);
+		this.peso.setBounds(190, 140, 100, 20);
+		this.btnAceptar.setBounds(100, 190, 90, 20);
+                this.btnCancelar.setBounds(200, 190, 90, 20);
                 
 		this.setBackground(new Color(137, 208, 171));
 
@@ -60,6 +63,7 @@ public class PanelIngresoDatos extends JPanel {
 		this.add(this.fechaNacimiento);
 		this.add(this.peso);
                 this.add(this.btnAceptar);
+                this.add(this.btnCancelar);
 
 	}
 
