@@ -6,6 +6,7 @@
 package LegionGatito.PorcionJusta.App;
 
 import LegionGatito.PorcionJusta.GUI.VentanaInicio;
+import ventanas.VentanaNotificacion;
 
 /**
  *
@@ -18,7 +19,8 @@ public class App {
      */
     public static void main(String[] args) {
 
-        VentanaInicio vi = new VentanaInicio();
+        //VentanaInicio vi = new VentanaInicio();
+        VentanaNotificacion vn = new VentanaNotificacion();
     }
     
 }
