@@ -17,7 +17,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
     }
 
     private void initComponents() {
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 450);
         this.setTitle("Porcion Justa");
         this.setVisible(true);

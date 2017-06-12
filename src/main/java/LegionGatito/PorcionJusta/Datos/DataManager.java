@@ -19,30 +19,6 @@ import javax.swing.JOptionPane;
  * @author UsuarioWin7
  */
 public class DataManager {
-    /*public void crearDirectorio() {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese ruta completa del Directorio");
-        String ruta = leer.nextLine();
-        Path directorio = Paths.get(ruta);
-        if (verificarDirectorio(directorio)) {
-            System.out.println("El directorio ya existe");
-        } else {
-            try {
-                Files.createDirectories(directorio);
-                System.out.println("El directorio fue creado");
-            } catch (IOException e) {
-                System.out.println("El directorio no puede ser creado");
-            }
-        }
-    }*/
-    
-    /*private boolean verificarDirectorio(Path dir) {
-        if (Files.exists(dir)) {
-            return true;
-        }else {
-            return false;
-        }
-    }*/
     
     public void crearArchivo(String[] data, String nombre) {
         //System.out.println("Ingrese ruta completa del archivo");

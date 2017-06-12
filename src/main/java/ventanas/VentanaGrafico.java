@@ -12,7 +12,7 @@ public class VentanaGrafico extends JFrame implements ActionListener{
 	}
 	
 	private void initComponents(){
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    this.setSize(700,500); 
 	    this.setTitle("Grafico");
 	    this.setVisible(true);
