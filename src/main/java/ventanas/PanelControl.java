@@ -42,5 +42,13 @@ public class PanelControl extends JPanel{
 		
 		
 	}
+
+    public JTextField getIngresoPeso() {
+        return ingresoPeso;
+    }
+
+    public JButton getAceptar() {
+        return aceptar;
+    }
 	
 }

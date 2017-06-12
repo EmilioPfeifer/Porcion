@@ -1,5 +1,7 @@
 package ventanas;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
 
@@ -7,7 +9,7 @@ import net.sf.jcarrierpigeon.Notification;
 import net.sf.jcarrierpigeon.NotificationQueue;
 import net.sf.jcarrierpigeon.WindowPosition;
 
-public class VentanaNotificacion extends JFrame {
+public class VentanaNotificacion extends JFrame implements ActionListener{
 	Notification notificacion;
 	PanelControl panelNotif;
 	NotificationQueue mostrarNot;
@@ -33,6 +35,10 @@ public class VentanaNotificacion extends JFrame {
 
 			mostrarNot.add(notificacion);
 		}
+
+    public void actionPerformed(ActionEvent ae) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 		
 		
 		

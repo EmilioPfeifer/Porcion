@@ -1,0 +1,394 @@
+COMIDA || CALORIAS (100g)
+
+Cereales y derivados
+
+Valor energético (kcal.)
+Arroz blanco	354
+Arroz integral	350
+Avena	367
+Cebada	373
+Centeno	350
+Cereales con chocolate	358
+Cereales desayuno, con miel	386
+Copos de maíz	350
+Harina de maíz	349
+Harina de trigo integral	340
+Harina de trigo refinada	353
+Pan de centeno	241
+Pan de trigo blanco	255
+Pan de trigo integral	239
+Pan de trigo molde blanco	233
+Pan de trigo molde integral	216
+Pasta al huevo	368
+Pasta de sémola	361
+Polenta	358
+Sémola de trigo	368
+Yuca	338
+Legumbres
+Valor energético (kcal.)
+Arvejas secas	340
+Garbanzos	361
+Habas secas	343
+Lentejas	336
+Poroto	316
+Soja en grano	422
+Huevos
+Valor energético (kcal.)
+Clara	48
+Huevo duro	147
+Huevo entero	162
+Yema	368
+Pastelería
+Valor energético (kcal.)
+Bizcocho	456
+Croissant chocolate	469
+Croissant, donut	456
+Galletas de chocolate	524
+Galletas de mantequilla tipo “Danesas”	397
+Galletas saladas	464
+Magdalenas	469
+Pasta de hojaldre cocida	565
+Pastel de manzana	311
+Pastel de manzana, masa hojaldre	456
+Pastel de queso	414
+Azúcares y dulces
+Valor energético (kcal.)
+Azúcar	380
+Cacao en polvo con azúcar instantáneo	366
+Caramelos	378
+Chocolate con leche	550
+Chocolate sin leche	530
+Crema chocolate con avellanas	549
+Dulce de membrillo	215
+Gomas de fruta	172
+Helados de agua	139
+Mermeladas con azúcar	280
+Mermeladas sin azúcar	145
+Miel	300
+Verduras y hortalizas
+Valor energético (kcal.)
+Aceitunas negras	349
+Aceitunas verdes	132
+Acelgas	33
+Ajos	169
+Alcachofas	64
+Apio	20
+Arvejas	78
+Arvejas congeladas	71
+Berenjena	29
+Berros	21
+Brócoli	31
+Calabacín	31
+Calabaza	24
+Cebolla	47
+Cebolla tierna	39
+Champiñón y otras cetas	28
+Choclo	96
+Cochayuyo	50
+Col	28
+Col de Bruselas	54
+Coliflor	30
+Endibia	22
+Escarola	37
+Espárragos	26
+Espárragos en lata	24
+Espinaca	32
+Espinacas congeladas	25
+Habas tiernas	64
+Hinojo	16
+Lechuga	18
+Maíz dulce en conserva	50
+Nabos	29
+Papas cocidas	86
+Pepino	12
+Perejil	55
+Pimiento	22
+Porotos verdes	21
+Puerros	42
+Puré de papas	357
+Rábanos	20
+Remolacha	40
+Repollo	19
+Rúcula	37
+Soja, Brotes de	50
+Tomate triturado en conserva	39
+Tomates	22
+Trufa	92
+Zanahoria	42
+Zumo de tomate	21
+Frutas
+Valor energético (kcal.)
+Arándanos	41
+Caqui	64
+Cereza	47
+Chirimoya	78
+Ciruela	44
+Ciruela seca	290
+Coco	646
+Damasco	44
+Dátil	279
+Dátil seco	306
+Durazno	52
+Durazno en almíbar	84
+Frambuesa	40
+Fresas	36
+Granada	65
+Grosella	37
+Higos	80
+Higos secos	275
+Kiwi	51
+Limón	39
+Mandarina	40
+Mango	57
+Manzana	52
+Melón	31
+Mora	37
+Naranja	44
+Nectarina	64
+Nísperos	97
+Palta	167
+Papaya	45
+Pera	61
+Piña	51
+Piña en almíbar	84
+Plátano	90
+Pomelo	30
+Sandía	30
+Uva	81
+Uva pasa	324
+Zumo de fruta	45
+Zumo de Naranja	42
+Frutos Secos
+Valor energético (kcal.)
+Almendras	620
+Avellanas	675
+Castañas	199
+Maní	560
+Nueces	660
+Piñones	660
+Pistacho	581
+Lácteos y derivados	Valor energético (kcal.)
+Cuajada	92
+Flan de huevo	126
+Flan de vainilla	102
+Helados lácteos	167
+Leche condensada c/azúcar	350
+Leche condensada s/azúcar	160
+Leche de cabra	72
+Leche de oveja	96
+Leche descremada	36
+Leche en polvo descremada	373
+Leche en polvo entera	500
+Leche entera	68
+Leche semi descremada	49
+Mousse	177
+Nata o crema de leche	298
+Queso blanco desnatado	70
+Queso Brie	263
+Queso cammembert	312
+Queso cheddar	381
+Queso crema	245
+Queso de bola	349
+Queso de Burgos	174
+Queso de oveja	245
+Queso edam	306
+Queso emmental	415
+Queso fundido untable	285
+Queso gruyere	391
+Queso manchego	376
+Queso mozzarella	245
+Queso parmesano	393
+Queso ricota	400
+Queso roquefort	405
+Requesón	96
+Yogur desnatado	45
+Yogur desnatado con frutas	82
+Yogur enriquecido con nata	65
+Yogur natural	62
+Yogur natural con fruta	100
+Carnes, caza y embutidos	Valor energético (kcal.)
+Bacon (Panceta ahumada)	665
+Butifarra cocida	390
+Butifarra, salchicha fresca	326
+Cabrito	127
+Cerdo, chuleta	330
+Cerdo, hígado	153
+Cerdo, lomo	208
+Charqui	110
+Chicharrón	601
+Chorizo	468
+Ciervo	120
+Codorniz y perdiz	114
+Conejo, liebre	162
+Cordero lechón	105
+Cordero pierna	98
+Cordero, costillas	215
+Cordero, hígado	132
+Faisán	144
+Foie-Gras	518
+Gallina	369
+Hamburguesa	230
+Jabalí	107
+Jamón	380
+Jamón cocido	126
+Jamón crudo	296
+Jamón York	289
+Lengua de vaca	191
+Lomo embuchado	380
+Mortadela	265
+Pato	200
+Pavo, Muslo	186
+Pavo, Pechuga	134
+Perdiz	120
+Pies de cerdo	290
+Pollo, Hígado	129
+Pollo, Muslo	186
+Pollo, Pechuga	134
+Salamín	325
+Salchicha Frankfurt	315
+Salchichón	294
+Ternera, bistec	181
+Ternera, chuleta	168
+Ternera, hígado	140
+Ternera, lengua	207
+Ternera, riñón	86
+Ternera, sesos	125
+Ternera, solomillo	290
+Tira de asado	401
+Tripas	100
+Vacuno, Hígado	129
+Pescados, mariscos y crustáceos
+Valor energético (kcal.)
+Almejas	50
+Anchoas	175
+Anguilas	200
+Arenque ahumado	209
+Arenque seco	122
+Atún en lata con aceite vegetal	280
+Atún en lata con agua	127
+Atún fresco	225
+Bacalao fresco	74
+Bacalao salado remojado	108
+Bacalao seco	322
+Besugo	118
+Caballa	153
+Calamar	82
+Cangrejo	85
+Caviar	233
+Congrio	112
+Dorada	80
+Gallo	73
+Gambas	96
+Kani-Kama	80
+Langosta	67
+Langostino	96
+Lenguado	73
+Lubina	118
+Lucio	81
+Mejillón	74
+Merluza	86
+Mero	118
+Ostras	80
+Pejerrey	87
+Pez espada	109
+Pulpo	57
+Rodaballo	81
+Salmón	172
+Salmón ahumado	154
+Salmonete	97
+Sardina en lata con aceite vegetal	192
+Sardinas	151
+Trucha	94
+Bebidas	Valor energético (kcal.)
+Agua ardiente	280
+Agua tónica	34
+Anís	312
+Batido lácteo de cacao	100
+Cacao en polvo sin azúcar a la taza	439
+Café	1
+Cerveza negra	37
+Cerveza rubia	45
+Champaña demi-sec	90
+Champaña dulce	118
+Champaña seca	85
+Coñac, brandy	243
+Crema de cacao	260
+Daiquiri	122
+Gin & Tónica	76
+Ginebra	244
+Leche de almendras	335
+Licor de caña	273
+Piña colada	194
+Pisco	210
+Refrescos carbonatados	48
+Ron	244
+Sidra dulce	33
+Sidra seca	35
+Té	1
+Vermouth amargo	112
+Vermouth dulce	160
+Vino de mesa	70
+Vino dulce, jerez	160
+Vino oporto	160
+Vodka	315
+Whisky	244
+Snacks	Valor energético (kcal.)
+Barra de chocolate	441
+Maíz, palomitas	592
+Maíz, tiras fritas	459
+Papas fritas	544
+Aceites y grasas	Valor energético (kcal.)
+Aceite de girasol	900
+Aceite de maíz	900
+Aceite de maní	900
+Aceite de oliva	900
+Aceite de soja	900
+Manteca	670
+Mantequilla	752
+Margarina vegetal	752
+Salsas y condimentos	Valor energético (kcal.)
+Bechamel	115
+Caldos concentrados	259
+Ketchup	98
+Mayonesa	718
+Mayonesa light	374
+Mostaza	15
+Salsa de soja	61
+Salsa de tomate en conserva	86
+Salsa golf	640
+Sofrito	116
+Vinagres	8
+Pre-cocinados	Valor energético (kcal.)
+Arroz con leche	123
+Babaroise	149
+Berlín	588
+Brazo de reina	150
+Buñuelos	123
+Canapé	234
+Canelones	127
+Churros	348
+Compota de frutas	90
+Croquetas	123
+Durazno en conserva	79
+Empanada de atún	243
+Jalea sola	30
+Jamón y queso apanados	214
+Lasaña	147
+Leche asada	145
+Leche nevada	120
+Manzana asada	157
+Mote con huesillos	221
+Ñoquis de papa	246
+Panqueque con manjar	219
+Pescado apanado	178
+Pie de limón	298
+Pizza	234
+Pollo apanado	283
+Ravioles de carne y jamón	253
+Rollos primavera	258
+Sémola con leche	130
+Sopaipillas pasadas	190
+Sopas de sobre	49
+Torta mil hojas	379
+Tortilla de papa	194
+Tutti fruti	185

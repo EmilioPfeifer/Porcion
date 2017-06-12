@@ -39,4 +39,13 @@ public class PanelCalculadoraComida extends JPanel {
 		this.add(caloriasComida,3);
 		
 	}
+
+    public JButton getBtnCalcular() {
+        return btnCalcular;
+    }
+
+    public JTextField getCantidadCalorias() {
+        return cantidadCalorias;
+    }
+        
 }
