@@ -20,7 +20,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
         //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 450);
         this.setTitle("Porcion Justa");
-        this.setVisible(true);
+    
         this.setLocationRelativeTo(null);
         GridLayout distribution = new GridLayout(1, 2);
         this.setLayout(distribution);
@@ -36,12 +36,16 @@ public class VentanaInicio extends JFrame implements ActionListener {
         this.panelBotones.getBtnTablaComida().addActionListener((ActionListener) this);
         this.add(panelDatos, 0);
         this.add(panelBotones, 1);
+            this.setVisible(true);
 
     }
 
     public void actionPerformed(ActionEvent e) {
         if ( this.panelBotones.getBtnAgregarControl() ==e.getSource()) {
             
+        }
+         if (this.panelBotones.getBtnTablaComida() ==e.getSource()) {
+            VentanaAlimentos va = new VentanaAlimentos();
         }
         if (this.panelBotones.getBtnGraficoControles() ==e.getSource()) {
             VentanaGrafico vg= new VentanaGrafico();
@@ -50,9 +54,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
         if (this.panelBotones.getBtnSalir() ==e.getSource()) {
             System.exit(0);
         }
-        if (this.panelBotones.getBtnTablaComida() ==e.getSource()) {
-            VentanaAlimentos va = new VentanaAlimentos();
-        }
+       
     }
 
 }

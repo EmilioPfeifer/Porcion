@@ -11,12 +11,12 @@ import datos.DataManager;
  *
  * @author UsuarioWin7
  */
-public class TablaAlimento {
+public class TablaAlimentoQuePase {
     DataManager data;
     private String[][] alimentos;
     private String[] lista;
 
-    public TablaAlimento() {
+    public TablaAlimentoQuePase() {
         data = new DataManager();
         this.obtenerLista();
     }

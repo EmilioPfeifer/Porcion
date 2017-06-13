@@ -6,9 +6,12 @@
 package app;
 
 
+//<<<<<<< HEAD
 import datos.DataManager;
-import modelo.TablaAlimento;
+import modelo.TablaAlimentoQuePase;
 import ventanas.VentanaAlimentos;
+//=======
+//>>>>>>> 5637d981a3766c3f5e6eb32081740e33a639cc37
 import ventanas.VentanaInicio;
 
 /**
@@ -18,9 +21,7 @@ import ventanas.VentanaInicio;
 public class App {
     
     public static void main(String[] args){
-        TablaAlimento t = new TablaAlimento();
-        t.llenarAlimentos();
-        //VentanaAlimentos va = new VentanaAlimentos();
+        VentanaInicio vi = new VentanaInicio();
     }
     
 }

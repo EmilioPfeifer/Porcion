@@ -1,6 +1,7 @@
 package ventanas;
 
 
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,27 +11,34 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
 
     private PanelTablaAlimentos panelTablaAlimentos;
     private PanelCalculadoraComida panelCalcCalorias;
-
+    
+            
+            
     public VentanaAlimentos() {
         initComponents();
     }
 
     private void initComponents() {
-        //GridLayout distribution = new GridLayout(1, 2);
-        //this.setLayout(distribution);
+        GridLayout distribution = new GridLayout(1, 2);
+        this.setLayout(distribution);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 450);
         this.setTitle("Alimento");
-        this.setVisible(true);
+
         this.setLocationRelativeTo(null);
-
-        //this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
-        //this.panelTablaAlimentos.getBtnSeleccionar().addActionListener((ActionListener) this);;
-
-        this.panelCalcCalorias = new PanelCalculadoraComida();
+         this.panelCalcCalorias = new PanelCalculadoraComida();
         this.panelTablaAlimentos = new PanelTablaAlimentos();
-         this.add(this.panelTablaAlimentos );
-       /// this.add(this.panelCalcCalorias,1);
+        this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
+        this.panelTablaAlimentos.getTFComida().addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+               TFCPresionado(evt);
+            }
+        });
+
+       
+        this.add(this.panelTablaAlimentos ,0);
+        this.add(this.panelCalcCalorias,1);
+        this.setVisible(true);
 
     }
 
@@ -38,8 +46,8 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
         if (this.panelCalcCalorias.getBtnCalcular() == e.getSource()) {
 
         }
-        if (this.panelTablaAlimentos.getBtnSeleccionar() == e.getSource()) {
-
-        }
     }
+     private void TFCPresionado(java.awt.event.KeyEvent evt) {                                       
+         panelTablaAlimentos.getTFComida().getText();
+    }       
 }
