@@ -6,6 +6,8 @@
 package app;
 
 
+import datos.DataManager;
+import modelo.TablaAlimento;
 import ventanas.VentanaAlimentos;
 import ventanas.VentanaInicio;
 
@@ -16,7 +18,9 @@ import ventanas.VentanaInicio;
 public class App {
     
     public static void main(String[] args){
-        VentanaAlimentos va = new VentanaAlimentos();
+        TablaAlimento t = new TablaAlimento();
+        t.llenarAlimentos();
+        //VentanaAlimentos va = new VentanaAlimentos();
     }
     
 }

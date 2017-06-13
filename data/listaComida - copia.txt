@@ -1,0 +1,377 @@
+COMIDA || CALORIAS (100g)
+
+Cereales y derivados
+
+Valor energético (kcal.)
+Arroz blanco\\3.54
+Arroz integral\\3.50
+Avena\\3.67
+Cebada\\3.73
+Centeno\\3.50
+Cereales con chocolate\\3.58
+Cereales desayuno, con miel\\3.86
+Copos de maíz\\3.50
+Harina de maíz\\3.49
+Harina de trigo integral\\3.40
+Harina de trigo refinada\\3.53
+Pan de centeno\\2.41
+Pan de trigo blanco\\2.55
+Pan de trigo integral\\2.39
+Pan de trigo molde blanco\\2.33
+Pan de trigo molde integral\\2.16
+Pasta al huevo\\3.68
+Pasta de sémola\\3.61
+Polenta\\3.58
+Sémola de trigo\\3.68
+Yuca	3.38
+
+Arvejas secas	3.40
+Garbanzos	3.61
+Habas secas	3.43
+Lentejas	3.36
+Poroto	3.16
+Soja en grano	4.22
+
+Clara	0.48
+Huevo duro	1.47
+Huevo entero	1.62
+Yema	3.68
+
+Bizcocho	4.56
+Croissant chocolate	4.69
+Croissant, donut	4.56
+Galletas de chocolate	5.24
+Galletas de mantequilla tipo “Danesas”	3.97
+Galletas saladas	4.64
+Magdalenas	4.69
+Pasta de hojaldre cocida	5.65
+Pastel de manzana	3.11
+Pastel de manzana, masa hojaldre	4.56
+Pastel de queso	4.14
+
+Azúcar	3.80
+Cacao en polvo con azúcar instantáneo	3.66
+Caramelos	3.78
+Chocolate con leche	5.50
+Chocolate sin leche	5.30
+Crema chocolate con avellanas	5.49
+Dulce de membrillo	2.15
+Gomas de fruta	1.72
+Helados de agua	1.39
+Mermeladas con azúcar	2.80
+Mermeladas sin azúcar	1.45
+Miel	3.00
+
+Aceitunas negras	3.49
+Aceitunas verdes	1.32
+Acelgas	0.33
+Ajos	1.69
+Alcachofas	0.64
+Apio	0.20
+Arvejas	0.78
+Arvejas congeladas	0.71
+Berenjena	0.29
+Berros	0.21
+Brócoli	0.31
+Calabacín	0.31
+Calabaza	0.24
+Cebolla	0.47
+Cebolla tierna	0.39
+Champiñón y otras cetas	0.28
+Choclo	0.96
+Cochayuyo	0.50
+Col	0.28
+Col de Bruselas	0.54
+Coliflor	0.30
+Endibia	0.22
+Escarola	0.37
+Espárragos	0.26
+Espárragos en lata	0.24
+Espinaca	0.32
+Espinacas congeladas	0.25
+Habas tiernas	0.64
+Hinojo	0.16
+Lechuga	0.18
+Maíz dulce en conserva	0.50
+Nabos	0.29
+Papas cocidas	0.86
+Pepino	0.12
+Perejil	0.55
+Pimiento	0.22
+Porotos verdes	0.21
+Puerros	0.42
+Puré de papas	0.357
+Rábanos	0.20
+Remolacha	0.40
+Repollo	0.19
+Rúcula	0.37
+Brotes de Soja	0.50
+Tomate triturado en conserva	0.39
+Tomates	0.22
+Trufa	0.92
+Zanahoria	0.42
+Zumo de tomate	0.21
+Arándanos	0.41
+Caqui	0.64
+Cereza	0.47
+Chirimoya	0.78
+Ciruela	0.44
+Ciruela seca	2.90
+Coco	6.46
+Damasco	0.44
+Dátil	2.79
+Dátil seco	3.06
+Durazno	0.52
+Durazno en almíbar	0.84
+Frambuesa	0.40
+Fresas	0.36
+Granada	0.65
+Grosella	0.37
+Higos	0.80
+Higos secos	2.75
+Kiwi	0.51
+Limón	0.39
+Mandarina	0.40
+Mango	0.57
+Manzana	0.52
+Melón	0.31
+Mora	0.37
+Naranja	0.44
+Nectarina	0.64
+Nísperos	0.97
+Palta	1.67
+Papaya	0.45
+Pera	0.61
+Piña	0.51
+Piña en almíbar	0.84
+Plátano	0.90
+Pomelo	0.30
+Sandía	0.30
+Uva	0.81
+Uva pasa	3.24
+Zumo de fruta	0.45
+Zumo de Naranja	0.42
+Almendras	6.20
+Avellanas	6.75
+Castañas	1.99
+Maní	5.60
+Nueces	6.60
+Piñones	6.60
+Pistacho	5.81
+Cuajada	0.92
+Flan de huevo	1.26
+Flan de vainilla	1.02
+Helados lácteos	1.67
+Leche condensada c/azúcar	3.50
+Leche condensada s/azúcar	1.60
+Leche de cabra	0.72
+Leche de oveja	0.96
+Leche descremada	0.36
+Leche en polvo descremada	3.73
+Leche en polvo entera	5.00
+Leche entera	0.68
+Leche semi descremada	0.49
+Mousse	1.77
+Nata o crema de leche	2.98
+Queso blanco desnatado	0.70
+Queso Brie	2.63
+Queso cammembert	3.12
+Queso cheddar	3.81
+Queso crema	2.45
+Queso de bola	3.49
+Queso de Burgos	1.74
+Queso de oveja	2.45
+Queso edam	3.06
+Queso emmental	4.15
+Queso fundido untable	2.85
+Queso gruyere	3.91
+Queso manchego	3.76
+Queso mozzarella	2.45
+Queso parmesano	3.93
+Queso ricota	4.00
+Queso roquefort	4.05
+Requesón	0.96
+Yogur desnatado	0.45
+Yogur desnatado con frutas	0.82
+Yogur enriquecido con nata	0.65
+Yogur natural	0.62
+Yogur natural con fruta	1.00
+
+Tocino	6.65
+Butifarra cocida	3.90
+Butifarra, salchicha fresca	3.26
+Cabrito	1.27
+Cerdo, chuleta	3.30
+Cerdo, hígado	1.53
+Cerdo, lomo	2.08
+Charqui	1.10
+Chicharrón	6.01
+Chorizo	4.68
+Ciervo	1.20
+Codorniz y perdiz	1.14
+Conejo, liebre	1.62
+Cordero lechón	1.05
+Cordero pierna	0.98
+Cordero, costillas	2.15
+Cordero, hígado	1.32
+Faisán	1.44
+Foie-Gras	5.18
+Gallina	3.69
+Hamburguesa	2.30
+Jabalí	1.07
+Jamón	3.80
+Jamón cocido	1.26
+Jamón crudo	2.96
+Jamón York	2.89
+Lengua de vaca	1.91
+Lomo embuchado	3.80
+Mortadela	2.65
+Pato	2.00
+Pavo, Muslo	1.86
+Pavo, Pechuga	1.34
+Perdiz	1.20
+Pies de cerdo	2.90
+Pollo, Hígado	1.29
+Pollo, Muslo	1.86
+Pollo, Pechuga	1.34
+Salamín	3.25
+Salchicha Frankfurt	3.15
+Salchichón	2.94
+Ternera, bistec	1.81
+Ternera, chuleta	1.68
+Ternera, hígado	1.40
+Ternera, lengua	2.07
+Ternera, riñón	0.86
+Ternera, sesos	1.25
+Ternera, solomillo	2.90
+Tira de asado	4.01
+Entrañas	1.00
+Vacuno, Hígado	1.29
+Almejas	0.50
+Anchoas	1.75
+Anguilas	2.00
+Arenque ahumado	2.09
+Arenque seco	1.22
+Atún en lata con aceite vegetal	2.80
+Atún en lata con agua	1.27
+Atún fresco	2.25
+Bacalao fresco	7.4
+Bacalao salado remojado	1.08
+Bacalao seco	3.22
+Besugo	1.18
+Caballa	1.53
+Calamar	0.82
+Cangrejo	0.85
+Caviar	2.33
+Congrio	1.12
+Dorada	0.80
+Gallo	0.73
+Gambas	0.96
+Kani-Kama	0.80
+Langosta	0.67
+Langostino	0.96
+Lenguado	0.73
+Lubina	1.18
+Lucio	0.81
+Mejillón	0.74
+Merluza	0.86
+Mero	1.18
+Ostras	0.80
+Pejerrey	0.87
+Pez espada	1.09
+Pulpo	0.57
+Rodaballo	0.81
+Salmón	1.72
+Salmón ahumado	1.54
+Salmonete	0.97
+Sardina en lata con aceite vegetal	1.92
+Sardinas	1.51
+Trucha	0.94
+Agua ardiente	2.80
+Agua tónica	0.34
+Anís	3.12
+Batido lácteo de cacao	1.00
+Cacao en polvo sin azúcar a la taza	4.39
+Café	0.01
+Cerveza negra	0.37
+Cerveza rubia	0.45
+Champaña demi-sec	0.90
+Champaña dulce	1.18
+Champaña seca	0.85
+Coñac, brandy	2.43
+Crema de cacao	2.60
+Daiquiri	1.22
+Gin & Tónica	0.76
+Ginebra	2.44
+Leche de almendras	3.35
+Licor de caña	2.73
+Piña colada	1.94
+Pisco	2.10
+Refrescos carbonatados	0.48
+Ron	2.44
+Sidra dulce	0.33
+Sidra seca	0.35
+Té	0.01
+Vermouth amargo	1.12
+Vermouth dulce	1.60
+Vino de mesa	0.70
+Vino dulce, jerez	1.60
+Vino oporto	1.60
+Vodka	3.15
+Whisky	2.44
+Barra de chocolate	4.41
+Maíz, palomitas	5.92
+Maíz, tiras fritas	4.59
+Papas fritas	5.44
+Aceite de girasol	9.00
+Aceite de maíz	9.00
+Aceite de maní	9.00
+Aceite de oliva	9.00
+Aceite de soja	9.00
+Manteca	6.70
+Mantequilla	7.52
+Margarina vegetal	7.52
+Bechamel	1.15
+Caldos concentrados	2.59
+Ketchup	0.98
+Mayonesa	7.18
+Mayonesa light	3.74
+Mostaza	0.15
+Salsa de soja	0.61
+Salsa de tomate en conserva	0.86
+Salsa golf	6.40
+Sofrito	1.16
+Vinagres	0.08
+Arroz con leche	1.23
+Babaroise	1.49
+Berlín	5.88
+Brazo de reina	1.50
+Buñuelos	1.23
+Canapé	2.34
+Canelones	1.27
+Churros	3.48
+Compota de frutas	0.90
+Croquetas	1.23
+Durazno en conserva	0.79
+Empanada de atún	2.43
+Jalea sola	0.30
+Jamón y queso apanados	2.14
+Lasaña	1.47
+Leche asada	1.45
+Leche nevada	1.20
+Manzana asada	1.57
+Mote con huesillos	2.21
+Ñoquis de papa	2.46
+Panqueque con manjar	2.19
+Pescado apanado	1.78
+Pie de limón	2.98
+Pizza	2.34
+Pollo apanado	2.83
+Ravioles de carne y jamón	2.53
+Rollos primavera	2.58
+Sémola con leche	1.30
+Sopaipillas pasadas	1.90
+Sopas de sobre	0.49
+Torta mil hojas	3.79
+Tortilla de papa	1.94
+Tutti fruti	1.85

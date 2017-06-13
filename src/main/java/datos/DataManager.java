@@ -64,4 +64,29 @@ public class DataManager {
             JOptionPane.showMessageDialog( null, "No existe", "ERROR", JOptionPane.PLAIN_MESSAGE );
         }
     }
+    public String[] leerAlimentos() {
+        String[] texto = new String[3000];
+        String[] aux;
+        String direccion = "data\\listaComida.txt";
+        try{
+            BufferedReader bf = new BufferedReader(new FileReader(direccion));
+            String bfRead;
+            int contador=0;
+            int pos;
+            while((bfRead = bf.readLine()) != null) {
+                texto[contador]=bfRead;
+                contador++;
+            }
+            bf.close();
+        }catch(IOException e){
+            JOptionPane.showMessageDialog( null, "No existe", "ERROR", JOptionPane.PLAIN_MESSAGE );
+        }
+        return texto;
+    }
+    /*  int pos1=str.indexOf(" ");
+        System.out.println(pos1);
+        int pos2=str.indexOf(" ", pos1+1);
+        System.out.println(pos2);
+        String subStr = str.substring(pos1,pos2);
+        System.out.println(subStr);*/
 }
