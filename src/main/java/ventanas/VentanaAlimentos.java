@@ -24,13 +24,13 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
 
-        this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
-        this.panelTablaAlimentos.getBtnSeleccionar().addActionListener((ActionListener) this);;
+        //this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
+        //this.panelTablaAlimentos.getBtnSeleccionar().addActionListener((ActionListener) this);;
 
         this.panelCalcCalorias = new PanelCalculadoraComida();
-        //this.panelTablaAlimentos = new PanelTablaAlimentos();
-        // this.add(this.panelTablaAlimentos ,0);
-        this.add(this.panelCalcCalorias);
+        this.panelTablaAlimentos = new PanelTablaAlimentos();
+         this.add(this.panelTablaAlimentos );
+       /// this.add(this.panelCalcCalorias,1);
 
     }
 

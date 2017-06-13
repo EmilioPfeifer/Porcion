@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import LegionGatito.PorcionJusta.modelo.Control;
+import modelo.Control;
 
 public class ControlTest {
 	private Control control;

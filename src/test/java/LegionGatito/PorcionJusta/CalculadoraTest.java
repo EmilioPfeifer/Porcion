@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import LegionGatito.PorcionJusta.modelo.Calculadora;
+import modelo.Calculadora;
 
 public class CalculadoraTest {
 	private Calculadora calculadora;

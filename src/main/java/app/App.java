@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LegionGatito.PorcionJusta.App;
+package app;
 
 
+import ventanas.VentanaAlimentos;
 import ventanas.VentanaInicio;
 
 /**
@@ -15,7 +16,7 @@ import ventanas.VentanaInicio;
 public class App {
     
     public static void main(String[] args){
-        ventanas.VentanaInicio vi = new VentanaInicio();
+        VentanaAlimentos va = new VentanaAlimentos();
     }
     
 }
