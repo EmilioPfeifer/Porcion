@@ -11,7 +11,9 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
 
     private PanelTablaAlimentos panelTablaAlimentos;
     private PanelCalculadoraComida panelCalcCalorias;
-
+    
+            
+            
     public VentanaAlimentos() {
         initComponents();
     }
@@ -26,7 +28,6 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
          this.panelCalcCalorias = new PanelCalculadoraComida();
         this.panelTablaAlimentos = new PanelTablaAlimentos();
-
         this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
         this.panelTablaAlimentos.getTFComida().addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -47,6 +48,6 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
         }
     }
      private void TFCPresionado(java.awt.event.KeyEvent evt) {                                       
-        // TODO add your handling code here:
+         panelTablaAlimentos.getTFComida().getText();
     }       
 }

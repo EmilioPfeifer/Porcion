@@ -2,7 +2,7 @@ package ventanas;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import javax.swing.JButton;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -13,10 +13,11 @@ import javax.swing.table.DefaultTableModel;
 public class PanelTablaAlimentos extends JPanel {
 
     private JTable tablaAlimentos;
-    DefaultTableModel tabla;
+    private DefaultTableModel tabla;
     private JLabel buscar;
     private JTextField TFComida;
-    JScrollPane scroll;
+    private JScrollPane scroll;
+    private Object[][] datos;
 
     public PanelTablaAlimentos() {
         initComponents();
@@ -26,8 +27,8 @@ public class PanelTablaAlimentos extends JPanel {
     private void initComponents() {
         this.setLayout(null);
         String[] titulo = {"Alimentos"};
-        Object[][] datos = {{null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {"coliflor"}, {"lechuga"}, {"col"}, {"cocos"}, {null}, {null}, {null}, {null}, {null}, {null}, {null}, {"gato"}};
-        DefaultTableModel tab = new DefaultTableModel(datos, titulo) {
+        Object[][] datos = {{"azucar"}, {"pepino"}, {"tomate"}, {"cardo"}, {"galleta"}, {"jurel"}, {"comino"}, {"coliflor"}, {"lechuga"}, {"col"}, {"cocos"}, {"zapallo"}, {"nuez"}, {"aceite"}, {"cilantro"}, {"tocino"}, {"sardina"}, {"gato"}};
+        this.tabla = new DefaultTableModel(datos, titulo) {
             @Override
             public boolean isCellEditable(int columna, int i1) {
                 if (columna ==1) {
@@ -38,7 +39,7 @@ public class PanelTablaAlimentos extends JPanel {
             }
         };
         
-        this.tablaAlimentos = new JTable(tab);
+        this.tablaAlimentos = new JTable(tabla);
         this.scroll = new JScrollPane(tablaAlimentos);
         this.scroll.setPreferredSize(new Dimension(260,300 ));
         this.scroll.setBackground(new Color(137, 208, 171));
