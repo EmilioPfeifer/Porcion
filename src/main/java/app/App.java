@@ -6,7 +6,6 @@
 package app;
 
 
-import ventanas.VentanaAlimentos;
 import ventanas.VentanaInicio;
 
 /**
@@ -16,7 +15,8 @@ import ventanas.VentanaInicio;
 public class App {
     
     public static void main(String[] args){
-        VentanaAlimentos va = new VentanaAlimentos();
+        VentanaInicio vi = new VentanaInicio();
+       
     }
     
 }
