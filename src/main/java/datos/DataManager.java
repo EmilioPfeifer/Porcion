@@ -22,7 +22,7 @@ public class DataManager {
     
     public void crearArchivo(String[] data, String nombre) {
         //System.out.println("Ingrese ruta completa del archivo");
-        String ruta = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\"+nombre.toUpperCase()+".txt";
+        String ruta = "data/"+nombre.toUpperCase()+".txt";
         Path archivo = Paths.get(ruta);
         //System.out.println("Ingrese texto a guardar en el archivo");
         //String texto = "hola mundo\r\nhello world";
