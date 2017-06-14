@@ -1,7 +1,4 @@
-COMIDA || CALORIAS (100g)
-
-Cereales y derivados
-
+COMIDA || CALORIAS (1g)
 Valor energético (kcal.)
 Arroz blanco\\3.54
 Arroz integral\\3.50
@@ -24,19 +21,16 @@ Pasta de sémola\\3.61
 Polenta\\3.58
 Sémola de trigo\\3.68
 Yuca	3.38
-
 Arvejas secas	3.40
 Garbanzos	3.61
 Habas secas	3.43
 Lentejas	3.36
 Poroto	3.16
 Soja en grano	4.22
-
 Clara	0.48
 Huevo duro	1.47
 Huevo entero	1.62
 Yema	3.68
-
 Bizcocho	4.56
 Croissant chocolate	4.69
 Croissant, donut	4.56
@@ -48,7 +42,6 @@ Pasta de hojaldre cocida	5.65
 Pastel de manzana	3.11
 Pastel de manzana, masa hojaldre	4.56
 Pastel de queso	4.14
-
 Azúcar	3.80
 Cacao en polvo con azúcar instantáneo	3.66
 Caramelos	3.78
@@ -61,7 +54,6 @@ Helados de agua	1.39
 Mermeladas con azúcar	2.80
 Mermeladas sin azúcar	1.45
 Miel	3.00
-
 Aceitunas negras	3.49
 Aceitunas verdes	1.32
 Acelgas	0.33
