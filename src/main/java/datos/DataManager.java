@@ -13,6 +13,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import javax.swing.JOptionPane;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import modelo.Alimento;
+
 
 /**
  *
@@ -83,6 +87,20 @@ public class DataManager {
         }
         return texto;
     }
+    //aqui se crea el el archivo con todo los json
+    /*public void setJson(Alimento a){
+        FileWriter writer;
+        try{
+            writer = new FileWriter("data\\Alimentos.json", true);
+            writer.write("\r\n");
+            Gson gson = new GsonBuilder().create();
+            gson.toJson(a, writer);
+            writer.close();
+            
+        }catch (IOException e){
+            System.out.println("Error");
+        }
+    }*/
     /*  int pos1=str.indexOf(" ");
         System.out.println(pos1);
         int pos2=str.indexOf(" ", pos1+1);

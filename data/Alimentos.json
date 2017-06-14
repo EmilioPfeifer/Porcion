@@ -1,0 +1,366 @@
+{"nombre":"Arroz blanco","caloria":3.54}
+{"nombre":"Arroz integral","caloria":3.5}
+{"nombre":"Avena","caloria":3.67}
+{"nombre":"Cebada","caloria":3.73}
+{"nombre":"Centeno","caloria":3.5}
+{"nombre":"Cereales con chocolate","caloria":3.58}
+{"nombre":"Cereales desayuno, con miel","caloria":3.86}
+{"nombre":"Copos de maíz","caloria":3.5}
+{"nombre":"Harina de maíz","caloria":3.49}
+{"nombre":"Harina de trigo integral","caloria":3.4}
+{"nombre":"Harina de trigo refinada","caloria":3.53}
+{"nombre":"Pan de centeno","caloria":2.41}
+{"nombre":"Pan de trigo blanco","caloria":2.55}
+{"nombre":"Pan de trigo integral","caloria":2.39}
+{"nombre":"Pan de trigo molde blanco","caloria":2.33}
+{"nombre":"Pan de trigo molde integral","caloria":2.16}
+{"nombre":"Pasta al huevo","caloria":3.68}
+{"nombre":"Pasta de sémola","caloria":3.61}
+{"nombre":"Polenta","caloria":3.58}
+{"nombre":"Sémola de trigo","caloria":3.68}
+{"nombre":"Yuca","caloria":3.38}
+{"nombre":"Arvejas secas","caloria":3.4}
+{"nombre":"Garbanzos","caloria":3.61}
+{"nombre":"Habas secas","caloria":3.43}
+{"nombre":"Lentejas","caloria":3.36}
+{"nombre":"Poroto","caloria":3.16}
+{"nombre":"Soja en grano","caloria":4.22}
+{"nombre":"Clara","caloria":0.48}
+{"nombre":"Huevo duro","caloria":1.47}
+{"nombre":"Huevo entero","caloria":1.62}
+{"nombre":"Yema","caloria":3.68}
+{"nombre":"Bizcocho","caloria":4.56}
+{"nombre":"Croissant chocolate","caloria":4.69}
+{"nombre":"Croissant, donut","caloria":4.56}
+{"nombre":"Galletas de chocolate","caloria":5.24}
+{"nombre":"Galletas de mantequilla tipo “Danesas�?","caloria":3.97}
+{"nombre":"Galletas saladas","caloria":4.64}
+{"nombre":"Magdalenas","caloria":4.69}
+{"nombre":"Pasta de hojaldre cocida","caloria":5.65}
+{"nombre":"Pastel de manzana","caloria":3.11}
+{"nombre":"Pastel de manzana, masa hojaldre","caloria":4.56}
+{"nombre":"Pastel de queso","caloria":4.14}
+{"nombre":"Azúcar","caloria":3.8}
+{"nombre":"Cacao en polvo con azúcar instantáneo","caloria":3.66}
+{"nombre":"Caramelos","caloria":3.78}
+{"nombre":"Chocolate con leche","caloria":5.5}
+{"nombre":"Chocolate sin leche","caloria":5.3}
+{"nombre":"Crema chocolate con avellanas","caloria":5.49}
+{"nombre":"Dulce de membrillo","caloria":2.15}
+{"nombre":"Gomas de fruta","caloria":1.72}
+{"nombre":"Helados de agua","caloria":1.39}
+{"nombre":"Mermeladas con azúcar","caloria":2.8}
+{"nombre":"Mermeladas sin azúcar","caloria":1.45}
+{"nombre":"Miel","caloria":3.0}
+{"nombre":"Aceitunas negras","caloria":3.49}
+{"nombre":"Aceitunas verdes","caloria":1.32}
+{"nombre":"Acelgas","caloria":0.33}
+{"nombre":"Ajos","caloria":1.69}
+{"nombre":"Alcachofas","caloria":0.64}
+{"nombre":"Apio","caloria":0.2}
+{"nombre":"Arvejas","caloria":0.78}
+{"nombre":"Arvejas congeladas","caloria":0.71}
+{"nombre":"Berenjena","caloria":0.29}
+{"nombre":"Berros","caloria":0.21}
+{"nombre":"Brócoli","caloria":0.31}
+{"nombre":"Calabacín","caloria":0.31}
+{"nombre":"Calabaza","caloria":0.24}
+{"nombre":"Cebolla","caloria":0.47}
+{"nombre":"Cebolla tierna","caloria":0.39}
+{"nombre":"Champiñón y otras cetas","caloria":0.28}
+{"nombre":"Choclo","caloria":0.96}
+{"nombre":"Cochayuyo","caloria":0.5}
+{"nombre":"Col","caloria":0.28}
+{"nombre":"Col de Bruselas","caloria":0.54}
+{"nombre":"Coliflor","caloria":0.3}
+{"nombre":"Endibia","caloria":0.22}
+{"nombre":"Escarola","caloria":0.37}
+{"nombre":"Espárragos","caloria":0.26}
+{"nombre":"Espárragos en lata","caloria":0.24}
+{"nombre":"Espinaca","caloria":0.32}
+{"nombre":"Espinacas congeladas","caloria":0.25}
+{"nombre":"Habas tiernas","caloria":0.64}
+{"nombre":"Hinojo","caloria":0.16}
+{"nombre":"Lechuga","caloria":0.18}
+{"nombre":"Maíz dulce en conserva","caloria":0.5}
+{"nombre":"Nabos","caloria":0.29}
+{"nombre":"Papas cocidas","caloria":0.86}
+{"nombre":"Pepino","caloria":0.12}
+{"nombre":"Perejil","caloria":0.55}
+{"nombre":"Pimiento","caloria":0.22}
+{"nombre":"Porotos verdes","caloria":0.21}
+{"nombre":"Puerros","caloria":0.42}
+{"nombre":"Puré de papas","caloria":0.357}
+{"nombre":"Rábanos","caloria":0.2}
+{"nombre":"Remolacha","caloria":0.4}
+{"nombre":"Repollo","caloria":0.19}
+{"nombre":"Rúcula","caloria":0.37}
+{"nombre":"Brotes de Soja","caloria":0.5}
+{"nombre":"Tomate triturado en conserva","caloria":0.39}
+{"nombre":"Tomates","caloria":0.22}
+{"nombre":"Trufa","caloria":0.92}
+{"nombre":"Zanahoria","caloria":0.42}
+{"nombre":"Zumo de tomate","caloria":0.21}
+{"nombre":"Arándanos","caloria":0.41}
+{"nombre":"Caqui","caloria":0.64}
+{"nombre":"Cereza","caloria":0.47}
+{"nombre":"Chirimoya","caloria":0.78}
+{"nombre":"Ciruela","caloria":0.44}
+{"nombre":"Ciruela seca","caloria":2.9}
+{"nombre":"Coco","caloria":6.46}
+{"nombre":"Damasco","caloria":0.44}
+{"nombre":"Dátil","caloria":2.79}
+{"nombre":"Dátil seco","caloria":3.06}
+{"nombre":"Durazno","caloria":0.52}
+{"nombre":"Durazno en almíbar","caloria":0.84}
+{"nombre":"Frambuesa","caloria":0.4}
+{"nombre":"Fresas","caloria":0.36}
+{"nombre":"Granada","caloria":0.65}
+{"nombre":"Grosella","caloria":0.37}
+{"nombre":"Higos","caloria":0.8}
+{"nombre":"Higos secos","caloria":2.75}
+{"nombre":"Kiwi","caloria":0.51}
+{"nombre":"Limón","caloria":0.39}
+{"nombre":"Mandarina","caloria":0.4}
+{"nombre":"Mango","caloria":0.57}
+{"nombre":"Manzana","caloria":0.52}
+{"nombre":"Melón","caloria":0.31}
+{"nombre":"Mora","caloria":0.37}
+{"nombre":"Naranja","caloria":0.44}
+{"nombre":"Nectarina","caloria":0.64}
+{"nombre":"Nísperos","caloria":0.97}
+{"nombre":"Palta","caloria":1.67}
+{"nombre":"Papaya","caloria":0.45}
+{"nombre":"Pera","caloria":0.61}
+{"nombre":"Piña","caloria":0.51}
+{"nombre":"Piña en almíbar","caloria":0.84}
+{"nombre":"Plátano","caloria":0.9}
+{"nombre":"Pomelo","caloria":0.3}
+{"nombre":"Sandía","caloria":0.3}
+{"nombre":"Uva","caloria":0.81}
+{"nombre":"Uva pasa","caloria":3.24}
+{"nombre":"Zumo de fruta","caloria":0.45}
+{"nombre":"Zumo de Naranja","caloria":0.42}
+{"nombre":"Almendras","caloria":6.2}
+{"nombre":"Avellanas","caloria":6.75}
+{"nombre":"Castañas","caloria":1.99}
+{"nombre":"Maní","caloria":5.6}
+{"nombre":"Nueces","caloria":6.6}
+{"nombre":"Piñones","caloria":6.6}
+{"nombre":"Pistacho","caloria":5.81}
+{"nombre":"Cuajada","caloria":0.92}
+{"nombre":"Flan de huevo","caloria":1.26}
+{"nombre":"Flan de vainilla","caloria":1.02}
+{"nombre":"Helados lácteos","caloria":1.67}
+{"nombre":"Leche condensada c/azúcar","caloria":3.5}
+{"nombre":"Leche condensada s/azúcar","caloria":1.6}
+{"nombre":"Leche de cabra","caloria":0.72}
+{"nombre":"Leche de oveja","caloria":0.96}
+{"nombre":"Leche descremada","caloria":0.36}
+{"nombre":"Leche en polvo descremada","caloria":3.73}
+{"nombre":"Leche en polvo entera","caloria":5.0}
+{"nombre":"Leche entera","caloria":0.68}
+{"nombre":"Leche semi descremada","caloria":0.49}
+{"nombre":"Mousse","caloria":1.77}
+{"nombre":"Nata o crema de leche","caloria":2.98}
+{"nombre":"Queso blanco desnatado","caloria":0.7}
+{"nombre":"Queso Brie","caloria":2.63}
+{"nombre":"Queso cammembert","caloria":3.12}
+{"nombre":"Queso cheddar","caloria":3.81}
+{"nombre":"Queso crema","caloria":2.45}
+{"nombre":"Queso de bola","caloria":3.49}
+{"nombre":"Queso de Burgos","caloria":1.74}
+{"nombre":"Queso de oveja","caloria":2.45}
+{"nombre":"Queso edam","caloria":3.06}
+{"nombre":"Queso emmental","caloria":4.15}
+{"nombre":"Queso fundido untable","caloria":2.85}
+{"nombre":"Queso gruyere","caloria":3.91}
+{"nombre":"Queso manchego","caloria":3.76}
+{"nombre":"Queso mozzarella","caloria":2.45}
+{"nombre":"Queso parmesano","caloria":3.93}
+{"nombre":"Queso ricota","caloria":4.0}
+{"nombre":"Queso roquefort","caloria":4.05}
+{"nombre":"Requesón","caloria":0.96}
+{"nombre":"Yogur desnatado","caloria":0.45}
+{"nombre":"Yogur desnatado con frutas","caloria":0.82}
+{"nombre":"Yogur enriquecido con nata","caloria":0.65}
+{"nombre":"Yogur natural","caloria":0.62}
+{"nombre":"Yogur natural con fruta","caloria":1.0}
+{"nombre":"Tocino","caloria":6.65}
+{"nombre":"Butifarra cocida","caloria":3.9}
+{"nombre":"Butifarra, salchicha fresca","caloria":3.26}
+{"nombre":"Cabrito","caloria":1.27}
+{"nombre":"Cerdo, chuleta","caloria":3.3}
+{"nombre":"Cerdo, hígado","caloria":1.53}
+{"nombre":"Cerdo, lomo","caloria":2.08}
+{"nombre":"Charqui","caloria":1.1}
+{"nombre":"Chicharrón","caloria":6.01}
+{"nombre":"Chorizo","caloria":4.68}
+{"nombre":"Ciervo","caloria":1.2}
+{"nombre":"Codorniz y perdiz","caloria":1.14}
+{"nombre":"Conejo, liebre","caloria":1.62}
+{"nombre":"Cordero lechón","caloria":1.05}
+{"nombre":"Cordero pierna","caloria":0.98}
+{"nombre":"Cordero, costillas","caloria":2.15}
+{"nombre":"Cordero, hígado","caloria":1.32}
+{"nombre":"Faisán","caloria":1.44}
+{"nombre":"Foie-Gras","caloria":5.18}
+{"nombre":"Gallina","caloria":3.69}
+{"nombre":"Hamburguesa","caloria":2.3}
+{"nombre":"Jabalí","caloria":1.07}
+{"nombre":"Jamón","caloria":3.8}
+{"nombre":"Jamón cocido","caloria":1.26}
+{"nombre":"Jamón crudo","caloria":2.96}
+{"nombre":"Jamón York","caloria":2.89}
+{"nombre":"Lengua de vaca","caloria":1.91}
+{"nombre":"Lomo embuchado","caloria":3.8}
+{"nombre":"Mortadela","caloria":2.65}
+{"nombre":"Pato","caloria":2.0}
+{"nombre":"Pavo, Muslo","caloria":1.86}
+{"nombre":"Pavo, Pechuga","caloria":1.34}
+{"nombre":"Perdiz","caloria":1.2}
+{"nombre":"Pies de cerdo","caloria":2.9}
+{"nombre":"Pollo, Hígado","caloria":1.29}
+{"nombre":"Pollo, Muslo","caloria":1.86}
+{"nombre":"Pollo, Pechuga","caloria":1.34}
+{"nombre":"Salamín","caloria":3.25}
+{"nombre":"Salchicha Frankfurt","caloria":3.15}
+{"nombre":"Salchichón","caloria":2.94}
+{"nombre":"Ternera, bistec","caloria":1.81}
+{"nombre":"Ternera, chuleta","caloria":1.68}
+{"nombre":"Ternera, hígado","caloria":1.4}
+{"nombre":"Ternera, lengua","caloria":2.07}
+{"nombre":"Ternera, riñón","caloria":0.86}
+{"nombre":"Ternera, sesos","caloria":1.25}
+{"nombre":"Ternera, solomillo","caloria":2.9}
+{"nombre":"Tira de asado","caloria":4.01}
+{"nombre":"Entrañas","caloria":1.0}
+{"nombre":"Vacuno, Hígado","caloria":1.29}
+{"nombre":"Almejas","caloria":0.5}
+{"nombre":"Anchoas","caloria":1.75}
+{"nombre":"Anguilas","caloria":2.0}
+{"nombre":"Arenque ahumado","caloria":2.09}
+{"nombre":"Arenque seco","caloria":1.22}
+{"nombre":"Atún en lata con aceite vegetal","caloria":2.8}
+{"nombre":"Atún en lata con agua","caloria":1.27}
+{"nombre":"Atún fresco","caloria":2.25}
+{"nombre":"Bacalao fresco","caloria":7.4}
+{"nombre":"Bacalao salado remojado","caloria":1.08}
+{"nombre":"Bacalao seco","caloria":3.22}
+{"nombre":"Besugo","caloria":1.18}
+{"nombre":"Caballa","caloria":1.53}
+{"nombre":"Calamar","caloria":0.82}
+{"nombre":"Cangrejo","caloria":0.85}
+{"nombre":"Caviar","caloria":2.33}
+{"nombre":"Congrio","caloria":1.12}
+{"nombre":"Dorada","caloria":0.8}
+{"nombre":"Gallo","caloria":0.73}
+{"nombre":"Gambas","caloria":0.96}
+{"nombre":"Kani-Kama","caloria":0.8}
+{"nombre":"Langosta","caloria":0.67}
+{"nombre":"Langostino","caloria":0.96}
+{"nombre":"Lenguado","caloria":0.73}
+{"nombre":"Lubina","caloria":1.18}
+{"nombre":"Lucio","caloria":0.81}
+{"nombre":"Mejillón","caloria":0.74}
+{"nombre":"Merluza","caloria":0.86}
+{"nombre":"Mero","caloria":1.18}
+{"nombre":"Ostras","caloria":0.8}
+{"nombre":"Pejerrey","caloria":0.87}
+{"nombre":"Pez espada","caloria":1.09}
+{"nombre":"Pulpo","caloria":0.57}
+{"nombre":"Rodaballo","caloria":0.81}
+{"nombre":"Salmón","caloria":1.72}
+{"nombre":"Salmón ahumado","caloria":1.54}
+{"nombre":"Salmonete","caloria":0.97}
+{"nombre":"Sardina en lata con aceite vegetal","caloria":1.92}
+{"nombre":"Sardinas","caloria":1.51}
+{"nombre":"Trucha","caloria":0.94}
+{"nombre":"Agua ardiente","caloria":2.8}
+{"nombre":"Agua tónica","caloria":0.34}
+{"nombre":"Anís","caloria":3.12}
+{"nombre":"Batido lácteo de cacao","caloria":1.0}
+{"nombre":"Cacao en polvo sin azúcar a la taza","caloria":4.39}
+{"nombre":"Café","caloria":0.01}
+{"nombre":"Cerveza negra","caloria":0.37}
+{"nombre":"Cerveza rubia","caloria":0.45}
+{"nombre":"Champaña demi-sec","caloria":0.9}
+{"nombre":"Champaña dulce","caloria":1.18}
+{"nombre":"Champaña seca","caloria":0.85}
+{"nombre":"Coñac, brandy","caloria":2.43}
+{"nombre":"Crema de cacao","caloria":2.6}
+{"nombre":"Daiquiri","caloria":1.22}
+{"nombre":"Gin \u0026 Tónica","caloria":0.76}
+{"nombre":"Ginebra","caloria":2.44}
+{"nombre":"Leche de almendras","caloria":3.35}
+{"nombre":"Licor de caña","caloria":2.73}
+{"nombre":"Piña colada","caloria":1.94}
+{"nombre":"Pisco","caloria":2.1}
+{"nombre":"Refrescos carbonatados","caloria":0.48}
+{"nombre":"Ron","caloria":2.44}
+{"nombre":"Sidra dulce","caloria":0.33}
+{"nombre":"Sidra seca","caloria":0.35}
+{"nombre":"Té","caloria":0.01}
+{"nombre":"Vermouth amargo","caloria":1.12}
+{"nombre":"Vermouth dulce","caloria":1.6}
+{"nombre":"Vino de mesa","caloria":0.7}
+{"nombre":"Vino dulce, jerez","caloria":1.6}
+{"nombre":"Vino oporto","caloria":1.6}
+{"nombre":"Vodka","caloria":3.15}
+{"nombre":"Whisky","caloria":2.44}
+{"nombre":"Barra de chocolate","caloria":4.41}
+{"nombre":"Maíz, palomitas","caloria":5.92}
+{"nombre":"Maíz, tiras fritas","caloria":4.59}
+{"nombre":"Papas fritas","caloria":5.44}
+{"nombre":"Aceite de girasol","caloria":9.0}
+{"nombre":"Aceite de maíz","caloria":9.0}
+{"nombre":"Aceite de maní","caloria":9.0}
+{"nombre":"Aceite de oliva","caloria":9.0}
+{"nombre":"Aceite de soja","caloria":9.0}
+{"nombre":"Manteca","caloria":6.7}
+{"nombre":"Mantequilla","caloria":7.52}
+{"nombre":"Margarina vegetal","caloria":7.52}
+{"nombre":"Bechamel","caloria":1.15}
+{"nombre":"Caldos concentrados","caloria":2.59}
+{"nombre":"Ketchup","caloria":0.98}
+{"nombre":"Mayonesa","caloria":7.18}
+{"nombre":"Mayonesa light","caloria":3.74}
+{"nombre":"Mostaza","caloria":0.15}
+{"nombre":"Salsa de soja","caloria":0.61}
+{"nombre":"Salsa de tomate en conserva","caloria":0.86}
+{"nombre":"Salsa golf","caloria":6.4}
+{"nombre":"Sofrito","caloria":1.16}
+{"nombre":"Vinagres","caloria":0.08}
+{"nombre":"Arroz con leche","caloria":1.23}
+{"nombre":"Babaroise","caloria":1.49}
+{"nombre":"Berlín","caloria":5.88}
+{"nombre":"Brazo de reina","caloria":1.5}
+{"nombre":"Buñuelos","caloria":1.23}
+{"nombre":"Canapé","caloria":2.34}
+{"nombre":"Canelones","caloria":1.27}
+{"nombre":"Churros","caloria":3.48}
+{"nombre":"Compota de frutas","caloria":0.9}
+{"nombre":"Croquetas","caloria":1.23}
+{"nombre":"Durazno en conserva","caloria":0.79}
+{"nombre":"Empanada de atún","caloria":2.43}
+{"nombre":"Jalea sola","caloria":0.3}
+{"nombre":"Jamón y queso apanados","caloria":2.14}
+{"nombre":"Lasaña","caloria":1.47}
+{"nombre":"Leche asada","caloria":1.45}
+{"nombre":"Leche nevada","caloria":1.2}
+{"nombre":"Manzana asada","caloria":1.57}
+{"nombre":"Mote con huesillos","caloria":2.21}
+{"nombre":"Ñoquis de papa","caloria":2.46}
+{"nombre":"Panqueque con manjar","caloria":2.19}
+{"nombre":"Pescado apanado","caloria":1.78}
+{"nombre":"Pie de limón","caloria":2.98}
+{"nombre":"Pizza","caloria":2.34}
+{"nombre":"Pollo apanado","caloria":2.83}
+{"nombre":"Ravioles de carne y jamón","caloria":2.53}
+{"nombre":"Rollos primavera","caloria":2.58}
+{"nombre":"Sémola con leche","caloria":1.3}
+{"nombre":"Sopaipillas pasadas","caloria":1.9}
+{"nombre":"Sopas de sobre","caloria":0.49}
+{"nombre":"Torta mil hojas","caloria":3.79}
+{"nombre":"Tortilla de papa","caloria":1.94}
+{"nombre":"Tutti fruti","caloria":1.85}

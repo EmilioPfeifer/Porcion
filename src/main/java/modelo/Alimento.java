@@ -56,5 +56,10 @@ public class Alimento {
     }
     
     
+    
 //>>>>>>> 5637d981a3766c3f5e6eb32081740e33a639cc37
+
+    public void setCaloria(double caloria) {
+        this.caloria = caloria;
+    }
 }
