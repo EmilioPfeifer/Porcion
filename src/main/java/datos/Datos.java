@@ -109,7 +109,7 @@ public class Datos {
     public void addPaciente(Paciente paciente){
         FileWriter writer;
         try{
-            writer = new FileWriter("data\\Paciente.json", true);
+            writer = new FileWriter("data\\Paciente.json");
             Gson gson = new GsonBuilder().create();
             gson.toJson(paciente, writer);
             writer.close();
@@ -117,6 +117,22 @@ public class Datos {
             Logger.getLogger(getClass().getName()).log(
             Level.INFO, "Fallo escrbir en paciente");
         }
+    }
+    public String obtenerPaciente() {
+        String texto = "";
+        String direccion = "data\\Paciente.json";
+        try{
+            BufferedReader bf = new BufferedReader(new FileReader(direccion));
+            String bfRead;
+            while((bfRead = bf.readLine()) != null) {
+               texto=bfRead;
+            }
+            bf.close();
+        }catch(IOException e){
+            Logger.getLogger(getClass().getName()).log(
+            Level.INFO, "Fallo obtencion de controles");
+        }
+        return texto;
     }
 }
 /*

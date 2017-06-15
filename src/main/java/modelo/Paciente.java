@@ -93,6 +93,10 @@ public class Paciente {
     public String getFechaNac() {
         return fechaNac;
     }
+    
+    public double getIMC() {
+        return this.imc;
+    }
 
     @Override
     public String toString() {

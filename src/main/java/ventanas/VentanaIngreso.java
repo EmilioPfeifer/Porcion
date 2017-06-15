@@ -42,6 +42,8 @@ public class VentanaIngreso extends JFrame implements ActionListener {
             
             Paciente p= new Paciente(nombre, estatura, fechaNac, peso, sexo);
             p.crearJson(p);
+            
+            VentanaInicio v = new VentanaInicio();
         }
           if (this.panelIngDatos.getBtnCancelar()== e.getSource()) {
                System.exit(0);

@@ -20,7 +20,7 @@ public class App {
         VentanaInicio vi = new VentanaInicio();
         //TablaAlimentoQuePase a = new TablaAlimentoQuePase();
         //a.llenarAlimentos();
-        VentanaIngreso v = new VentanaIngreso();
+        //VentanaIngreso v = new VentanaIngreso();
     }
     
 }

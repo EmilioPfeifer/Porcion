@@ -36,7 +36,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
         this.panelBotones.getBtnTablaComida().addActionListener((ActionListener) this);
         this.add(panelDatos, 0);
         this.add(panelBotones, 1);
-            this.setVisible(true);
+        this.setVisible(true);
 
     }
 
