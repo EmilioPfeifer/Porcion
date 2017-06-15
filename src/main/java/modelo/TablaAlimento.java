@@ -64,6 +64,7 @@ public class TablaAlimento {
     
     private void llenarArrayList() {
         String aux = "";
+        this.tabAlimentos.clear();
         int cont=0;
         while(this.data.leerArchivo()[cont]!=null){
             Gson objJson = new Gson();
@@ -78,12 +79,10 @@ public class TablaAlimento {
     
     public String[][] nombresTodosAlimentos(){
         llenarArrayList();
-        System.out.println("entro");
         String[][] todosAlimentos = new String[tabAlimentos.size()][1];
         System.out.println(tabAlimentos.size());
         for (int i = 0; i < tabAlimentos.size(); i++) {
             todosAlimentos[i][0]=tabAlimentos.get(i).getNombre();
-            System.out.println(tabAlimentos.get(i).getNombre());
         }
         return todosAlimentos;
     }
@@ -96,7 +95,9 @@ public class TablaAlimento {
         
         for (int i = 0; i < tabAlimentos.size(); i++) {
             String alimentoEnTabla = tabAlimentos.get(i).getNombre();
-            if (alimentoBuscar.equals(cortaCadena(largo, alimentoEnTabla))) {
+            if(largo > alimentoEnTabla.length()){
+            }else if (alimentoBuscar.equals(cortaCadena(largo, alimentoEnTabla))) {
+                System.out.println(cortaCadena(largo, alimentoEnTabla));
                 auxBuscar.add(alimentoEnTabla);
             }
         }
@@ -104,8 +105,8 @@ public class TablaAlimento {
         for (int i = 0; i < auxBuscar.size(); i++) {
             busqueda[i][0] = auxBuscar.get(i);
         }
-        Logger.getLogger(getClass().getName()).log(
-        Level.INFO, "Fallo escrbir en paciente");
+        //Logger.getLogger(getClass().getName()).log(
+        //Level.INFO, "Fallo busqueda Alimentos");
         return busqueda;
     }
 
@@ -113,7 +114,10 @@ public class TablaAlimento {
         //corta una palabra de un largo especifico;
         String palabraCortada = "";
         for (int i = 0; i < largo; i++) {
-            palabraCortada += "" + palabra.charAt(i);
+            try{
+                palabraCortada = "" + palabra.charAt(i);
+            }catch(StringIndexOutOfBoundsException e){
+            }
         }
         return palabraCortada.toLowerCase();
     }

@@ -64,7 +64,7 @@ public class PanelTablaAlimentos extends JPanel {
         this.setBackground(new Color(137, 208, 171));
     }
     public void mostrarBusqueda(String busqueda){
-        if (busqueda == "") {
+        if (busqueda.equals("")) {
             this.datosTabla = this.tabAlimento.nombresTodosAlimentos();
         }else{
              this.datosTabla = this.tabAlimento.busquedaAlimentos(busqueda);

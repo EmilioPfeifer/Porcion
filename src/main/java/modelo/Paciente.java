@@ -12,6 +12,7 @@ import java.util.Date;
  */
 public class Paciente {
     private Datos data;
+    
     private String nombre;
     private int edad;
     private double estatura;
@@ -39,6 +40,9 @@ public class Paciente {
             cont++;
         }
     }
+    public void crearJson(Paciente p){
+        this.data.addPaciente(p);
+    }
 
     public String getNombre() {
         return nombre;
@@ -63,5 +67,5 @@ public class Paciente {
     public String getFechaNac() {
         return fechaNac;
     }
-   
+    
 }
