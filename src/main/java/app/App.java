@@ -7,6 +7,7 @@ package app;
 
 
 
+import ventanas.VentanaIngreso;
 import ventanas.VentanaInicio;
 
 /**
@@ -19,6 +20,7 @@ public class App {
         VentanaInicio vi = new VentanaInicio();
         //TablaAlimentoQuePase a = new TablaAlimentoQuePase();
         //a.llenarAlimentos();
+        VentanaIngreso v = new VentanaIngreso();
     }
     
 }

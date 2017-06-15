@@ -86,5 +86,21 @@ public class PanelIngresoDatos extends JPanel {
     public JButton getBtnAceptar() {
         return btnAceptar;
     }
+
+    public void setNombre(JTextField nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setFechaNacimiento(JTextField fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public void setEstatura(JTextField estatura) {
+        this.estatura = estatura;
+    }
+
+    public void setPeso(JTextField peso) {
+        this.peso = peso;
+    }
         
 }

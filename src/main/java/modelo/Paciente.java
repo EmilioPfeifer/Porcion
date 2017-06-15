@@ -22,16 +22,7 @@ public class Paciente {
     double imc;
     double caloriasDiarias;
     private ArrayList<Control> controles = new ArrayList<Control>();
-    private Calculadora calculadora ;
-
-    public Paciente(String nombre, String fechaNac, double estatura, double peso) {
-        this.nombre = nombre;
-        this.estatura = estatura;
-        this.fechaNac = fechaNac;
-        this.peso = peso;
-    }
-    
-    
+    private Calculadora calculadora ;    
     
     public void addControl(double peso) {
         Control control = new Control(peso);
@@ -79,7 +70,9 @@ public class Paciente {
 
     @Override
     public String toString() {
-        return "Paciente{" + "nombre=" + nombre + ", estatura=" + estatura + ", fechaNac=" + fechaNac + ", peso=" + peso + '}';
+        return "Paciente{" + "nombre=" + nombre + ", fechaNac=" + fechaNac + ", estatura=" + estatura + ", peso=" + peso + '}';
     }
+
+    
     
 }
