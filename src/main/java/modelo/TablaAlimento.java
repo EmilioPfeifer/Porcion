@@ -6,9 +6,10 @@
 package modelo;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.sun.istack.internal.logging.Logger;
 import datos.Datos;
 import java.util.ArrayList;
+import java.util.logging.Level;
 
 /**
  *
@@ -16,7 +17,7 @@ import java.util.ArrayList;
  */
 public class TablaAlimento {
     Datos data;
-    private String[][] alimentos;
+    private String[][] alimentos; //Pramaetro para JList
     private String[] lista;
     private ArrayList<Alimento> tabAlimentos;
     private Alimento alimento;
@@ -40,6 +41,7 @@ public class TablaAlimento {
         }
         return x-5;
     }
+    /*
     public void llenarAlimentos(){
         this.obtenerLista();
         int contador=0;
@@ -58,8 +60,9 @@ public class TablaAlimento {
             //this.data.setJson(alimento);
         }
     }
+    */
     
-    public void llenarArrayList() {
+    private void llenarArrayList() {
         String aux = "";
         int cont=0;
         while(this.data.leerArchivo()[cont]!=null){
@@ -72,22 +75,37 @@ public class TablaAlimento {
             cont++;
         }
     }
+    
+    public String[][] nombresTodosAlimentos(){
+        llenarArrayList();
+        System.out.println("entro");
+        String[][] todosAlimentos = new String[tabAlimentos.size()][1];
+        System.out.println(tabAlimentos.size());
+        for (int i = 0; i < tabAlimentos.size(); i++) {
+            todosAlimentos[i][0]=tabAlimentos.get(i).getNombre();
+            System.out.println(tabAlimentos.get(i).getNombre());
+        }
+        return todosAlimentos;
+    }
     public String[][] busquedaAlimentos(String alimentoBuscar) {
         //metodo ayuda a buscar una cadena y devuelve una matriz con los posibles alimentos
+        //ej:  parametro que entra es "c", devolveria coliflor, comino,coco,
         int largo = alimentoBuscar.length();
         ArrayList<String> auxBuscar = new ArrayList<String>();
-
+        alimentoBuscar =alimentoBuscar.toLowerCase();
+        
         for (int i = 0; i < tabAlimentos.size(); i++) {
             String alimentoEnTabla = tabAlimentos.get(i).getNombre();
             if (alimentoBuscar.equals(cortaCadena(largo, alimentoEnTabla))) {
                 auxBuscar.add(alimentoEnTabla);
             }
         }
-
         String[][] busqueda = new String[auxBuscar.size()][1];
         for (int i = 0; i < auxBuscar.size(); i++) {
             busqueda[i][0] = auxBuscar.get(i);
         }
+        Logger.getLogger(getClass().getName()).log(
+                Level.INFO, "busqueda Alimentos");
         return busqueda;
     }
 
@@ -97,7 +115,7 @@ public class TablaAlimento {
         for (int i = 0; i < largo; i++) {
             palabraCortada += "" + palabra.charAt(i);
         }
-        return palabraCortada;
+        return palabraCortada.toLowerCase();
     }
     /*
     public void delArchivo() {
