@@ -24,7 +24,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         GridLayout distribution = new GridLayout(1, 2);
         this.setLayout(distribution);
-
+        
         this.setBackground(Color.ORANGE);
         
         this.panelBotones = new PanelBotonesMenu();

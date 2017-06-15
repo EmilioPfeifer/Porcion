@@ -28,5 +28,25 @@ public class Paciente {
     public String getNombre() {
         return nombre;
     }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public double getEstatura() {
+        return estatura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public boolean isMasculino() {
+        return masculino;
+    }
+
+    public String getFechaNac() {
+        return fechaNac;
+    }
    
 }

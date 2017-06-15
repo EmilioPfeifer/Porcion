@@ -6,12 +6,7 @@
 package app;
 
 
-//<<<<<<< HEAD
-import datos.DataManager;
-import modelo.TablaAlimentoQuePase;
-import ventanas.VentanaAlimentos;
-//=======
-//>>>>>>> 5637d981a3766c3f5e6eb32081740e33a639cc37
+
 import ventanas.VentanaInicio;
 
 /**

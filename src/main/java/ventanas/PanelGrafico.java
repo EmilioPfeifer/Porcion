@@ -2,6 +2,7 @@ package ventanas;
 
 
 
+import java.awt.Color;
 import javax.swing.JPanel;
 
 import org.jfree.chart.ChartFactory;
@@ -13,6 +14,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 public class PanelGrafico extends JPanel{
 	JFreeChart grafico;
 	ChartPanel contenedorGrafico ;
+        DefaultCategoryDataset graficoLineas;
 
 	
 	public PanelGrafico(){
@@ -20,16 +22,16 @@ public class PanelGrafico extends JPanel{
 	}
 	
 	private void initComponents(){
-		DefaultCategoryDataset graficoLineas = new DefaultCategoryDataset();
-
-		graficoLineas.addValue(80, "daniela", "Semana 1");
-		graficoLineas.addValue(70, "daniela", "Semana 2");
-		graficoLineas.addValue(40, "daniela", "Semana 3");
-		graficoLineas.addValue(60, "daniela", "Semana 4");
+		this.graficoLineas= new DefaultCategoryDataset();
+		this.graficoLineas.addValue(80, "daniela", "Semana 1");
+		this.graficoLineas.addValue(70, "daniela", "Semana 2");
+		this.graficoLineas.addValue(40, "daniela", "Semana 3");
+		this.graficoLineas.addValue(60, "daniela", "Semana 4");
 		
-		grafico = ChartFactory.createLineChart("avance por semanas", "Controles", "Kilos",graficoLineas,PlotOrientation.VERTICAL, true,true,false);
+		this.grafico = ChartFactory.createLineChart("avance por semanas", "Controles", "Kilos",graficoLineas,PlotOrientation.VERTICAL, true,true,false);
 
-		contenedorGrafico = new ChartPanel(grafico);
+                
+                contenedorGrafico = new ChartPanel(grafico);
 		this.add(contenedorGrafico);
 	}
 }

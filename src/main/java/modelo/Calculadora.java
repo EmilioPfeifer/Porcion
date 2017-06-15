@@ -15,45 +15,32 @@ import java.time.format.DateTimeFormatter;
  * @author UsuarioWin7
  */
 public class Calculadora {
-    private Persona persona;
-	private double peso;
-	private double altura;
-	private int edad;
-	private boolean masculino;
-	private String fechaNacimiento;
-
         
-	public Calculadora(double peso, double altura, String fechaNac, boolean masculino) {
-		if (fechaNac != null) {
-			if (!Double.isNaN(altura) && !Double.isNaN(peso)) {
-				this.fechaNacimiento = fechaNac;
-				this.peso = peso;
-				this.altura = altura;
-				this.edad = calcularEdad();
-				this.masculino = masculino;
-			} else {
-					throw new IllegalArgumentException("double vacio");
-			}
-
-		} else {
-			throw new NullPointerException("String Vacio");
-		}
-
-	}
-
-	public double calcularCalorias() {
+	public Calculadora(){
+            
+        }
+        public double calcularCaloriasAlimento(double calGramo, double gramos){
+            //calcula las calorias de las ccomida, recibe como parametro la caloria por unidad del alimento
+            //y los gramos de alimentos, retorna la cantidad de calorias totales en la cantidad de alimento
+            return calGramo*gramos;
+        }
+        
+	public double calcularCalorias(boolean masculino , double peso, double altura, int edad) {
+            //calcula las calorias diarias que la persona debe consumir respecto los paramtros, sexo, 
+            //peso. altura, edad
 		double calorias = 0;
 		if (masculino) {
-			calorias = 66.4730 + (13.7516 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
+			calorias = 66.4730 + (13.7516 * peso) + (5.0033 * altura) - (6.7550 * edad);
 		}
 		if (!masculino) {
-			calorias = 65.0955 + (9.5634 * this.peso) + (5.0033 * this.altura) - (6.7550 * this.edad);
+			calorias = 65.0955 + (9.5634 * peso) + (5.0033 * altura) - (6.7550 * edad);
 		}
 		System.out.println(calorias);
 		return calorias;
 	}
 
-	public double calcularImc() {
+	public double calcularImc(double peso, double altura, int edad) {
+            //calcula el indice de masa corporal con la altura y el peso de la persona
 		double imc = 0;
 		imc = peso / (altura * altura);
 		imc = imc*100;
@@ -62,7 +49,9 @@ public class Calculadora {
 		return imc;
 	}
 
-	public int calcularEdad() {
+	public int calcularEdad(String fechaNacimiento) {
+            //calcula la edad respecto a la fecha de nacimietno
+            //tiene como parametro una cadena con la fecha de nacimietno
 		int edad = 0;
 		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		LocalDate fechaNac = LocalDate.parse(fechaNacimiento, fmt);
@@ -72,7 +61,4 @@ public class Calculadora {
 		return periodo.getYears();
 	}
 
-	public int getEdad() {
-		return edad;
-	}
 }
