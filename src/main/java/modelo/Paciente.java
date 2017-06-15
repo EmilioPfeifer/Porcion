@@ -21,8 +21,31 @@ public class Paciente {
     private boolean masculino;
     double imc;
     double caloriasDiarias;
+    
     private ArrayList<Control> controles = new ArrayList<Control>();
-    private Calculadora calculadora ;    
+    private Calculadora calculadora ;
+    
+    
+    public Paciente(String nombre, double estatura, String fechaNac, double peso, String masculino) {
+        this.nombre = nombre;
+        this.estatura = estatura;
+        this.fechaNac = fechaNac;
+        this.peso = peso;
+        this.masculino = comprobarMasculino(masculino);
+        this.calculadora = new Calculadora();
+        this.edad = calculadora.calcularEdad(this.fechaNac);
+        this.caloriasDiarias =this.calculadora.calcularCalorias(this.masculino, this.peso, this.estatura, this.edad);
+    }
+
+
+    
+    private boolean comprobarMasculino(String masculino){
+        boolean sexo = true;
+        if (masculino.equals("Femenino")) {
+            return false;
+        }
+        return sexo;
+    }
     
     public void addControl(double peso) {
         Control control = new Control(peso);

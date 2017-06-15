@@ -16,11 +16,13 @@ import java.util.logging.Level;
  * @author UsuarioWin7
  */
 public class TablaAlimento {
+    
     Datos data;
     private String[][] alimentos; //Pramaetro para JList
     private String[] lista;
     private ArrayList<Alimento> tablaAlimentos;
     private Alimento alimento;
+    private Calculadora calculadora;
 
     public TablaAlimento() {
         data = new Datos();
@@ -41,6 +43,24 @@ public class TablaAlimento {
         }
         return x-5;
     }
+    
+    public String caloriasPorGramos(String gramos, String alimento) {
+        gramos=gramos.trim();
+        double gramosDoub = Double.parseDouble(gramos);
+        this.calculadora = new Calculadora();
+        return this.calculadora.calcularCaloriasAlimento(gramosDoub, caloriasPor1GramoAlimeno(alimento));
+    }
+
+    public double caloriasPor1GramoAlimeno(String Alimento) {
+        double calorias = 0;
+        for (int i = 0; i < tablaAlimentos.size(); i++) {
+            if (alimento.equals(tablaAlimentos.get(i).getNombre())) {
+                calorias = tablaAlimentos.get(i).getCaloria();
+            }
+        }
+        return calorias;
+    }
+
     /*
     public void llenarAlimentos(){
         this.obtenerLista();

@@ -19,10 +19,10 @@ public class Calculadora {
 	public Calculadora(){
             
         }
-        public double calcularCaloriasAlimento(double calGramo, double gramos){
+        public String calcularCaloriasAlimento(double calGramo, double gramos){
             //calcula las calorias de las ccomida, recibe como parametro la caloria por unidad del alimento
             //y los gramos de alimentos, retorna la cantidad de calorias totales en la cantidad de alimento
-            return calGramo*gramos;
+            return ""+calGramo*gramos;
         }
         
 	public double calcularCalorias(boolean masculino , double peso, double altura, int edad) {
