@@ -21,7 +21,7 @@ public class DatosJSon {
 
 
     public void serializar() {
-        Paciente p = new Paciente();
+        Paciente p1 = new Paciente();
        
         Gson objJson = new Gson();
         String jsonString = objJson.toJson(p1);
@@ -31,10 +31,10 @@ public class DatosJSon {
 
     public void deserializar() {
         Persona p1 = new Persona();
-        p1.setId(1);
-        p1.setNombres("Juan");
-        p1.setApellidos("Lopez");
-        p1.setFechaNacimiento("12-12-2016");
+        //p1.setId(1);
+        p1.setNombre("Juan");
+        //p1.setApellidos("Lopez");
+        //p1.setFechaNacimiento("12-12-2016");
         Gson objJson = new Gson();
         String jsonString = objJson.toJson(p1);
         Persona p2 = objJson.fromJson(jsonString,
@@ -64,14 +64,14 @@ public class DatosJSon {
                 
             } while (features != null);
             
-            return features;
+            //return features;
         } catch (FileNotFoundException e) {
             System.out.println("archivo no encontrado");
             
         }
         return null; 
     }
-     public Alimento recuperarDatosPersona() {
+    public Alimento recuperarDatosPersona() {
         try {
             Reader reader = new FileReader("data/output.json");
             Gson gson = new Gson();
@@ -82,5 +82,5 @@ public class DatosJSon {
             
         }
         return null;
-
+    }
 }

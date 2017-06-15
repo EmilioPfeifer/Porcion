@@ -22,7 +22,6 @@ public class Persona {
     private boolean masculino;
 
     public Persona(String nombre, int edad, double estatura, String fechaNac, double peso, boolean masculino) {
-
         if (nombre != null) {
             this.nombre = nombre;
             this.edad = edad;
@@ -31,6 +30,42 @@ public class Persona {
             this.peso = peso;
             this.masculino = masculino;
         }
-
     }
+    
+    public Persona(){
+        
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getEstatura() {
+        return estatura;
+    }
+
+    public void setEstatura(double estatura) {
+        this.estatura = estatura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 }
