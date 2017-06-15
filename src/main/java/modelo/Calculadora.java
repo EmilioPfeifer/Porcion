@@ -15,12 +15,14 @@ import java.time.format.DateTimeFormatter;
  * @author UsuarioWin7
  */
 public class Calculadora {
+    private Persona persona;
 	private double peso;
 	private double altura;
 	private int edad;
 	private boolean masculino;
 	private String fechaNacimiento;
 
+        
 	public Calculadora(double peso, double altura, String fechaNac, boolean masculino) {
 		if (fechaNac != null) {
 			if (!Double.isNaN(altura) && !Double.isNaN(peso)) {

@@ -88,7 +88,7 @@ public class DataManager {
         return texto;
     }
     //aqui se crea el el archivo con todo los json
-    /*public void setJson(Alimento a){
+    public void setJson(Alimento a){
         FileWriter writer;
         try{
             writer = new FileWriter("data\\Alimentos.json", true);
@@ -100,7 +100,7 @@ public class DataManager {
         }catch (IOException e){
             System.out.println("Error");
         }
-    }*/
+    }
     /*  int pos1=str.indexOf(" ");
         System.out.println(pos1);
         int pos2=str.indexOf(" ", pos1+1);

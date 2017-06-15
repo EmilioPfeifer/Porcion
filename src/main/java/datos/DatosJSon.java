@@ -60,7 +60,7 @@ public class DatosJSon {
         try {
             Reader reader = new FileReader("data/output.json");
             Gson gson = new Gson();
-            JsonArray 
+           JsonArray ja = new JsonArray(alimentos);
             
 <<<<<<< HEAD
             //return features;
