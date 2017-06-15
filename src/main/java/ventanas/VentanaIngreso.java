@@ -21,19 +21,30 @@ public class VentanaIngreso extends JFrame implements ActionListener {
         this.setTitle("Porcion Justa");
         this.setVisible(true);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
 
         this.panelIngDatos.getBtnAceptar().addActionListener((ActionListener) this);
 
+        this.panelIngDatos.getBtnCancelar().addActionListener((ActionListener) this);
         this.add(panelIngDatos);
     }
 
     public void actionPerformed(ActionEvent e) {
+
+        
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
-            Paciente p = new Paciente(this.panelIngDatos.getNombre().getText(),
-                    this.panelIngDatos.getEstatura().getText(),
-                    Double.parseDouble(this.panelIngDatos.getFechaNacimiento().getText()),
-                    Double.parseDouble(this.panelIngDatos.getPeso().getText()));
-            System.out.println(p);
+            
+            String nombre = this.panelIngDatos.getNombre().getText();
+           double estatura=  Double.parseDouble(this.panelIngDatos.getEstatura().getText());
+          double peso= Double.parseDouble(this.panelIngDatos.getPeso().getText()) ;
+          String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
+           String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();
+            
+            Paciente p= new Paciente(nombre, estatura, fechaNac, peso, sexo);
         }
+          if (this.panelIngDatos.getBtnCancelar()== e.getSource()) {
+               System.exit(0);
+        }
+        
     }
 }

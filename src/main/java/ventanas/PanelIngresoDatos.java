@@ -3,6 +3,7 @@ package ventanas;
 import java.awt.Color;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -13,10 +14,13 @@ public class PanelIngresoDatos extends JPanel {
 	private JLabel TextFechaNacimietno;
 	private JLabel TextEstatura;
 	private JLabel TextPeso;
+        private JLabel TextSexo;
+        
 	private JTextField nombre;
 	private JTextField fechaNacimiento;
 	private JTextField estatura;
 	private JTextField peso;
+        private JComboBox comboSexo;
         private JButton btnAceptar;
         private JButton btnCancelar;
         
@@ -32,25 +36,31 @@ public class PanelIngresoDatos extends JPanel {
 		this.TextFechaNacimietno = new JLabel("Fecha de Nacimiento");
 		this.TextEstatura = new JLabel("Estatura");
 		this.TextPeso = new JLabel("Peso");
+                this.TextSexo = new JLabel("sexo");
 
+                String[] sexo = new String[] {"masculino", "Femenino"};
 		this.nombre = new JTextField();
 		this.fechaNacimiento = new JTextField();
 		this.estatura = new JTextField();
 		this.peso = new JTextField();
+                this.comboSexo = new JComboBox(sexo);
+                
                 this.btnAceptar = new JButton("Aceptar");
                 this.btnCancelar = new JButton("Cancelar");
 
 		this.TextNombre.setBounds(50, 50, 100, 20);
-		this.TextFechaNacimietno.setBounds(50, 80, 100, 20);
+		this.TextFechaNacimietno.setBounds(50, 80, 130, 20);
 		this.TextEstatura.setBounds(50, 110, 100, 20);
 		this.TextPeso.setBounds(50, 140, 100, 20);
+                this.TextSexo.setBounds(50, 170, 100, 20);
 
 		this.nombre.setBounds(190, 50, 100, 20);
 		this.estatura.setBounds(190, 80, 100, 20);
 		this.fechaNacimiento.setBounds(190, 110, 100, 20);
 		this.peso.setBounds(190, 140, 100, 20);
-		this.btnAceptar.setBounds(100, 190, 90, 20);
-                this.btnCancelar.setBounds(200, 190, 90, 20);
+                this.comboSexo.setBounds(190, 170, 100, 20);
+		this.btnAceptar.setBounds(100, 230, 90, 20);
+                this.btnCancelar.setBounds(200, 230, 90, 20);
                 
 		this.setBackground(new Color(137, 208, 171));
 
@@ -58,14 +68,20 @@ public class PanelIngresoDatos extends JPanel {
 		this.add(this.TextFechaNacimietno);
 		this.add(this.TextEstatura);
 		this.add(this.TextPeso);
+                this.add(this.TextSexo);
 		this.add(this.nombre);
 		this.add(this.estatura);
 		this.add(this.fechaNacimiento);
 		this.add(this.peso);
+                this.add(this.comboSexo);
                 this.add(this.btnAceptar);
                 this.add(this.btnCancelar);
 
 	}
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
 
     public JTextField getNombre() {
         return nombre;
@@ -73,6 +89,10 @@ public class PanelIngresoDatos extends JPanel {
 
     public JTextField getFechaNacimiento() {
         return fechaNacimiento;
+    }
+
+    public JComboBox getComboSexo() {
+        return comboSexo;
     }
 
     public JTextField getEstatura() {
