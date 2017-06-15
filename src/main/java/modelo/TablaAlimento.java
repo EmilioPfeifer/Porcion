@@ -66,9 +66,9 @@ public class TablaAlimento {
             Gson objJson = new Gson();
             aux = this.data.leerArchivo()[cont];
             String jsonString = aux;
-            Alimento a = objJson.fromJson(jsonString, Alimento.class);
-            this.tabAlimentos.add(a);
-            //System.out.println(a);
+            Alimento alim = objJson.fromJson(jsonString, Alimento.class);
+            this.tabAlimentos.add(alim);
+            //System.out.println(alim);
             cont++;
         }
     }

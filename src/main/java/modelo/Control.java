@@ -43,6 +43,9 @@ public class Control {
 	public double getPesoControl() {
 		return pesoControl;
 	}
-	
-    
+
+    @Override
+    public String toString() {
+        return "Control{" + "pesoControl=" + pesoControl + ", fechaControl=" + fechaControl + '}';
+    }
 }

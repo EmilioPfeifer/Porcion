@@ -1,6 +1,8 @@
 
 package modelo;
 
+import com.google.gson.Gson;
+import datos.Datos;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -9,6 +11,7 @@ import java.util.Date;
  * @author UsuarioWin7
  */
 public class Paciente {
+    private Datos data;
     private String nombre;
     private int edad;
     private double estatura;
@@ -23,6 +26,18 @@ public class Paciente {
     public void addControl(double peso) {
         Control control = new Control(peso);
         this.controles.add(control);
+    }
+    public void llenarArrayList() {
+        String aux = "";
+        int cont=0;
+        while(this.data.obtenerControles()[cont]!=null){
+            Gson objJson = new Gson();
+            aux = this.data.obtenerControles()[cont];
+            String jsonString = aux;
+            Control control = objJson.fromJson(jsonString, Control.class);
+            this.controles.add(control);
+            cont++;
+        }
     }
 
     public String getNombre() {

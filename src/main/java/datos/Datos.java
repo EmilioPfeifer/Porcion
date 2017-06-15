@@ -5,11 +5,17 @@
  */
 package datos;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import modelo.Control;
+import modelo.Paciente;
 
 /**
  *
@@ -68,21 +74,48 @@ public class Datos {
         return texto;
     }
     
-    public void addControl(String control) {
-        String ARCHIVO = "C:\\Users\\UsuarioWin7\\Desktop\\pruebas\\EMILIO.txt";
-        FileWriter escribir = null;
-
-        try {
-            escribir = new FileWriter(ARCHIVO, true);
-            escribir.write("\r\n"+control);
-        } catch (IOException e) {
-            System.out.println("Problemas abriendo el archivo" + ARCHIVO);
-        } finally {
-            try {
-                escribir.close();
-            } catch (IOException ex) {
-                System.out.println("Problemas cerrando el archivo " + ARCHIVO);
+    public void addControl(Control control) {
+        FileWriter writer;
+        try{
+            writer = new FileWriter("data\\Control.json", true);
+            writer.write("\r\n");
+            Gson gson = new GsonBuilder().create();
+            gson.toJson(control, writer);
+            writer.close();
+            
+        }catch (IOException e){
+            Logger.getLogger(getClass().getName()).log(
+            Level.INFO, "No se añadio el control");
+        }
+    }
+    public String[] obtenerControles() {
+        String[] texto = new String[3000];
+        String direccion = "data\\Control.json";
+        try{
+            BufferedReader bf = new BufferedReader(new FileReader(direccion));
+            String bfRead;
+            int contador=0;
+            while((bfRead = bf.readLine()) != null) {
+               texto[contador]=bfRead;
+               contador++;
             }
+            bf.close();
+        }catch(IOException e){
+            Logger.getLogger(getClass().getName()).log(
+            Level.INFO, "Fallo obtencion de controles");
+        }
+        return texto;
+    }
+    public void addPaciente(Paciente paciente){
+        FileWriter writer;
+        try{
+            writer = new FileWriter("data\\Paciente.json", true);
+            Gson gson = new GsonBuilder().create();
+            gson.toJson(paciente, writer);
+            writer.close();
+        }catch(IOException e){
+            Logger.getLogger(getClass().getName()).log(
+            Level.INFO, "Fallo escrbir en paciente");
         }
     }
 }
