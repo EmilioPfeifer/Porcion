@@ -46,6 +46,10 @@ public class Alimento {
         this.caloria = caloria;
     }
 
+    @Override
+    public String toString() {
+        return "Alimento{" + "nombre=" + nombre + ", caloria=" + caloria + '}';
+    }
 /*
     public void setGr(long gr) {
         this.gr = gr;
