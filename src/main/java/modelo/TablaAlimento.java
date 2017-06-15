@@ -6,7 +6,7 @@
 package modelo;
 
 import com.google.gson.Gson;
-import com.sun.istack.internal.logging.Logger;
+import java.util.logging.Logger;
 import datos.Datos;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -105,7 +105,7 @@ public class TablaAlimento {
             busqueda[i][0] = auxBuscar.get(i);
         }
         Logger.getLogger(getClass().getName()).log(
-                Level.INFO, "busqueda Alimentos");
+        Level.INFO, "Fallo escrbir en paciente");
         return busqueda;
     }
 
@@ -117,32 +117,4 @@ public class TablaAlimento {
         }
         return palabraCortada.toLowerCase();
     }
-    /*
-    public void delArchivo() {
-        FileReader reader = null;
-        int caracter;
-        String aux = "";
-        try{
-           reader = new FileReader("data\\output.json");
-           caracter = reader.read();
-           while (caracter != -1) {
-           aux = aux+String.valueOf((char) caracter);
-           caracter = reader.read();
-           }
-        }catch (IOException e){
-            
-        }finally{
-            try{
-                reader.close();
-            }catch(IOException e){
-                
-            }
-            Gson objJson = new Gson();
-            String jsonString = aux;
-        
-            Persona p2 = objJson.fromJson(jsonString, Persona.class);
-            System.out.println(p2);
-        }
-    }
-    */
 }
