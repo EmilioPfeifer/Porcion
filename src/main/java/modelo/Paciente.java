@@ -11,7 +11,7 @@ import java.util.Date;
  * @author UsuarioWin7
  */
 public class Paciente {
-    private Datos data;
+    private Datos data = new Datos();
     
     private String nombre;
     private int edad;
@@ -34,7 +34,9 @@ public class Paciente {
         this.masculino = comprobarMasculino(masculino);
         this.calculadora = new Calculadora();
         this.edad = calculadora.calcularEdad(this.fechaNac);
+        this.imc = this.calculadora.calcularImc(this.peso, this.estatura, edad);
         this.caloriasDiarias =this.calculadora.calcularCalorias(this.masculino, this.peso, this.estatura, this.edad);
+        this.addControl(this.peso);
     }
 
 
@@ -64,6 +66,7 @@ public class Paciente {
         }
     }
     public void crearJson(Paciente p){
+        System.out.println(p);
         this.data.addPaciente(p);
     }
 
@@ -93,9 +96,14 @@ public class Paciente {
 
     @Override
     public String toString() {
-        return "Paciente{" + "nombre=" + nombre + ", fechaNac=" + fechaNac + ", estatura=" + estatura + ", peso=" + peso + '}';
+        return "Paciente{" + "nombre=" + nombre + ", edad=" + edad + ", estatura=" + estatura + ", fechaNac=" + fechaNac + ", peso=" + peso + ", masculino=" + masculino + ", imc=" + imc + ", caloriasDiarias=" + caloriasDiarias + '}';
     }
 
+    /*@Override
+    public String toString() {
+        return "Paciente{" + "data=" + data + ", nombre=" + nombre + ", edad=" + edad + ", estatura=" + estatura + ", fechaNac=" + fechaNac + ", peso=" + peso + ", masculino=" + masculino + ", imc=" + imc + ", caloriasDiarias=" + caloriasDiarias + ", controles=" + controles + ", calculadora=" + calculadora + '}';
+    }*/
     
+
     
 }

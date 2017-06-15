@@ -33,14 +33,15 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
         
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
-            
+
             String nombre = this.panelIngDatos.getNombre().getText();
-           double estatura=  Double.parseDouble(this.panelIngDatos.getEstatura().getText());
-          double peso= Double.parseDouble(this.panelIngDatos.getPeso().getText()) ;
-          String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
-           String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();
+            double estatura=  Double.parseDouble(this.panelIngDatos.getEstatura().getText());
+            double peso= Double.parseDouble(this.panelIngDatos.getPeso().getText()) ;
+            String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
+            String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();
             
             Paciente p= new Paciente(nombre, estatura, fechaNac, peso, sexo);
+            p.crearJson(p);
         }
           if (this.panelIngDatos.getBtnCancelar()== e.getSource()) {
                System.exit(0);

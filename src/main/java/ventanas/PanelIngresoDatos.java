@@ -55,8 +55,8 @@ public class PanelIngresoDatos extends JPanel {
                 this.TextSexo.setBounds(50, 170, 100, 20);
 
 		this.nombre.setBounds(190, 50, 100, 20);
-		this.estatura.setBounds(190, 80, 100, 20);
-		this.fechaNacimiento.setBounds(190, 110, 100, 20);
+		this.estatura.setBounds(190, 110, 100, 20);
+		this.fechaNacimiento.setBounds(190, 80, 100, 20);
 		this.peso.setBounds(190, 140, 100, 20);
                 this.comboSexo.setBounds(190, 170, 100, 20);
 		this.btnAceptar.setBounds(100, 230, 90, 20);
