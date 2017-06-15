@@ -2,6 +2,7 @@ package datos;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -55,16 +56,16 @@ public class DatosJSon {
     }
 
     public ArrayList<Alimento> recuperarDatosAlimento() {
+       ArrayList<Alimento> alimentos = new ArrayList<Alimento>();
         try {
             Reader reader = new FileReader("data/output.json");
             Gson gson = new Gson();
-            Alimento features;
-            do {                
-                features = gson.fromJson(reader, Alimento.class);
-                
-            } while (features != null);
+            JsonArray 
             
+<<<<<<< HEAD
             //return features;
+=======
+>>>>>>> f1552558d38ceb02ceed9dbaceeb452c4f88c775
         } catch (FileNotFoundException e) {
             System.out.println("archivo no encontrado");
             
