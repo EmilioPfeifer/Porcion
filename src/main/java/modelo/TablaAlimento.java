@@ -19,13 +19,13 @@ public class TablaAlimento {
     Datos data;
     private String[][] alimentos; //Pramaetro para JList
     private String[] lista;
-    private ArrayList<Alimento> tabAlimentos;
+    private ArrayList<Alimento> tablaAlimentos;
     private Alimento alimento;
 
     public TablaAlimento() {
         data = new Datos();
         this.obtenerLista();
-        this.tabAlimentos = new ArrayList<Alimento>();
+        this.tablaAlimentos = new ArrayList<Alimento>();
     }
     
     private void obtenerLista(){
@@ -64,14 +64,14 @@ public class TablaAlimento {
     
     private void llenarArrayList() {
         String aux = "";
-        this.tabAlimentos.clear();
+        this.tablaAlimentos.clear();
         int cont=0;
         while(this.data.leerArchivo()[cont]!=null){
             Gson objJson = new Gson();
             aux = this.data.leerArchivo()[cont];
             String jsonString = aux;
             Alimento alim = objJson.fromJson(jsonString, Alimento.class);
-            this.tabAlimentos.add(alim);
+            this.tablaAlimentos.add(alim);
             //System.out.println(alim);
             cont++;
         }
@@ -79,10 +79,10 @@ public class TablaAlimento {
     
     public String[][] nombresTodosAlimentos(){
         llenarArrayList();
-        String[][] todosAlimentos = new String[tabAlimentos.size()][1];
-        System.out.println(tabAlimentos.size());
-        for (int i = 0; i < tabAlimentos.size(); i++) {
-            todosAlimentos[i][0]=tabAlimentos.get(i).getNombre();
+        String[][] todosAlimentos = new String[tablaAlimentos.size()][1];
+        System.out.println(tablaAlimentos.size());
+        for (int i = 0; i < tablaAlimentos.size(); i++) {
+            todosAlimentos[i][0]=tablaAlimentos.get(i).getNombre();
         }
         return todosAlimentos;
     }
@@ -93,8 +93,8 @@ public class TablaAlimento {
         ArrayList<String> auxBuscar = new ArrayList<String>();
         alimentoBuscar =alimentoBuscar.toLowerCase();
         
-        for (int i = 0; i < tabAlimentos.size(); i++) {
-            String alimentoEnTabla = tabAlimentos.get(i).getNombre();
+        for (int i = 0; i < tablaAlimentos.size(); i++) {
+            String alimentoEnTabla = tablaAlimentos.get(i).getNombre();
             if(largo > alimentoEnTabla.length()){
             }else if (alimentoBuscar.equals(cortaCadena(largo, alimentoEnTabla))) {
                 System.out.println(cortaCadena(largo, alimentoEnTabla));
