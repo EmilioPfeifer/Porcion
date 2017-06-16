@@ -15,7 +15,7 @@ public class PanelControl extends JPanel{
 	private JButton aceptar;
 	
 	public PanelControl(){
-		initComponents();
+            initComponents();
 	}
 	
 	private void initComponents(){
