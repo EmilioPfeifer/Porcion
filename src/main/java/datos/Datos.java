@@ -130,7 +130,7 @@ public class Datos {
             bf.close();
         }catch(IOException e){
             Logger.getLogger(getClass().getName()).log(
-            Level.INFO, "Fallo obtencion de controles");
+            Level.INFO, "Fallo obtencion datos Paciente");
         }
         return texto;
     }

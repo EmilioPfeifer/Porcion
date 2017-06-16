@@ -40,6 +40,10 @@ public class Paciente {
         this.llenarArrayList();
     }
 
+    public Paciente() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
     
     private boolean comprobarMasculino(String masculino){
@@ -98,6 +102,10 @@ public class Paciente {
     
     public double getIMC() {
         return this.imc;
+    }
+
+    public ArrayList<Control> getControles() {
+        return controles;
     }
 
     @Override
