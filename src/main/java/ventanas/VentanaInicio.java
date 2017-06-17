@@ -16,32 +16,20 @@ import javax.swing.JFrame;
 
 public class VentanaInicio extends JFrame implements ActionListener {
     
-    private PanelBotonesMenu panelBotones;
+   private PanelBotonesMenu panelBotones;
     private PanelDatosPersona panelDatos;
-    private TrayIcon trayIcon;
+   
+    /*private TrayIcon trayIcon;
     private SystemTray systemTray;
     private PopupMenu popUP;
-    private Image image;    
+    private ImageIcon imagen;    
+ 
     private MenuItem menuSalir;  
     private MenuItem mPorcionJusta;
-    
+    */
     public VentanaInicio() {
         initComponents();
         
-        if (SystemTray.isSupported()) {
-            systemTray = SystemTray.getSystemTray();
-            this.image = new ImageIcon(getClass().getResource("img/iconImage.png")).getImage();
-            this.popUP = new PopupMenu();
-            this.menuSalir = new Menu("Salir");
-            this.popUP.add(mPorcionJusta);
-            this.popUP.add(menuSalir);
-            
-            this.trayIcon = new TrayIcon(image, "SystemTray java", popUP);
-             
-            this.mPorcionJusta.addActionListener((ActionListener) this);
-            this.menuSalir.addActionListener((ActionListener)this);
-            this.trayIcon.addActionListener((ActionListener)this);
-        }
 
     }
     private void initComponents() {
@@ -65,23 +53,24 @@ public class VentanaInicio extends JFrame implements ActionListener {
         this.add(panelDatos, 0);
         this.add(panelBotones, 1);
       
-        
+        /*
          if (SystemTray.isSupported()) {
+ 
             systemTray = SystemTray.getSystemTray();
-            this.image = new ImageIcon(getClass().getResource("img/iconImage.png")).getImage();
+  this.imagen = new ImageIcon("img/iconImage");
             this.popUP = new PopupMenu();
             this.menuSalir = new Menu("Salir");
             this.popUP.add(mPorcionJusta);
             this.popUP.add(menuSalir);
             
-            this.trayIcon = new TrayIcon(image, "SystemTray java", popUP);
-             
+            //this.trayIcon = new TrayIcon(image, "SystemTray java", popUP);
+  this.trayIcon = new TrayIcon(imagen.getImage(), "SystemTray icon", popUP);
             this.mPorcionJusta.addActionListener((ActionListener) this);
             this.menuSalir.addActionListener((ActionListener)this);
             this.trayIcon.addActionListener((ActionListener)this);
         }
         this.trayIcon.setImageAutoSize(true);
-        
+        */
           this.setVisible(true);
     }
     
@@ -98,22 +87,9 @@ public class VentanaInicio extends JFrame implements ActionListener {
         }
         if (this.panelBotones.getBtnSalir() == e.getSource()) {
             System.exit(0);
-        }
-        if (this.mPorcionJusta == e.getSource()) {
-            this.setVisible(true);
-            this.toFront();
-            systemTray.remove(trayIcon);
-            
-        }
-        if (this.menuSalir == e.getSource()) {
-            System.exit(0);
-        }
-        if(this.trayIcon == e.getSource()){
-            trayIcon.displayMessage("menu1 Expandir ventana"," menu2 Salir del programa" , TrayIcon.MessageType.INFO);
-        }
+
         
-        
-        
-    }
     
+}
+}
 }

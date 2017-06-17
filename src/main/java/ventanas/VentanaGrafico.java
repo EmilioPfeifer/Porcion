@@ -3,12 +3,15 @@ package ventanas;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import modelo.Paciente;
 
 public class VentanaGrafico extends JFrame implements ActionListener{
 	private PanelGrafico panelGrafico;
+   
 	
 	public VentanaGrafico(){
 		initComponents();
+              
 	}
 	
 	private void initComponents(){

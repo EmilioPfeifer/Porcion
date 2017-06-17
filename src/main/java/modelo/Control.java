@@ -13,10 +13,10 @@ import java.util.GregorianCalendar;
  *
  * @author UsuarioWin7
  */
-public class Control {
-    Calendar fecha;
-    double pesoControl;
-    String fechaControl;
+public final class Control {
+    private Calendar fecha;
+    private double pesoControl;
+    private String fechaControl;
 
     public Control(double pesoControlado) {
     	if (!Double.isNaN(pesoControlado)) {
@@ -33,7 +33,7 @@ public class Control {
         String dia = Integer.toString(fecha.get(Calendar.DATE));
         String mes = Integer.toString(fecha.get(Calendar.MONTH)+1);
         String ano = Integer.toString(fecha.get(Calendar.YEAR));
-    	return dia + "-" + mes + "-" +ano;
+         	return dia + "-" + mes + "-" +ano;
     }
 
 	public String getFechaControl() {

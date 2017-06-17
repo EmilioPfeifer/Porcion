@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import datos.Datos;
 import java.awt.Color;
 import java.awt.Image;
+import java.util.logging.Logger;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -115,7 +116,7 @@ public class PanelDatosPersona extends JPanel{
             Gson objJson = new Gson();
             String jsonString = this.data.obtenerPaciente();
             Paciente p = objJson.fromJson(jsonString, Paciente.class);
-            System.out.println(p);
+            
             return p;
         }
 }

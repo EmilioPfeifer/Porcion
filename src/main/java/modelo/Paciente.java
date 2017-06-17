@@ -5,6 +5,8 @@ import com.google.gson.Gson;
 import datos.Datos;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -40,10 +42,6 @@ public class Paciente {
         this.llenarArrayList();
     }
 
-    public Paciente() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 
     
     private boolean comprobarMasculino(String masculino){
@@ -71,8 +69,11 @@ public class Paciente {
             cont++;
         }
     }
+    
     public void crearJson(Paciente p){
-        System.out.println(p);
+ Logger.getLogger(getClass().getName()).log(
+            Level.INFO, p.toString());
+
         this.data.addPaciente(p);
     }
 

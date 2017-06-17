@@ -17,7 +17,7 @@ import ventanas.VentanaInicio;
 public class App {
     
     public static void main(String[] args){
-       // VentanaInicio vi = new VentanaInicio();
+      // VentanaInicio vi = new VentanaInicio();
         //TablaAlimentoQuePase a = new TablaAlimentoQuePase();
         //a.llenarAlimentos();
   VentanaIngreso v = new VentanaIngreso();

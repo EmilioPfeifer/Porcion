@@ -34,8 +34,8 @@ public class PanelIngresoDatos extends JPanel {
 
 		this.TextNombre = new JLabel("Nombre");
 		this.TextFechaNacimietno = new JLabel("Fecha de Nacimiento");
-		this.TextEstatura = new JLabel("Estatura");
-		this.TextPeso = new JLabel("Peso");
+		this.TextEstatura = new JLabel("Estatura (m)");
+		this.TextPeso = new JLabel("Peso (kg)");
                 this.TextSexo = new JLabel("sexo");
 
                 String[] sexo = new String[] {"masculino", "Femenino"};
@@ -47,6 +47,9 @@ public class PanelIngresoDatos extends JPanel {
                 
                 this.btnAceptar = new JButton("Aceptar");
                 this.btnCancelar = new JButton("Cancelar");
+                
+                this.btnAceptar.setBackground(new Color(255, 171, 107));
+                this.btnCancelar.setBackground(new Color(255, 171, 107));
 
 		this.TextNombre.setBounds(50, 50, 100, 20);
 		this.TextFechaNacimietno.setBounds(50, 80, 130, 20);

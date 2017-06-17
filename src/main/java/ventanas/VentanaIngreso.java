@@ -4,6 +4,7 @@ import datos.Datos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import modelo.Paciente;
 
 public class VentanaIngreso extends JFrame implements ActionListener {
@@ -31,23 +32,28 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 
-        
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
 
             String nombre = this.panelIngDatos.getNombre().getText();
-            double estatura=  Double.parseDouble(this.panelIngDatos.getEstatura().getText());
-            double peso= Double.parseDouble(this.panelIngDatos.getPeso().getText()) ;
+            double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
+            double peso = Double.parseDouble(this.panelIngDatos.getPeso().getText());
             String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
             String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();
             
-            Paciente p= new Paciente(nombre, estatura, fechaNac, peso, sexo);
-            p.crearJson(p);
             
-            VentanaInicio v = new VentanaInicio();
+            if (nombre != null && this.panelIngDatos.getEstatura().getText() != null && Double.isNaN(peso) && fechaNac != null) {
+                Paciente p = new Paciente(nombre, estatura, fechaNac, peso, sexo);
+                p.crearJson(p);
+
+                VentanaInicio v = new VentanaInicio();
+            }else{
+                JOptionPane.showMessageDialog(null, "Ingrese Todos los campos solicitados");
+            }
+
+            if (this.panelIngDatos.getBtnCancelar() == e.getSource()) {
+                System.exit(0);
+            }
+
         }
-          if (this.panelIngDatos.getBtnCancelar()== e.getSource()) {
-               System.exit(0);
-        }
-        
     }
 }
