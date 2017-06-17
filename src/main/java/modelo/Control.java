@@ -33,7 +33,7 @@ public final class Control {
         String dia = Integer.toString(fecha.get(Calendar.DATE));
         String mes = Integer.toString(fecha.get(Calendar.MONTH)+1);
         String ano = Integer.toString(fecha.get(Calendar.YEAR));
-         	return dia + "-" + mes + "-" +ano;
+            return dia + "-" + mes + "-" +ano;
     }
 
 	public String getFechaControl() {

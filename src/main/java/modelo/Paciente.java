@@ -71,8 +71,8 @@ public class Paciente {
     }
     
     public void crearJson(Paciente p){
- Logger.getLogger(getClass().getName()).log(
-            Level.INFO, p.toString());
+        Logger.getLogger(getClass().getName()).log(
+        Level.INFO, p.toString());
 
         this.data.addPaciente(p);
     }
