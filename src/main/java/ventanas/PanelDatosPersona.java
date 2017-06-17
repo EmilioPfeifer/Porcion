@@ -38,9 +38,7 @@ public class PanelDatosPersona extends JPanel{
 	
 	private  void initComponents(){
 		this.setLayout(null);
-
-             
-		
+                
 		this.nombre  =new JLabel("Nombre");
 		this.edad = new JLabel("Edad");
 		this.estatura = new JLabel("Estatura");

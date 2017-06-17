@@ -3,9 +3,11 @@ package ventanas;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.Image;
+import java.awt.Menu;
 import java.awt.MenuItem;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
+import java.awt.TrayIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -16,17 +18,31 @@ public class VentanaInicio extends JFrame implements ActionListener {
     
     private PanelBotonesMenu panelBotones;
     private PanelDatosPersona panelDatos;
+    private TrayIcon trayIcon;
     private SystemTray systemTray;
     private PopupMenu popUP;
     private Image image;    
-    private MenuItem menuSalir;    
+    private MenuItem menuSalir;  
+    private MenuItem mPorcionJusta;
     
     public VentanaInicio() {
         initComponents();
+        
         if (SystemTray.isSupported()) {
             systemTray = SystemTray.getSystemTray();
             this.image = new ImageIcon(getClass().getResource("img/iconImage.png")).getImage();
+            this.popUP = new PopupMenu();
+            this.menuSalir = new Menu("Salir");
+            this.popUP.add(mPorcionJusta);
+            this.popUP.add(menuSalir);
+            
+            this.trayIcon = new TrayIcon(image, "SystemTray java", popUP);
+             
+            this.mPorcionJusta.addActionListener((ActionListener) this);
+            this.menuSalir.addActionListener((ActionListener)this);
+            this.trayIcon.addActionListener((ActionListener)this);
         }
+
     }
     private void initComponents() {
         //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -48,8 +64,25 @@ public class VentanaInicio extends JFrame implements ActionListener {
         this.panelBotones.getBtnTablaComida().addActionListener((ActionListener) this);
         this.add(panelDatos, 0);
         this.add(panelBotones, 1);
-        this.setVisible(true);
+      
         
+         if (SystemTray.isSupported()) {
+            systemTray = SystemTray.getSystemTray();
+            this.image = new ImageIcon(getClass().getResource("img/iconImage.png")).getImage();
+            this.popUP = new PopupMenu();
+            this.menuSalir = new Menu("Salir");
+            this.popUP.add(mPorcionJusta);
+            this.popUP.add(menuSalir);
+            
+            this.trayIcon = new TrayIcon(image, "SystemTray java", popUP);
+             
+            this.mPorcionJusta.addActionListener((ActionListener) this);
+            this.menuSalir.addActionListener((ActionListener)this);
+            this.trayIcon.addActionListener((ActionListener)this);
+        }
+        this.trayIcon.setImageAutoSize(true);
+        
+          this.setVisible(true);
     }
     
     public void actionPerformed(ActionEvent e) {
@@ -66,6 +99,20 @@ public class VentanaInicio extends JFrame implements ActionListener {
         if (this.panelBotones.getBtnSalir() == e.getSource()) {
             System.exit(0);
         }
+        if (this.mPorcionJusta == e.getSource()) {
+            this.setVisible(true);
+            this.toFront();
+            systemTray.remove(trayIcon);
+            
+        }
+        if (this.menuSalir == e.getSource()) {
+            System.exit(0);
+        }
+        if(this.trayIcon == e.getSource()){
+            trayIcon.displayMessage("menu1 Expandir ventana"," menu2 Salir del programa" , TrayIcon.MessageType.INFO);
+        }
+        
+        
         
     }
     
