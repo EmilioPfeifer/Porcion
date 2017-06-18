@@ -2,6 +2,8 @@ package ventanas;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -63,6 +65,16 @@ public class PanelCalculadoraComida extends JPanel {
     }
 
     public JTextField getTxfGramosCalorias() {
+        //this.comprovar();
         return txfGramosCalorias;
+    }
+    private void comprovar(){
+        try{
+            Double.parseDouble(this.txfGramosCalorias.getText());
+        }catch(IllegalArgumentException e){
+            Logger.getLogger(getClass().getName()).log(
+                Level.WARNING, "Se introdujo un caracter ilegal");
+            throw new IllegalArgumentException("");
+        }
     }
 }
