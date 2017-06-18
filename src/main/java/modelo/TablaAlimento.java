@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modelo;
 
 import com.google.gson.Gson;
@@ -11,10 +7,7 @@ import datos.Datos;
 import java.util.ArrayList;
 import java.util.logging.Level;
 
-/**
- *
- * @author UsuarioWin7
- */
+
 public class TablaAlimento {
     
     Datos data;

@@ -36,7 +36,7 @@ public class VentanaControl extends JFrame implements ActionListener {
         this.add(this.pnlComntrol);
         
     }
-
+    
     public void actionPerformed(ActionEvent e) {
         if (this.pnlComntrol.getAceptar() == e.getSource()) {
             double peso = Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());

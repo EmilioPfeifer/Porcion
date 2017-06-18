@@ -8,10 +8,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author UsuarioWin7
- */
+
 public class Paciente {
     private Datos data = new Datos();
     

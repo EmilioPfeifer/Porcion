@@ -21,10 +21,9 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
     private void initComponents() {
         GridLayout distribution = new GridLayout(1, 2);
         this.setLayout(distribution);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         this.setSize(600, 450);
         this.setTitle("Alimento");
-
         this.setLocationRelativeTo(null);
          this.panelCalcCalorias = new PanelCalculadoraComida();
         this.panelTablaAlimentos = new PanelTablaAlimentos();
