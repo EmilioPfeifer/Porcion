@@ -75,7 +75,7 @@ public class TablaAlimento {
     }
     */
     
-    private void llenarArrayList() {
+    public void llenarArrayList() {
         String aux = "";
         this.tablaAlimentos.clear();
         int cont=0;
@@ -85,7 +85,10 @@ public class TablaAlimento {
             String jsonString = aux;
             Alimento alim = objJson.fromJson(jsonString, Alimento.class);
             this.tablaAlimentos.add(alim);
-            //System.out.println(alim);
+            
+            //Logger.getLogger(getClass().getName()).log(
+            //Level.INFO, alim.toString());
+ 
             cont++;
         }
     }
@@ -134,4 +137,10 @@ public class TablaAlimento {
         }
         return palabraCortada.toLowerCase();
     }
+
+    public ArrayList<Alimento> getTablaAlimentos() {
+      
+        return tablaAlimentos;
+    }
+    
 }

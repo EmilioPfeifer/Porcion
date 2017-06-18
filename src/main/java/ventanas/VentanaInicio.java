@@ -69,7 +69,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
             Level.INFO, "SystemTray");
         if (SystemTray.isSupported()) {
             this. popup = new PopupMenu();
-            this.image = new ImageIcon("iconImage.jpg").getImage();
+            this.image = new ImageIcon("iconImage.png").getImage();
             this.trayIcon = new TrayIcon(image, "Mostrar notificación en java", popup);
             this.systemTray = SystemTray.getSystemTray();
             this.trayIcon.setImageAutoSize(true);

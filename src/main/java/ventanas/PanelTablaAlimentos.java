@@ -9,6 +9,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import modelo.Alimento;
 import modelo.TablaAlimento;
 import sun.rmi.runtime.Log;
 
@@ -34,6 +35,7 @@ public class PanelTablaAlimentos extends JPanel {
         this.tabAlimento = new TablaAlimento();
         this.datosTabla = this.tabAlimento.nombresTodosAlimentos();
 
+        
         //  String[][] datos = {{"azucar"}, {"pepino"}, {"tomate"}, {"cardo"}, {"galleta"}, {"jurel"}, {"comino"}, {"coliflor"}, {"lechuga"}, {"col"}, {"cocos"}, {"zapallo"}, {"nuez"}, {"aceite"}, {"cilantro"}, {"tocino"}, {"sardina"}, {"gato"}};
         this.tabla = new DefaultTableModel(datosTabla, titulo) {
             @Override
@@ -69,6 +71,12 @@ public class PanelTablaAlimentos extends JPanel {
         }else{
              this.datosTabla = this.tabAlimento.busquedaAlimentos(busqueda);
         }
+    }
+    
+    public Alimento alimentoDeTabla(int posicion){
+        TablaAlimento tabla = new TablaAlimento();
+        tabla.llenarArrayList();
+        return tabla.getTablaAlimentos().get(posicion);
     }
 
     public JTable getTablaAlimentos() {

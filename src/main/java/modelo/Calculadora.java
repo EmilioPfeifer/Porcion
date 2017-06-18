@@ -25,7 +25,7 @@ public class Calculadora {
 			calorias = (66.4730 + (13.7516 * peso) + (5.0033 * altura) - (6.7550 * edad))*2.2;
 		}
 		if (!masculino) {
-			calorias = 65.0955 + (9.5634 * peso) + (5.0033 * altura) - (6.7550 * edad);
+			calorias = (65.0955 + (9.5634 * peso) + (5.0033 * altura) - (6.7550 * edad))*2;
 		}
 		return calorias;
 	}
@@ -47,7 +47,6 @@ public class Calculadora {
 		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		LocalDate fechaNac = LocalDate.parse(fechaNacimiento, fmt);
 		LocalDate ahora = LocalDate.now();
-
 		Period periodo = Period.between(fechaNac, ahora);
 		return periodo.getYears();
 	}
