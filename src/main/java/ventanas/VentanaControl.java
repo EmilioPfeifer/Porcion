@@ -42,6 +42,7 @@ public class VentanaControl extends JFrame implements ActionListener {
             double peso = Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
             this.data.addControl(this.ctl = new Control(peso));
             this.setVisible(false);
+            VentanaInicio vi = new VentanaInicio();
         }
     }
 }

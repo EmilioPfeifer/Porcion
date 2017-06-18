@@ -76,6 +76,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (this.panelBotones.getBtnAgregarControl() == e.getSource()) {
             VentanaControl vc = new VentanaControl();
+            this.setVisible(false);
         }
         if (this.panelBotones.getBtnTablaComida() == e.getSource()) {
             VentanaAlimentos va = new VentanaAlimentos();

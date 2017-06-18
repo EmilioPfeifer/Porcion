@@ -33,10 +33,8 @@ public class PanelGrafico extends JPanel {
         logger.log(Level.INFO, p.toString());
         logger.log(Level.INFO, String.valueOf(p.getControles().size()));
         this.graficoLineas = new DefaultCategoryDataset();
-       
         for (int i = 0; i < p.getControles().size(); i++) {
             this.graficoLineas.addValue(p.getControles().get(i).getPesoControl(), p.getNombre(), p.getControles().get(i).getFechaControl());
-
         }
 
         /*
