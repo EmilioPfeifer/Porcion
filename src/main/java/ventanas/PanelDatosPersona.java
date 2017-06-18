@@ -14,6 +14,7 @@ import modelo.Paciente;
 public class PanelDatosPersona extends JPanel{
     
         Datos data = new Datos();
+        Paciente pac;
 
 	private JLabel nombre;
 	private JLabel edad;
@@ -116,7 +117,10 @@ public class PanelDatosPersona extends JPanel{
             Gson objJson = new Gson();
             String jsonString = this.data.obtenerPaciente();
             Paciente p = objJson.fromJson(jsonString, Paciente.class);
-            
-            return p;
+            this.pac = p;
+            this.pac.getControles().clear();
+            this.pac.llenarArrayList();
+            this.pac.crearJson(this.pac);
+            return this.pac;
         }
 }

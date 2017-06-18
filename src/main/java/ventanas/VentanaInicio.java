@@ -29,7 +29,6 @@ public class VentanaInicio extends JFrame implements ActionListener {
     */
     public VentanaInicio() {
         initComponents();
-        
 
     }
     private void initComponents() {
@@ -82,7 +81,7 @@ public class VentanaInicio extends JFrame implements ActionListener {
             VentanaAlimentos va = new VentanaAlimentos();
         }
         if (this.panelBotones.getBtnGraficoControles() == e.getSource()) {
-            VentanaGrafico vg = new VentanaGrafico();
+            VentanaGrafico vg = new VentanaGrafico(this.panelDatos.pac);
             
         }
         if (this.panelBotones.getBtnSalir() == e.getSource()) {

@@ -18,24 +18,24 @@ public class PanelGrafico extends JPanel {
     private JFreeChart grafico;
     private ChartPanel contenedorGrafico;
     private DefaultCategoryDataset graficoLineas;
-    private Paciente paciente;
+    //private Paciente paciente;
     private Datos data;
     private Logger logger = Logger.getLogger(PanelGrafico.class.getName());
 
-    public PanelGrafico() {
-        initComponents();
+    public PanelGrafico(Paciente p) {
+        initComponents(this.crearPaciente(p));
 
     }
 
-    private void initComponents() {
+    private void initComponents(Paciente p) {
 
-        crearPaciente();
-        logger.log(Level.WARNING, this.paciente.toString());
+        //crearPaciente();
+        logger.log(Level.INFO, p.toString());
+        logger.log(Level.INFO, String.valueOf(p.getControles().size()));
         this.graficoLineas = new DefaultCategoryDataset();
        
-        for (int i = 0; i < paciente.getControles().size(); i++) {
-             logger.log(Level.WARNING, " ");
-            this.graficoLineas.addValue(paciente.getControles().get(i).getPesoControl(), paciente.getNombre(), paciente.getControles().get(i).getFechaControl());
+        for (int i = 0; i < p.getControles().size(); i++) {
+            this.graficoLineas.addValue(p.getControles().get(i).getPesoControl(), p.getNombre(), p.getControles().get(i).getFechaControl());
 
         }
 
@@ -51,10 +51,10 @@ public class PanelGrafico extends JPanel {
         this.add(contenedorGrafico);
     }
 
-    public void crearPaciente() {
-        Gson objJson = new Gson();
-        String jsonString = this.data.obtenerPaciente();
-        Paciente p = objJson.fromJson(jsonString, Paciente.class);
-        this.paciente = p;
+    public Paciente crearPaciente(Paciente p) {
+        //Gson objJson = new Gson();
+        //String jsonString = this.data.obtenerPaciente();
+        //Paciente p = objJson.fromJson(jsonString, Paciente.class);
+        return p;
     }
 }

@@ -9,24 +9,24 @@ public class VentanaGrafico extends JFrame implements ActionListener{
 	private PanelGrafico panelGrafico;
    
 	
-	public VentanaGrafico(){
-		initComponents();
+	public VentanaGrafico(Paciente p){
+		initComponents(p);
               
 	}
 	
-	private void initComponents(){
+	private void initComponents(Paciente p){
             //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    this.setSize(700,500); 
 	    this.setTitle("Grafico");
 	    this.setVisible(true);
 	    this.setLocationRelativeTo(null);
 	    
-	    this.panelGrafico = new PanelGrafico();
+	    this.panelGrafico = new PanelGrafico(p);
 	    this.add(this.panelGrafico);
 		
 	}
 
     public void actionPerformed(ActionEvent ae) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 }
