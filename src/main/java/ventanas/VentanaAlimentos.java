@@ -44,7 +44,8 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
 
             int posicionAlimento = this.panelTablaAlimentos.getTablaAlimentos().getSelectedRow();
             Logger.getLogger(getClass().getName()).log(
-                    Level.INFO, this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento).toString());
+                Level.INFO, this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento).toString());
+            
             this.panelCalcCalorias.calcularCalorias(this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento));
         }
     }

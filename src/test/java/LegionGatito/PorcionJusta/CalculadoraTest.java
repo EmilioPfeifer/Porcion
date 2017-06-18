@@ -1,6 +1,7 @@
 
 package LegionGatito.PorcionJusta;
 
+import modelo.Alimento;
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -10,9 +11,16 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import modelo.Calculadora;
+import ventanas.PanelCalculadoraComida;
 
 public class CalculadoraTest {
 	private Calculadora calculadora;
+        PanelCalculadoraComida panelCalcCalorias;
+        Alimento alim;
+
+    public CalculadoraTest() {
+    }
+        
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -68,6 +76,16 @@ public class CalculadoraTest {
 		//assertEquals(caloriasEsperadas, caloriasReales, 0.0);
 		
 	}
+        
+    @Test
+    public void testCalGramos(){
+        this.alim = new Alimento("prueba", 15);
+        this.calculadora = new Calculadora();
+        this.calculadora.calcularCaloriasAlimento(this.alim.getCaloria(), 120);
+        Double x;
+        x = Double.NaN;
+        this.calculadora.calcularCaloriasAlimento(x, 120);
+    }
 	
 
 }

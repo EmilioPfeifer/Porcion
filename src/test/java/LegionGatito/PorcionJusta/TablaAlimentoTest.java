@@ -5,10 +5,14 @@
  */
 package LegionGatito.PorcionJusta;
 
+import modelo.Alimento;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Test;
+import ventanas.PanelCalculadoraComida;
+import ventanas.PanelTablaAlimentos;
 
 
 /**
@@ -36,6 +40,4 @@ public class TablaAlimentoTest {
     public void tearDown() {
     }
 
-   // @Test
-    //public 
 }
