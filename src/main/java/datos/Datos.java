@@ -8,6 +8,7 @@ package datos;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -117,6 +118,20 @@ public class Datos {
             Logger.getLogger(getClass().getName()).log(
             Level.INFO, "Fallo escrbir en paciente");
         }
+    }
+    
+    public boolean comprobadorExistenciaArchivo(){
+        String direccionPaciente = "data/Paciente.json";
+        File   ficheroAux = new File(direccionPaciente);
+        boolean existe = false;
+        if (ficheroAux.exists()) {
+            existe = true;
+        }else{
+            existe = false;
+        }
+        Logger.getLogger(getClass().getName()).log(
+            Level.INFO, existe+"");
+        return existe;
     }
     public String obtenerPaciente() {
         String texto = "";

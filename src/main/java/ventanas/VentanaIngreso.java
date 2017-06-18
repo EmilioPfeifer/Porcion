@@ -14,7 +14,14 @@ public class VentanaIngreso extends JFrame implements ActionListener {
     private PanelIngresoDatos panelIngDatos;
 
     public VentanaIngreso() {
-        initComponents();
+        Datos datosAux = new Datos();
+                
+        if (datosAux.comprobadorExistenciaArchivo()) {
+            VentanaInicio vi = new VentanaInicio();
+        }else{
+             initComponents();
+        }
+       
     }
 
     private void initComponents() {
