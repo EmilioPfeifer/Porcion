@@ -89,6 +89,19 @@ public class Datos {
             Level.INFO, "No se añadio el control");
         }
     }
+    public void firstControl(Control control) {
+        FileWriter writer;
+        try{
+            writer = new FileWriter("data\\Control.json");
+            Gson gson = new GsonBuilder().create();
+            gson.toJson(control, writer);
+            writer.close();
+            
+        }catch (IOException e){
+            Logger.getLogger(getClass().getName()).log(
+            Level.INFO, "No se añadio el control");
+        }
+    }
     public String[] obtenerControles() {
         String[] texto = new String[3000];
         String direccion = "data\\Control.json";
@@ -122,6 +135,19 @@ public class Datos {
     
     public boolean comprobadorExistenciaArchivo(){
         String direccionPaciente = "data/Paciente.json";
+        File   ficheroAux = new File(direccionPaciente);
+        boolean existe = false;
+        if (ficheroAux.exists()) {
+            existe = true;
+        }else{
+            existe = false;
+        }
+        Logger.getLogger(getClass().getName()).log(
+            Level.INFO, existe+"");
+        return existe;
+    }
+    public boolean comprobadorExistenciaArrayJson(){
+        String direccionPaciente = "data/Control.json";
         File   ficheroAux = new File(direccionPaciente);
         boolean existe = false;
         if (ficheroAux.exists()) {

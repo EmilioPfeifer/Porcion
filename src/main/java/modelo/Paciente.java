@@ -35,6 +35,11 @@ public class Paciente {
         this.edad = calculadora.calcularEdad(this.fechaNac);
         this.imc = this.calculadora.calcularImc(this.peso, this.estatura, edad);
         this.caloriasDiarias =this.calculadora.calcularCalorias(this.masculino, this.peso, this.estatura, this.edad);
+        if (this.data.comprobadorExistenciaArrayJson()) {
+        }else{
+            Control c = new Control(this.peso);
+            this.data.firstControl(c);
+        }
         this.llenarArrayList();
     }
 

@@ -47,7 +47,7 @@ public class VentanaIngreso extends JFrame implements ActionListener {
                 String nombre = this.panelIngDatos.getNombre().getText();
                 double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
                  Logger.getLogger(getClass().getName()).log(
-        Level.INFO, "texto estatura "+this.panelIngDatos.getEstatura().getText());
+                    Level.INFO, "texto estatura "+this.panelIngDatos.getEstatura().getText());
                 double peso = Double.parseDouble(this.panelIngDatos.getPeso().getText());
                 String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
                 String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();

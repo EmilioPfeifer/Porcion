@@ -51,7 +51,7 @@ public class PanelCalculadoraComida extends JPanel {
     public void calcularCalorias(Alimento alimento) {
         this.calculadora = new Calculadora();
         double caloriaAlimento = alimento.getCaloria();
-        double gramos = Double.parseDouble(this.txfGramosCalorias.getText());
+        double gramos = Double.parseDouble(this.comprovar());
         String caloriasTotales = this.calculadora.calcularCaloriasAlimento(caloriaAlimento, gramos);
         this.lblCaloriasComida.setText(caloriasTotales);
     }
@@ -65,16 +65,18 @@ public class PanelCalculadoraComida extends JPanel {
     }
 
     public JTextField getTxfGramosCalorias() {
-        //this.comprovar();
         return txfGramosCalorias;
     }
-    private void comprovar(){
+    private String comprovar(){
+        String c = "";
         try{
             Double.parseDouble(this.txfGramosCalorias.getText());
+            c = this.txfGramosCalorias.getText();
         }catch(IllegalArgumentException e){
             Logger.getLogger(getClass().getName()).log(
                 Level.WARNING, "Se introdujo un caracter ilegal");
-            throw new IllegalArgumentException("");
+            c = "0";
         }
+        return c;
     }
 }
