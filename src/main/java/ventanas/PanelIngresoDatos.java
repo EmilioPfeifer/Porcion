@@ -125,5 +125,4 @@ public class PanelIngresoDatos extends JPanel {
     public void setPeso(JTextField peso) {
         this.peso = peso;
     }
-        
 }

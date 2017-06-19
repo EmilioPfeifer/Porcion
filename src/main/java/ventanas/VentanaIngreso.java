@@ -38,12 +38,24 @@ public class VentanaIngreso extends JFrame implements ActionListener {
         this.panelIngDatos.getBtnCancelar().addActionListener((ActionListener) this);
         this.add(panelIngDatos);
     }
+    private boolean comprovar(){
+        boolean c = true;
+        try{
+            Double.parseDouble(this.panelIngDatos.getEstatura().getText());
+            Double.parseDouble(this.panelIngDatos.getPeso().getText());
+        }catch(IllegalArgumentException e){
+            Logger.getLogger(getClass().getName()).log(
+                Level.WARNING, "Se introdujo un caracter ilegal");
+            c = false;
+        }
+        return c;
+    }
 
     public void actionPerformed(ActionEvent e) {
 
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
 
-            if (this.panelIngDatos.getNombre().getText() != null && this.panelIngDatos.getEstatura().getText() != null && this.panelIngDatos.getPeso().getText() != null && this.panelIngDatos.getFechaNacimiento().getText() != null) {
+            if (this.panelIngDatos.getNombre().getText().equals(null) && this.panelIngDatos.getEstatura().getText().equals(null) && this.panelIngDatos.getPeso().getText().equals(null) && this.panelIngDatos.getFechaNacimiento().getText().equals(null) && this.comprovar()) {
                 String nombre = this.panelIngDatos.getNombre().getText();
                 double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
                  Logger.getLogger(getClass().getName()).log(
@@ -56,6 +68,7 @@ public class VentanaIngreso extends JFrame implements ActionListener {
                 VentanaInicio v = new VentanaInicio();
                 Logger.getLogger(getClass().getName()).log(
                         Level.INFO, p.toString());
+                this.setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "Ingrese Todos los campos solicitados");
             }

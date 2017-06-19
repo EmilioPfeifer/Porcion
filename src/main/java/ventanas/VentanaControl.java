@@ -8,6 +8,8 @@ package ventanas;
 import datos.Datos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import modelo.Control;
 
@@ -37,12 +39,26 @@ public class VentanaControl extends JFrame implements ActionListener {
         
     }
     
+    private boolean comprovar(){
+        boolean c = true;
+        try{
+            Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
+        }catch(IllegalArgumentException e){
+            Logger.getLogger(getClass().getName()).log(
+                Level.WARNING, "Se introdujo un caracter ilegal");
+            c = false;
+        }
+        return c;
+    }
+    
     public void actionPerformed(ActionEvent e) {
         if (this.pnlComntrol.getAceptar() == e.getSource()) {
-            double peso = Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
-            this.data.addControl(this.ctl = new Control(peso));
-            this.setVisible(false);
-            VentanaInicio vi = new VentanaInicio();
+            if (comprovar()) {
+                double peso = Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
+                this.data.addControl(this.ctl = new Control(peso));
+                this.setVisible(false);
+                VentanaInicio vi = new VentanaInicio();
+            }
         }
     }
 }

@@ -47,10 +47,11 @@ public class IngresoTest {
     //
     @Test
     public void ingresoTest() {
-        //this.panel.setNombre(adrik);
-        //this.panel.setFechaNacimiento(fechaNacimiento);
-        this.panel.getNombre().getText();
-        this.panel.getFechaNacimiento().getText();
+        String nul="10";
+        String f = this.panel.getFechaNacimiento().getText();
+        String n =this.panel.getNombre().getText();
+        this.panel.getPeso().setText(nul);
+        this.panel.getEstatura().setText(nul);
         Double.parseDouble(this.panel.getEstatura().getText());
         Double.parseDouble(this.panel.getPeso().getText());
     }
