@@ -40,6 +40,8 @@ public class VentanaControl extends JFrame implements ActionListener {
     }
     
     private boolean comprovar(){
+        //el metodo comprueba que el dato ingresado en un numero.
+        //sino no se realiza la operacion del boton "aceptar"
         boolean c = true;
         try{
             Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
