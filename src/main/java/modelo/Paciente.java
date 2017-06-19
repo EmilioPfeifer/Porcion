@@ -33,7 +33,7 @@ public class Paciente {
         this.masculino = comprobarMasculino(masculino);
         this.calculadora = new Calculadora();
         this.edad = calculadora.calcularEdad(this.fechaNac);
-        this.imc = this.calculadora.calcularImc(this.peso, this.estatura, edad);
+        this.imc = this.calculadora.calcularImc(this.peso, this.estatura);
         this.caloriasDiarias =this.calculadora.calcularCalorias(this.masculino, this.peso, this.estatura, this.edad);
         if (this.data.comprobadorExistenciaArrayJson()) {
         }else{

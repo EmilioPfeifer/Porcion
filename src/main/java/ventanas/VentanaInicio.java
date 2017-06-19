@@ -42,9 +42,10 @@ public class VentanaInicio extends JFrame implements ActionListener {
         //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 450);
         this.setTitle("Porcion Justa");
-
+ this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         GridLayout distribution = new GridLayout(1, 2);
+        this.setResizable(false);
         this.setLayout(distribution);
 
         this.setBackground(Color.ORANGE);

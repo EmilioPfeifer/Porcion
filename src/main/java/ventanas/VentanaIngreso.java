@@ -15,15 +15,15 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
     public VentanaIngreso() {
         Datos datosAux = new Datos();
-                
+
         if (datosAux.comprobadorExistenciaArchivo()) {
             VentanaInicio vi = new VentanaInicio();
             this.dispose();
 
-        }else{
-             initComponents();
+        } else {
+            initComponents();
         }
-       
+
     }
 
     private void initComponents() {
@@ -40,16 +40,17 @@ public class VentanaIngreso extends JFrame implements ActionListener {
         this.panelIngDatos.getBtnCancelar().addActionListener((ActionListener) this);
         this.add(panelIngDatos);
     }
-    private boolean comprovar(){
+
+    private boolean comprovar() {
         //metodo que verifica si lo datos son compatible con las variable tipo double
         //de no ser compatible, el metodo no da el paso para continuar el algoritmo
         boolean c = false;
-        try{
+        try {
             Double.parseDouble(this.panelIngDatos.getEstatura().getText());
             Double.parseDouble(this.panelIngDatos.getPeso().getText());
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             Logger.getLogger(getClass().getName()).log(
-                Level.WARNING, "Se introdujo un caracter ilegal");
+                    Level.WARNING, "Se introdujo un caracter ilegal");
             c = true;
         }
         return c;
@@ -61,15 +62,15 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
             if (this.panelIngDatos.getNombre().getText().equals("")
                     || this.panelIngDatos.getEstatura().getText().equals("")
-                    || this.panelIngDatos.getPeso().getText().equals("") 
-                    || this.panelIngDatos.getFechaNacimiento().getText().equals("") 
+                    || this.panelIngDatos.getPeso().getText().equals("")
+                    || this.panelIngDatos.getFechaNacimiento().getText().equals("")
                     || this.comprovar()) {
                 JOptionPane.showMessageDialog(null, "Ingrese Todos los campos solicitados");
-            }else{
+            } else {
                 String nombre = this.panelIngDatos.getNombre().getText();
                 double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
-                 Logger.getLogger(getClass().getName()).log(
-                    Level.INFO, "texto estatura "+this.panelIngDatos.getEstatura().getText());
+                Logger.getLogger(getClass().getName()).log(
+                        Level.INFO, "texto estatura " + this.panelIngDatos.getEstatura().getText());
                 double peso = Double.parseDouble(this.panelIngDatos.getPeso().getText());
                 String fechaNac = this.panelIngDatos.getFechaNacimiento().getText();
                 String sexo = (String) this.panelIngDatos.getComboSexo().getSelectedItem();

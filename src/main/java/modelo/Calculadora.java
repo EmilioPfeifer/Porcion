@@ -14,7 +14,12 @@ public class Calculadora {
         public String calcularCaloriasAlimento(double calGramo, double gramos){
             //calcula las calorias de las ccomida, recibe como parametro la caloria por unidad del alimento
             //y los gramos de alimentos, retorna la cantidad de calorias totales en la cantidad de alimento
-            return ""+calGramo*gramos;
+            if (!Double.isNaN(gramos) && !Double.isNaN(calGramo)) {
+                return ""+calGramo*gramos;
+            }else{
+                throw new IllegalArgumentException("Parametro double vacio");
+            }
+            
         }
         
 	public double calcularCalorias(boolean masculino , double peso, double altura, int edad) {
@@ -30,7 +35,7 @@ public class Calculadora {
 		return calorias;
 	}
 
-	public double calcularImc(double peso, double altura, int edad) {
+	public double calcularImc(double peso, double altura) {
             //calcula el indice de masa corporal con la altura y el peso de la persona
 		double imc = 0;
 		imc = peso / (altura * altura);

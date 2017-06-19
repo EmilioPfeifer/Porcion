@@ -20,7 +20,7 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
     private void initComponents() {
         GridLayout distribution = new GridLayout(1, 2);
         this.setLayout(distribution);
-
+        this.setResizable(false);
         this.setSize(600, 450);
         this.setTitle("Alimento");
         this.setLocationRelativeTo(null);
@@ -28,7 +28,7 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
         this.panelTablaAlimentos = new PanelTablaAlimentos();
         this.panelCalcCalorias.getBtnCalcular().addActionListener((ActionListener) this);
 
-        this.panelCalcCalorias.getBtnVolver().addActionListener((ActionListener)this);
+        this.panelCalcCalorias.getBtnVolver().addActionListener((ActionListener) this);
         this.panelTablaAlimentos.getTFComida().addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 TFCPresionado(evt);
@@ -46,11 +46,11 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
 
             int posicionAlimento = this.panelTablaAlimentos.getTablaAlimentos().getSelectedRow();
             Logger.getLogger(getClass().getName()).log(
-                Level.INFO, this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento).toString());
-            
+                    Level.INFO, this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento).toString());
+
             this.panelCalcCalorias.calcularCalorias(this.panelTablaAlimentos.alimentoDeTabla(posicionAlimento));
         }
-        if(this.panelCalcCalorias.getBtnVolver() == e.getSource()){
+        if (this.panelCalcCalorias.getBtnVolver() == e.getSource()) {
             VentanaInicio vi = new VentanaInicio();
             this.dispose();
         }

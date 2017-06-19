@@ -18,41 +18,42 @@ import modelo.Control;
  * @author p.m.h
  */
 public class VentanaControl extends JFrame implements ActionListener {
+
     private PanelControl pnlComntrol;
     private Datos data = new Datos();
     private Control ctl;
-    
-    public VentanaControl(){
+
+    public VentanaControl() {
         initComponents();
     }
-    
-    private void initComponents(){
-        this.setSize(340,200); 
+
+    private void initComponents() {
+        this.setSize(340, 200);
         this.setTitle("Grafico");
         this.setVisible(true);
         this.setLocationRelativeTo(null);
-            
+
         this.setResizable(false);
         this.pnlComntrol = new PanelControl();
         this.pnlComntrol.getAceptar().addActionListener((ActionListener) this);
         this.add(this.pnlComntrol);
-        
+
     }
-    
-    private boolean comprovar(){
+
+    private boolean comprovar() {
         //el metodo comprueba que el dato ingresado en un numero.
         //sino no se realiza la operacion del boton "aceptar"
         boolean c = true;
-        try{
+        try {
             Double.parseDouble(this.pnlComntrol.getIngresoPeso().getText());
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             Logger.getLogger(getClass().getName()).log(
-                Level.WARNING, "Se introdujo un caracter ilegal");
+                    Level.WARNING, "Se introdujo un caracter ilegal");
             c = false;
         }
         return c;
     }
-    
+
     public void actionPerformed(ActionEvent e) {
         if (this.pnlComntrol.getAceptar() == e.getSource()) {
             if (comprovar()) {
