@@ -59,7 +59,7 @@ public class PanelCalculadoraComida extends JPanel {
         double caloriaAlimento = alimento.getCaloria();
         double gramos = Double.parseDouble(this.comprovar());
         String caloriasTotales = this.calculadora.calcularCaloriasAlimento(caloriaAlimento, gramos);
-        this.lblCaloriasComida.setText(caloriasTotales+"cal");
+        this.lblCaloriasComida.setText(caloriasTotales+" cal");
     }
 
     public JButton getBtnVolver() {
