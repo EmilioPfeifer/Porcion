@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":2,"minute":18,"second":48},"pesoControl":78.0,"fechaControl":"19-6-2017"}
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":2,"minute":19,"second":6},"pesoControl":89.0,"fechaControl":"19-6-2017"}
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":2,"minute":50,"second":59},"pesoControl":90.0,"fechaControl":"19-6-2017"}
@@ -5,3 +6,10 @@
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":3,"minute":6,"second":52},"pesoControl":76.0,"fechaControl":"19-6-2017"}
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":3,"minute":11,"second":23},"pesoControl":77.0,"fechaControl":"19-6-2017"}
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":3,"minute":11,"second":29},"pesoControl":55.0,"fechaControl":"19-6-2017"}
+=======
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":0,"minute":52,"second":39},"pesoControl":70.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":45,"second":12},"pesoControl":68.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":56,"second":2},"pesoControl":60.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":56,"second":10},"pesoControl":77.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":59,"second":49},"pesoControl":69.0,"fechaControl":"19-6-2017"}
+>>>>>>> origin/master
