@@ -1,6 +1,5 @@
 {"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":0,"minute":52,"second":39},"pesoControl":70.0,"fechaControl":"19-6-2017"}
-<<<<<<< HEAD
-{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":25,"second":43},"pesoControl":89.0,"fechaControl":"19-6-2017"}
-=======
-{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":24,"second":24},"pesoControl":68.0,"fechaControl":"19-6-2017"}
->>>>>>> origin/master
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":45,"second":12},"pesoControl":68.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":56,"second":2},"pesoControl":60.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":56,"second":10},"pesoControl":77.0,"fechaControl":"19-6-2017"}
+{"fecha":{"year":2017,"month":5,"dayOfMonth":19,"hourOfDay":1,"minute":59,"second":49},"pesoControl":69.0,"fechaControl":"19-6-2017"}

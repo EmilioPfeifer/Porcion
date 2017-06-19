@@ -121,6 +121,11 @@ public class PanelDatosPersona extends JPanel{
             this.paciente = p;
             this.paciente.getControles().clear();
             this.paciente.llenarArrayList();
+            this.paciente.setPeso(p.getControles().get(p.getControles().size()-1).getPesoControl());
+            this.paciente.setImc(this.paciente.calculadora.calcularImc(this.paciente.getPeso(),
+                    this.paciente.getEstatura(), this.paciente.getEdad()));
+            this.paciente.setCaloriasDiarias(this.paciente.calculadora.calcularCalorias(this.paciente.isMasculino(),
+                    this.paciente.getPeso(), this.paciente.getEstatura(), this.paciente.getEdad()));
             this.paciente.crearJson(this.paciente);
             return this.paciente;
 

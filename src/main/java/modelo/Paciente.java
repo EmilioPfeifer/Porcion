@@ -22,7 +22,7 @@ public class Paciente {
     double caloriasDiarias;
     
     private ArrayList<Control> controles = new ArrayList<Control>();
-    private Calculadora calculadora ;
+    public Calculadora calculadora ;
     
     
     public Paciente(String nombre, double estatura, String fechaNac, double peso, String masculino) {
@@ -113,6 +113,20 @@ public class Paciente {
     public ArrayList<Control> getControles() {
         return controles;
     }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public void setImc(double imc) {
+        this.imc = imc;
+    }
+
+    public void setCaloriasDiarias(double caloriasDiarias) {
+        this.caloriasDiarias = caloriasDiarias;
+    }
+    
+    
 
     @Override
     public String toString() {
