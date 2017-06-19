@@ -48,6 +48,8 @@ public class PanelCalculadoraComida extends JPanel {
         this.add(btnCalcular);
         this.add(lblCaloriasComida);
         this.add(btnVolver);
+       this.btnVolver.setBackground(new Color(255, 171, 107));
+       this.btnCalcular.setBackground(new Color(255, 171, 107));
         this.setBackground(new Color(137, 208, 171));
 
     }

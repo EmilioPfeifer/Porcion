@@ -106,6 +106,10 @@ public class Paciente {
         return this.imc;
     }
 
+    public double getCaloriasDiarias() {
+        return caloriasDiarias;
+    }
+
     public ArrayList<Control> getControles() {
         return controles;
     }
