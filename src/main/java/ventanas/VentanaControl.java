@@ -60,6 +60,7 @@ public class VentanaControl extends JFrame implements ActionListener {
                 this.data.addControl(this.ctl = new Control(peso));
                 this.setVisible(false);
                 VentanaInicio vi = new VentanaInicio();
+
                 this.dispose();
 
             }

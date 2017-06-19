@@ -19,6 +19,7 @@ public class VentanaIngreso extends JFrame implements ActionListener {
         if (datosAux.comprobadorExistenciaArchivo()) {
             VentanaInicio vi = new VentanaInicio();
             this.dispose();
+
         }else{
              initComponents();
         }

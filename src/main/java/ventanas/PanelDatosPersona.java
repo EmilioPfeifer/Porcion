@@ -123,5 +123,6 @@ public class PanelDatosPersona extends JPanel{
             this.paciente.llenarArrayList();
             this.paciente.crearJson(this.paciente);
             return this.paciente;
+
         }
 }

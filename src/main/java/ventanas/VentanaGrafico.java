@@ -22,6 +22,7 @@ public class VentanaGrafico extends JFrame implements ActionListener{
 	    this.setLocationRelativeTo(null);
 	    
 	    this.panelGrafico = new PanelGrafico(p);
+
             this.panelGrafico.getVolver().addActionListener((ActionListener)this);
 	    this.add(this.panelGrafico);
 		
@@ -32,5 +33,8 @@ public class VentanaGrafico extends JFrame implements ActionListener{
             VentanaInicio vi = new VentanaInicio();
             this.dispose();
         }
-    }
+		
+	}
 }
+
+
