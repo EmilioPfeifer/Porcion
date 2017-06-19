@@ -41,14 +41,14 @@ public class VentanaIngreso extends JFrame implements ActionListener {
     private boolean comprovar(){
         //metodo que verifica si lo datos son compatible con las variable tipo double
         //de no ser compatible, el metodo no da el paso para continuar el algoritmo
-        boolean c = true;
+        boolean c = false;
         try{
             Double.parseDouble(this.panelIngDatos.getEstatura().getText());
             Double.parseDouble(this.panelIngDatos.getPeso().getText());
         }catch(IllegalArgumentException e){
             Logger.getLogger(getClass().getName()).log(
                 Level.WARNING, "Se introdujo un caracter ilegal");
-            c = false;
+            c = true;
         }
         return c;
     }
@@ -57,11 +57,13 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
 
-            if (this.panelIngDatos.getNombre().getText().equals(null)
-                    && this.panelIngDatos.getEstatura().getText().equals(null)
-                    && this.panelIngDatos.getPeso().getText().equals(null) 
-                    && this.panelIngDatos.getFechaNacimiento().getText().equals(null) 
-                    && this.comprovar()) {
+            if (this.panelIngDatos.getNombre().getText().equals("")
+                    || this.panelIngDatos.getEstatura().getText().equals("")
+                    || this.panelIngDatos.getPeso().getText().equals("") 
+                    || this.panelIngDatos.getFechaNacimiento().getText().equals("") 
+                    || this.comprovar()) {
+                JOptionPane.showMessageDialog(null, "Ingrese Todos los campos solicitados");
+            }else{
                 String nombre = this.panelIngDatos.getNombre().getText();
                 double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
                  Logger.getLogger(getClass().getName()).log(
@@ -75,10 +77,7 @@ public class VentanaIngreso extends JFrame implements ActionListener {
                 Logger.getLogger(getClass().getName()).log(
                         Level.INFO, p.toString());
                 this.setVisible(false);
-            } else {
-                JOptionPane.showMessageDialog(null, "Ingrese Todos los campos solicitados");
             }
-
             if (this.panelIngDatos.getBtnCancelar() == e.getSource()) {
                 System.exit(0);
             }
