@@ -88,7 +88,11 @@ public class PanelDatosPersona extends JPanel{
             this.datoNombre = new JLabel(p.getNombre());
             this.datoEstatura = new JLabel(String.valueOf(p.getEstatura()));
             this.datoPeso = new JLabel(String.valueOf(p.getPeso()));
-            this.datoSexo = new JLabel();
+            if (p.isMasculino()) {
+                this.datoSexo = new JLabel("Masculino");
+            }else{
+                this.datoSexo = new JLabel("Femenino");
+            }
             this.datoIMC = new JLabel(String.valueOf(p.getIMC()));
             
             this.datoEdad.setForeground(Color.WHITE);
