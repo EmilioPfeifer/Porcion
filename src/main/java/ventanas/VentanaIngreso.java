@@ -39,6 +39,8 @@ public class VentanaIngreso extends JFrame implements ActionListener {
         this.add(panelIngDatos);
     }
     private boolean comprovar(){
+        //metodo que verifica si lo datos son compatible con las variable tipo double
+        //de no ser compatible, el metodo no da el paso para continuar el algoritmo
         boolean c = true;
         try{
             Double.parseDouble(this.panelIngDatos.getEstatura().getText());
@@ -55,7 +57,11 @@ public class VentanaIngreso extends JFrame implements ActionListener {
 
         if (this.panelIngDatos.getBtnAceptar() == e.getSource()) {
 
-            if (this.panelIngDatos.getNombre().getText().equals(null) && this.panelIngDatos.getEstatura().getText().equals(null) && this.panelIngDatos.getPeso().getText().equals(null) && this.panelIngDatos.getFechaNacimiento().getText().equals(null) && this.comprovar()) {
+            if (this.panelIngDatos.getNombre().getText().equals(null)
+                    && this.panelIngDatos.getEstatura().getText().equals(null)
+                    && this.panelIngDatos.getPeso().getText().equals(null) 
+                    && this.panelIngDatos.getFechaNacimiento().getText().equals(null) 
+                    && this.comprovar()) {
                 String nombre = this.panelIngDatos.getNombre().getText();
                 double estatura = Double.parseDouble(this.panelIngDatos.getEstatura().getText());
                  Logger.getLogger(getClass().getName()).log(
