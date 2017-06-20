@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import modelo.Alimento;
 import modelo.TablaAlimento;
-import sun.rmi.runtime.Log;
+
 
 public class PanelTablaAlimentos extends JPanel {
 

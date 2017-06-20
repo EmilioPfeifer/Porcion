@@ -58,6 +58,8 @@ public class VentanaAlimentos extends JFrame implements ActionListener {
 
     private void TFCPresionado(java.awt.event.KeyEvent evt) {
         String busqueda = panelTablaAlimentos.getTFComida().getText();
-        this.panelTablaAlimentos.mostrarBusqueda(busqueda);
+        Logger.getLogger(getClass().getName()).log(
+                    Level.INFO, panelTablaAlimentos.getTFComida().getText());
+
     }
 }
