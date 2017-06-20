@@ -69,7 +69,7 @@ public class PanelTablaAlimentos extends JPanel {
         if (busqueda.equals("")) {
             this.datosTabla = this.tabAlimento.nombresTodosAlimentos();
         }else{
-             this.datosTabla = this.tabAlimento.busquedaAlimentos(busqueda);
+            this.datosTabla = this.tabAlimento.busquedaAlimentos(busqueda);
         }
     }
     
